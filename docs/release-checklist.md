@@ -4,7 +4,7 @@ Use this before publishing the repository on GitHub.
 
 ## Repository
 
-- [ ] Confirm repository name, recommended: `human-gated-ai-native-academic-research-workflow`
+- [ ] Confirm repository name, recommended: `human-gated-ai-research-framework`
 - [ ] Ensure `.env` is ignored and not committed
 - [ ] Replace placeholder URL in `CITATION.cff`
 - [ ] Check license and contributor names

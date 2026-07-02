@@ -2,11 +2,11 @@
 
 Recommended repository name:
 
-`human-gated-ai-native-academic-research-workflow`
+`human-gated-ai-research-framework`
 
 Recommended display title:
 
-`A Human-Gated AI Research Workflow for Domain Researchers`
+`A Human-Gated, Skill-Guided Framework for AI-Native Academic Research`
 
 ## Before Creating the Repository
 
@@ -18,7 +18,7 @@ Recommended display title:
 
 ## Suggested Repository Description
 
-Human-gated, skill-guided workflow for evidence-grounded academic research by domain researchers.
+Human-gated, skill-guided framework for evidence-grounded academic research by domain researchers.
 
 ## Suggested Topics
 
@@ -39,10 +39,10 @@ From the repository folder:
 git init
 git add README.md LICENSE CONTRIBUTING.md CHANGELOG.md CITATION.cff .gitignore .env.example docs templates skills examples
 git status
-git commit -m "Prepare AI-Native Academic Research Workflow v0.1"
+git commit -m "Prepare AI-Native Academic Research Framework v0.1"
 ```
 
-Then create a GitHub repository named `human-gated-ai-native-academic-research-workflow` and follow GitHub's instructions to add the remote and push.
+Then create a GitHub repository named `human-gated-ai-research-framework` and follow GitHub's instructions to add the remote and push.
 
 After the repository URL exists, update:
 
@@ -52,7 +52,7 @@ After the repository URL exists, update:
 
 ## Suggested v0.1 Release Notes
 
-Initial development release of AI-Native Academic Research Workflow, including:
+Initial development release of AI-Native Academic Research Framework, including:
 
 - four-stage Planning -> Modeling -> Reporting / Output Packaging -> Reviewing framework
 - demo-before-scale-up control and run-log conventions

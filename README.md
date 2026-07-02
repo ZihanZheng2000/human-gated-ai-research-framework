@@ -1,12 +1,12 @@
-# AI-Native Academic Research Workflow
+# AI-Native Academic Research Framework
 
-A human-gated, skill-guided workflow for turning research questions, literature, public or local data, and domain expertise into inspectable academic research packages.
+A human-gated, skill-guided research framework for turning research questions, literature, public or local data, and domain expertise into inspectable academic research packages.
 
-This project is designed for researchers who want AI help with planning, data/model execution, research reporting, and review, but do **not** want an opaque fully autonomous research agent. The framework keeps the human researcher in control through explicit stage packages, evidence checks, and user gates.
+This project is designed for researchers who want AI help with planning, data/model execution, research reporting, and review, but do **not** want an opaque fully autonomous research agent. The framework is implemented as a lightweight workflow kit and keeps the human researcher in control through explicit stage packages, evidence checks, and user gates.
 
 ## What It Is
 
-The workflow has four stages:
+The framework is implemented through a four-stage workflow:
 
 1. **Planning**: clarify the research purpose, run Domain Onboarding on user-supplied materials, scan prior work, check feasibility, calibrate venue/output, and produce one Approved Planning Package.
 2. **Modeling**: acquire real usable data, run exploratory demos or full execution, validate outputs, produce figures/tables, and write one Modeling Package.
@@ -126,7 +126,7 @@ Example folders should follow [docs/example-organization.md](docs/example-organi
 
 ## Paper
 
-> **A Human-Gated AI Research Workflow for Domain Researchers**
+> **A Human-Gated, Skill-Guided Framework for AI-Native Academic Research**
 
 A companion paper is in preparation. It positions the repository as a practical, inspectable framework rather than a claim of full scientific automation. The draft is not yet public.
 

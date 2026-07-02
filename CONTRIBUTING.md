@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping improve AI-Native Academic Research Workflow.
+Thank you for helping improve AI-Native Academic Research Framework.
 
 This repository is a research workflow kit. Contributions should preserve the core design:
 
@@ -40,4 +40,3 @@ For framework-only tests, use `templates/smoke-test-package.md`.
 - Do not present synthetic gates as real user approval.
 - Do not count links, metadata, or inaccessible files as usable data.
 - Use project-specific skills inside `examples/` until they prove reusable.
-
