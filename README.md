@@ -17,6 +17,29 @@ Each stage ends with a gate. A real research project uses real user gates. A fra
 
 Each stage uses a maker-checker loop before the user gate: the researcher agent drafts the stage package, a separate reviewer agent critiques it, the researcher agent responds and fixes or routes the findings, and only then does the user approve, revise, or reject the gate.
 
+When the runtime supports structured choices, gate decisions are presented as
+clickable options such as approve, revise, or backtrack. The same gate can still
+accept a free-form condition or correction from the user.
+
+Planning is not just a form to fill before execution. For real research, the
+researcher agent should do a focused prior-work and novelty calibration before
+the full Planning Package is treated as ready. That calibration can be light,
+but it should ask whether the idea has already been studied, what adjacent work
+did, what gap or value remains, and whether the project is worth framing as a
+paper, demo, replication, tool, dataset, or internal report. It may be skipped
+or deferred only when the user explicitly chooses that route, and the package
+must record the accepted risk and revisit trigger.
+
+Modeling starts only after the Planning Gate is approved. A user confirming the
+topic, research interest, or rough direction is not the same as Planning Gate
+approval.
+
+The researcher agent is responsible for leading the workflow step by step. It
+should state the current stage, active package, next concrete action, and any
+needed user decision whenever work begins or pauses. Users provide domain
+judgment and gate decisions; they should not have to remind the agent what the
+next workflow step is.
+
 ## Why This Exists
 
 Many AI research tools can retrieve literature, write text, generate code, or automate agent loops. This framework focuses on a narrower practical problem: helping non-CS domain researchers build a traceable academic research package without losing control of evidence, claims, methods, and responsibility.
@@ -56,9 +79,16 @@ If you are a user (not an AI agent), read [USER_NOTE.md](USER_NOTE.md) first.
 3. Read [docs/quickstart.md](docs/quickstart.md).
 4. Choose full workflow mode or smoke-test mode.
 5. At the start of Planning, check for user-supplied domain materials in `artifacts/<run_id>/domain-materials/` and run Domain Onboarding if present.
-6. Start from [templates/plan-package.md](templates/plan-package.md) for a real project, or [templates/smoke-test-package.md](templates/smoke-test-package.md) for a framework test.
-7. Run Planning → Modeling → Reporting → Reviewing using the stage specs in [docs/](docs/).
-8. Record every stage output as a package; write a review request for the reviewer agent before each gate.
+6. For a real project, run a focused literature/prior-work and novelty check
+   before finalizing the Planning Package. Store detailed notes outside the
+   package and summarize the implications in [templates/plan-package.md](templates/plan-package.md).
+7. Start from [templates/plan-package.md](templates/plan-package.md) for a real project, or [templates/smoke-test-package.md](templates/smoke-test-package.md) for a framework test.
+8. Run Planning -> Modeling -> Reporting -> Reviewing using the stage specs in [docs/](docs/).
+9. Record every stage output as a package; write a review request for the reviewer agent before each gate.
+
+Researcher agents must lead one active stage at a time. Do not pre-fill
+downstream stage packages before their upstream gates are approved, except as
+empty scaffold placeholders.
 
 ## Repository Map
 
@@ -89,17 +119,17 @@ See [docs/stage-handoffs.md](docs/stage-handoffs.md) for package flow, backtrack
 
 ## Skills
 
-The workflow uses small reusable skills rather than one all-purpose agent. Each skill has a `SKILL.md` in `skills/` and a matching Claude Code slash command in `.claude/commands/`.
+The workflow uses small reusable internal skills rather than one all-purpose agent. Each skill has a `SKILL.md` in `skills/` and a matching Claude Code slash command in `.claude/commands/`. External tools and installable skills may still be used for literature search, analysis, citation management, writing, or visualization; the internal skills keep those outputs tied to stage packages, evidence records, review routes, and gates.
 
-| Skill | Slash command | Used mainly in | Responsibility |
-|---|---|---|---|
-| [venue-calibration](skills/venue-calibration/SKILL.md) | `/venue-calibration` | Planning, Reporting | Calibrate target journal, conference, preprint, policy note, or other output route |
-| [research-skill-card-distiller](skills/research-skill-card-distiller/SKILL.md) | `/research-skill-card-distiller` | Planning | Convert retrieved papers or user-supplied domain materials into reusable research-skill cards |
-| [model-contract-runner](skills/model-contract-runner/SKILL.md) | `/model-contract-runner` | Modeling | Execute the approved modeling contract with acquisition checks and bounded loops |
-| [figure-table-narrative](skills/figure-table-narrative/SKILL.md) | `/figure-table-narrative` | Reporting | Decide empirical, conceptual, method, and appendix visuals |
-| [claim-evidence-mapper](skills/claim-evidence-mapper/SKILL.md) | `/claim-evidence-mapper` | Reporting, Reviewing | Tie research-output claims to citations, artifacts, results, or limitations |
-| [route-aware-reviewer](skills/route-aware-reviewer/SKILL.md) | `/route-aware-reviewer` | Reviewing | Stress-test the research output and route findings to the correct stage |
-| [gate-manager](skills/gate-manager/SKILL.md) | `/gate-manager` | All stages | Record gate decisions and stage transitions |
+| Skill | Slash command | Used mainly in | Responsibility | External relationship |
+|---|---|---|---|---|
+| [venue-calibration](skills/venue-calibration/SKILL.md) | `/venue-calibration` | Planning, Reporting | Calibrate target journal, conference, preprint, policy note, or other output route | Wraps venue pages, templates, and exemplars |
+| [research-skill-card-distiller](skills/research-skill-card-distiller/SKILL.md) | `/research-skill-card-distiller` | Planning | Convert retrieved papers or user-supplied domain materials into reusable research-skill cards | Uses external literature/deep-research outputs as input when useful |
+| [model-contract-runner](skills/model-contract-runner/SKILL.md) | `/model-contract-runner` | Modeling | Execute the approved modeling contract with acquisition checks and bounded loops | Orchestrates Python, R, Jupyter, APIs, containers, or domain packages |
+| [figure-table-narrative](skills/figure-table-narrative/SKILL.md) | `/figure-table-narrative` | Reporting | Decide visual purpose, evidence status, claim alignment, and caption limits | Hands method/conceptual visuals to CCF-Figure or diagram tools; hands empirical visuals to Model/plotting tools |
+| [claim-evidence-mapper](skills/claim-evidence-mapper/SKILL.md) | `/claim-evidence-mapper` | Reporting, Reviewing | Tie research-output claims to citations, artifacts, results, or limitations | May use citation/retrieval tools, but keeps the final map internal |
+| [route-aware-reviewer](skills/route-aware-reviewer/SKILL.md) | `/route-aware-reviewer` | Reviewing | Stress-test the research output and route findings to the correct stage | May use external reviewer simulation or checklists |
+| [gate-manager](skills/gate-manager/SKILL.md) | `/gate-manager` | All stages | Record gate decisions and stage transitions | Mostly framework-native |
 
 See [docs/skill-strategy.md](docs/skill-strategy.md) for when to use external tools versus internal skills, and for Claude Code built-in capability coverage when Claude Code is the researcher (Config B).
 
@@ -117,6 +147,16 @@ The researcher and reviewer agents communicate through two files written to `art
 - `reviewer-critique.md` — written by the reviewer with a structured findings table
 
 See [docs/reviewer-agents/cross-agent-handoff.md](docs/reviewer-agents/cross-agent-handoff.md) for the full protocol and file formats.
+
+This repository also includes optional one-command wrappers for single-window
+workflows:
+
+- `scripts/run_reviewer_claude.ps1` lets a Codex researcher call Claude Code as reviewer under Config A.
+- `scripts/run_reviewer_codex.ps1` lets a Claude Code researcher call Codex as reviewer under Config B.
+
+Both wrappers preserve the same file protocol: the researcher still writes
+`review-request.md`, the reviewer writes `reviewer-critique.md`, and the
+researcher remains responsible for triage and gate presentation.
 
 ## Examples
 

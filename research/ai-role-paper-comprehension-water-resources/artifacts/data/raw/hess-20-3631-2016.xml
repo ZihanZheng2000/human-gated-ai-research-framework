@@ -1,0 +1,2820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <front>
+    <journal-meta>
+<journal-id journal-id-type="publisher">HESS</journal-id>
+<journal-title-group>
+<journal-title>Hydrology and Earth System Sciences</journal-title>
+<abbrev-journal-title abbrev-type="publisher">HESS</abbrev-journal-title>
+<abbrev-journal-title abbrev-type="nlm-ta">Hydrol. Earth Syst. Sci.</abbrev-journal-title>
+</journal-title-group>
+<issn pub-type="epub">1607-7938</issn>
+<publisher><publisher-name>Copernicus Publications</publisher-name>
+<publisher-loc>Göttingen, Germany</publisher-loc>
+</publisher>
+</journal-meta>
+
+    <article-meta>
+      <article-id pub-id-type="doi">10.5194/hess-20-3631-2016</article-id><title-group><article-title><?xmltex \hack{\vspace*{4mm}}?>Drought in a human-modified world: reframing drought definitions,
+understanding, and analysis approaches</article-title>
+      </title-group><?xmltex \runningtitle{Drought in a human-modified world}?><?xmltex \runningauthor{A. F. Van Loon et al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><surname>Van Loon</surname><given-names>Anne F.</given-names></name>
+          <email>a.f.vanloon@bham.ac.uk</email>
+        <ext-link>https://orcid.org/0000-0003-2308-0392</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Stahl</surname><given-names>Kerstin</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-2159-9441</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff3">
+          <name><surname>Di Baldassarre</surname><given-names>Giuliano</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-8180-4996</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff4">
+          <name><surname>Clark</surname><given-names>Julian</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Rangecroft</surname><given-names>Sally</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff5">
+          <name><surname>Wanders</surname><given-names>Niko</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-7102-5454</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff6">
+          <name><surname>Gleeson</surname><given-names>Tom</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff7">
+          <name><surname>Van Dijk</surname><given-names>Albert I. J. M.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-6508-7480</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff8">
+          <name><surname>Tallaksen</surname><given-names>Lena M.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-8480-7842</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff9">
+          <name><surname>Hannaford</surname><given-names>Jamie</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff10">
+          <name><surname>Uijlenhoet</surname><given-names>Remko</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0001-7418-4445</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff10">
+          <name><surname>Teuling</surname><given-names>Adriaan J.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0003-4302-2835</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Hannah</surname><given-names>David M.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0003-1714-1240</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff5">
+          <name><surname>Sheffield</surname><given-names>Justin</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0003-2400-0630</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff11">
+          <name><surname>Svoboda</surname><given-names>Mark</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff12">
+          <name><surname>Verbeiren</surname><given-names>Boud</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-4545-0051</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff13 aff14">
+          <name><surname>Wagener</surname><given-names>Thorsten</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0003-3881-5849</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff10">
+          <name><surname>Van Lanen</surname><given-names>Henny A. J.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0001-9226-3921</ext-link></contrib>
+        <aff id="aff1"><label>1</label><institution>Water Science Research Group, School of Geography, Earth, and Environmental Sciences, University of Birmingham, Edgbaston, Birmingham, UK</institution>
+        </aff>
+        <aff id="aff2"><label>2</label><institution>Hydrology Department, Faculty of Environment and Natural Resources, University of Freiburg, Freiburg, Germany</institution>
+        </aff>
+        <aff id="aff3"><label>3</label><institution>Department of Earth Sciences, Uppsala University, Uppsala, Sweden</institution>
+        </aff>
+        <aff id="aff4"><label>4</label><institution>Human Geography Research Group, School of Geography, Earth, and Environmental Sciences, University of Birmingham, Birmingham, UK</institution>
+        </aff>
+        <aff id="aff5"><label>5</label><institution>Civil and Environmental Engineering, Princeton University, Princeton, NJ, USA</institution>
+        </aff>
+        <aff id="aff6"><label>6</label><institution>Department of Civil Engineering, University of Victoria, Victoria, Canada</institution>
+        </aff>
+        <aff id="aff7"><label>7</label><institution>Fenner School of Environment &amp; Society, the Australian National University, Canberra, Australia</institution>
+        </aff>
+        <aff id="aff8"><label>8</label><institution>Department of Geosciences, University of Oslo, Oslo, Norway</institution>
+        </aff>
+        <aff id="aff9"><label>9</label><institution>Centre for Ecology and Hydrology, Wallingford, UK</institution>
+        </aff>
+        <aff id="aff10"><label>10</label><institution>Hydrology and Quantitative Water Management group, Wageningen University, Wageningen, the Netherlands</institution>
+        </aff>
+        <aff id="aff11"><label>11</label><institution>National Drought Mitigation Center, University of Nebraska, Lincoln, NE, USA</institution>
+        </aff>
+        <aff id="aff12"><label>12</label><institution>Department of Hydrology and Hydraulic Engineering, Vrije Universiteit Brussel, Brussels, Belgium</institution>
+        </aff>
+        <aff id="aff13"><label>13</label><institution>Department of Civil Engineering, University of Bristol, Bristol, UK</institution>
+        </aff>
+        <aff id="aff14"><label>14</label><institution>Cabot Institute, University of Bristol, Bristol, UK </institution>
+        </aff>
+      </contrib-group>
+      <author-notes><corresp id="corr1">Anne F. Van Loon (a.f.vanloon@bham.ac.uk)</corresp></author-notes><pub-date><day>8</day><month>September</month><year>2016</year></pub-date>
+      
+      <volume>20</volume>
+      <issue>9</issue>
+      <fpage>3631</fpage><lpage>3650</lpage>
+      <history>
+        <date date-type="received"><day>20</day><month>May</month><year>2016</year></date>
+           <date date-type="rev-request"><day>31</day><month>May</month><year>2016</year></date>
+           <date date-type="rev-recd"><day>23</day><month>August</month><year>2016</year></date>
+           <date date-type="accepted"><day>26</day><month>August</month><year>2016</year></date>
+      </history>
+      <permissions>
+<license license-type="open-access">
+<license-p>This work is licensed under a Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</ext-link></license-p>
+</license>
+</permissions><self-uri xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016.html">This article is available from https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016.html</self-uri>
+<self-uri xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016.pdf">The full text article is available as a PDF file from https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016.pdf</self-uri>
+
+
+      <abstract>
+    <p>In the current human-modified world, or Anthropocene,
+the state of water stores and fluxes has become dependent on human as well
+as natural processes. Water deficits (or droughts) are the result of a
+complex interaction between meteorological anomalies, land surface
+processes, and human inflows, outflows, and storage changes. Our current
+inability to adequately analyse and manage drought in many places points to
+gaps in our understanding and to inadequate data and tools. The Anthropocene
+requires a new framework for drought definitions and research. Drought
+definitions need to be revisited to explicitly include human processes
+driving and modifying soil moisture drought and hydrological drought
+development. We give recommendations for robust drought definitions to
+clarify timescales of drought and prevent confusion with related terms such
+as water scarcity and overexploitation. Additionally, our understanding and
+analysis of drought need to move from single driver to multiple drivers and
+from uni-directional to multi-directional. We identify research gaps and
+propose analysis approaches on (1) drivers, (2) modifiers, (3) impacts, (4) feedbacks,
+and (5) changing the baseline of drought in the Anthropocene. The most
+pressing research questions are related to the attribution of drought to its
+causes, to linking drought impacts to drought characteristics, and to
+societal adaptation and responses to drought. Example questions include
+<?xmltex \hack{\newpage}?>
+<list list-type="custom"><list-item><label>(i)</label><p>What are the dominant drivers of drought in different parts of the world?</p></list-item><list-item><label>(ii)</label><p>How do human modifications of drought enhance or alleviate drought
+severity?</p></list-item><list-item><label>(iii)</label><p>How do impacts of drought depend on the physical
+characteristics of drought vs. the vulnerability of people or the
+environment?</p></list-item><list-item><label>(iv)</label><p>To what extent are physical and human drought processes
+coupled, and can feedback loops be identified and altered to lessen or
+mitigate drought?</p></list-item><list-item><label>(v)</label><p>How should we adapt our drought analysis to
+accommodate changes in the normal situation (i.e. what are considered
+normal or reference conditions) over time?</p></list-item></list>
+Answering these questions requires exploration of qualitative and quantitative data as well as mixed
+modelling approaches. The challenges related to drought research and
+management in the Anthropocene are not unique to drought, but do require
+urgent attention. We give recommendations drawn from the fields of flood
+research, ecology, water management, and water resources studies. The
+framework presented here provides a holistic view on drought in the
+Anthropocene, which will help improve management strategies for mitigating
+the severity and reducing the impacts of droughts in future.</p>
+  </abstract>
+    </article-meta>
+  </front>
+<body>
+      
+
+<sec id="Ch1.S1" sec-type="intro">
+  <title>Introduction</title>
+      <p>The hydrological system is intrinsically intertwined with the climate
+system, the environmental/ecological system and the social system (Fig. 1).
+These links are dynamic and interdependent. Natural water inflows and
+outflows vary and change in time and space, as do human water exploitation
+and associated activities, leading to what some have called a mutually
+co-evolving hydrosocial cycle (Linton and Budds (2014), p. 170). All these
+complex interlinked processes define the state of the hydrological system
+and the amount of water stored in the soil, groundwater, lakes, rivers, and
+reservoirs. When there is (much) less water in the hydrological system than
+normal, as manifested in below-normal soil moisture levels, river discharge,
+groundwater, and/or lake/reservoir levels, the system is perceived to be in
+drought, whether by natural causes (meteorological anomalies) or
+anthropogenic causes such as groundwater abstraction (Van Loon et al.,
+2016). Droughts can have severe consequences for water use in various
+sectors, for instance agriculture, drinking water supply and hydropower
+production, as well as adverse impacts on ecosystems (Ciais et al.,
+2005; Lake, 2011; Sheffield et al., 2012; Grayson, 2013; Mosely, 2015; Stahl
+et al., 2015, 2016).</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F1"><caption><p>The water system linking physical, biological, and human components
+through natural and anthropogenic water flows (adapted from Winter et al.,
+1998; Vörösmarty et al., 2004; copyright: AGU).</p></caption>
+        <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f01.png"/>
+
+      </fig>
+
+      <p>In recent decades, droughts have received increasing attention from policy
+makers and society, while drought research has made significant progress.
+Examples of this progress are the continuous development of drought indices
+(Shukla and Wood, 2008; Bloomfield and Marchant, 2013; Stagge et al.,
+2015b); the improved understanding of the link between drought and
+atmospheric and ocean drivers (Fleig et al., 2010; Kingston et al., 2015);
+the influence of evapotranspiration (Teuling et al., 2013), snow (Staudinger
+et al., 2014) and geology (Stoelzle et al., 2014; Kumar et al., 2016) on
+drought severity; drought monitoring and forecasting (Sheffield et al.,
+2014; Trambauer et al., 2015); and the effects of climate change on drought
+(Prudhomme et al., 2014; Trenberth et al., 2014; Wanders et al., 2015).</p>
+      <p>Still, many challenges remain. For example, the attribution of a groundwater
+or surface water deficit to its natural and human causes and the prediction
+of such a drought remain very difficult (Van Dijk et al., 2013; Diffenbaugh
+et al., 2015). For the recent multi-year drought in California this has led
+to discussion about the role of groundwater abstraction (AghaKouchak et al.,
+2015a). Additionally, observed trends in measured low flows and drought are
+influenced by human activities (Sadri et al., 2016), probably even when only
+unregulated catchments are selected (as noted by Hisdal et al., 2001;
+Stahl et al., 2010). This undermines our understanding of the effects of
+climate change on low flows and droughts and increases the uncertainty in
+projections for the future (Forzieri et al., 2014). Similar difficulties
+arise when attempting to link physical (i.e. climate or hydrological)
+indicators with societal or environmental impacts (Stanke et al., 2013;
+Bachmair et al., 2015; Gudmundsson et al., 2014; Blauhut et al., 2015;
+Stagge et al., 2015a), with this link being a crucial step in enabling societies
+to prepare for drought risks. In many big cities, for example, coping with
+drought is very complex, because vulnerability is high and factors such as
+the urban heat island effect, poor water supply, and water quality issues
+play an additional role (Güneralp et al., 2015). In drought management,
+the connections within the hydrological cycle are often overlooked, for
+example, when unsustainable groundwater abstraction is used as adaptation to
+drought (e.g. Castle et al., 2014; Foster et al., 2015), or when
+restrictions are imposed for using surface water, but not for groundwater,
+leading to enhancement of the hydrological drought (as during the recent
+California drought and previous droughts in the Netherlands).</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F2"><caption><p>Drought propagation including natural and human drivers
+and feedbacks; black arrows indicate direct influences and grey arrows
+indicate feedbacks (modified from Van Loon et al., 2016).</p></caption>
+        <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f02.png"/>
+
+      </fig>
+
+      <?xmltex \floatpos{p}?><fig id="Ch1.F3" specific-use="star"><caption><p>Examples of why humans are integral to drought and we should not focus on natural drought causes only.</p></caption>
+        <?xmltex \igopts{width=497.923228pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f08.pdf"/>
+        <?xmltex \hack{\def\figurename{Box}\setcounter{figure}{0}}?>
+
+      </fig>
+
+      <p><?xmltex \hack{\setcounter{figure}{2}}?>These examples point out a number of issues (see Box 1). Firstly, recent
+(drought) research is not always picked up by water managers and policy
+makers. There exists a lack of two-way communication between stakeholders
+and researchers, with proper ontology and semantics. Secondly, drought
+research itself has some important gaps related to the interplay between
+drought and humans, which prevent us from completely understanding the
+complex interdisciplinary issue that is drought. Thirdly, these examples
+also highlight the unsuitability of current methods and data to address
+these gaps. For successful drought risk management, our understanding must
+include the processes leading to drought (causes) and the impacts of
+drought (consequences). In this way, drought predictions can be made and
+effective measures taken to mitigate drought severity and to reduce drought
+impacts.</p>
+      <p>The growing human impact on the earth system has led to numerous calls to
+recognize a new, distinct geological epoch: the Anthropocene. While debate
+continues about the definition of the Anthropocene (Crutzen, 2002; Lewis and
+Maslin, 2015; Hamilton, 2016), it provides a useful framework for
+considering the present era, when human activity plays a fundamental role in
+water, energy, and biogeochemical cycles. In the Anthropocene, society
+actively shapes water availability, and the feedbacks between physical and
+social aspects are particularly important during periods of water deficit.
+This means we cannot see drought as an external natural hazard and treat the
+consequences separately from the causes. Van Loon et al. (2016) argued that,
+for successful drought management in the Anthropocene, natural and human
+processes need to be fully integrated into drought definitions, process
+understanding, and analysis approaches. This paper builds on that argument
+and elaborates on research questions, data, and methodology that are needed
+to reframe and extent drought research in the Anthropocene.</p>
+</sec>
+<sec id="Ch1.S2">
+  <title>Drought definitions in the Anthropocene</title>
+      <p>It is known that human activities can create a drought situation or make an
+existing one worse (e.g. Wilhite and Glanz, 1985; Tallaksen and Van Lanen,
+2004), but these processes are rarely ever explicitly included in drought
+definitions. Much has been said about the need for objective drought
+definitions and the difficulties related to that aim (e.g. Yevjevich, 1967;
+Wilhite and Glantz, 1985; Lloyd-Hughes, 2014), which we will not repeat
+here. We do, however, need to have a closer look at identifying the role of
+human processes in the definition of drought. In this section, we therefore
+revisit drought definitions and make suggestions for robust use in the
+Anthropocene.</p>
+<sec id="Ch1.S2.SS1">
+  <title>Drought as a lack of water</title>
+      <p>Drought is defined as a lack of water compared to normal conditions which
+can occur in different components of the hydrological cycle (Palmer, 1965;
+Tallaksen and Van Lanen, 2004; Sheffield and Wood, 2011). It is commonly
+subdivided into meteorological drought (rainfall deficit), soil moisture
+drought (below-normal soil moisture levels), and hydrological drought
+(below-normal (sub)surface water availability). The normal is often taken as
+a percentile of the climatology of the variable of interest, and severity
+(e.g. deficit volume) and duration of drought events can be calculated (Van
+Loon, 2015).</p>
+      <p>In the natural sciences, there is a fair understanding of the propagation of
+drought from meteorological drought to soil moisture drought and
+hydrological drought (Fig. 2, left side), influenced by catchment
+properties such as geology and vegetation cover. For example, many
+hydrological drought types have been recognized, e.g. the classical
+rainfall-deficit drought, but also hydrological droughts caused by
+temperature anomalies in snow-dominated areas (Van Loon and Van Lanen, 2012;
+Van Loon et al., 2015). This is typically regarded as a uni-directional
+propagation with human receptors at the downstream end. However, in reality,
+human processes are interlinked with natural processes in various ways (Fig. 2,
+right side). Soil moisture and hydrological drought (hereafter called
+drought) are the result of low inputs to the hydrological system (e.g. lack
+of rain, snow/glacier melt, irrigation, sewage return flows), high outputs
+(e.g. evapotranspiration, human water use), and limited storage (in soil,
+groundwater, lakes, and reservoirs). Human activities influence water input,
+output, and storage and therefore modify the propagation of drought and can
+even be the cause of drought in the absence of natural drivers of drought.
+The drought typology based on natural processes should therefore be
+complemented with drought types based on human processes.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F4"><caption><p>Drought types: climate-induced drought, human-induced
+drought, human-modified drought (modified from Van Loon et al., 2016).</p></caption>
+          <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f03.png"/>
+
+        </fig>
+
+      <p>The natural drought types can be grouped together as “climate-induced”
+droughts and drought types based on human processes can be termed
+“human-induced” or “man-made” drought (Fig. 3; Van Loon et al., 2016).
+This parallels an existing widely referenced typology of floods, which
+includes man-made flood alongside natural floods such as flash flood,
+snowmelt flood, and ice jam flood (e.g. Yevjevich, 1994; De Kraker, 2015).
+The distinction between climate-induced and human-induced drought is useful
+in studies of the attribution of drought to its causes. To further
+acknowledge the possibly large influence of human activities modifying
+drought (Fig. 2), we additionally propose the term “human-modified
+drought” for a drought that is enhanced or alleviated as the result of
+anthropogenic processes (Fig. 3). For this terminology, we focus on direct
+human influences on the hydrological cycle such as water abstraction and
+land use change, although we recognize that anthropogenic climate change
+indirectly affects the meteorological drivers of drought (e.g. Williams et
+al., 2015).</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F5" specific-use="star"><caption><p>Conceptual figure of drought, aridity, and water scarcity.
+Average water availability (water levels or fluxes in rivers, lakes,
+reservoirs, or groundwater aquifers) are lower in arid climates <bold>(b)</bold> than in
+humid climates <bold>(a)</bold>, resulting in a lower threshold under natural conditions.
+In both regions, climate-induced droughts are defined relative to this
+threshold (<bold>a</bold> and <bold>b</bold>; green areas). The region experiences water scarcity
+when the long-term water demand is higher than the long-term water
+availability (<bold>a</bold> and <bold>b</bold>; red areas). In human-influenced catchments
+(<bold>c</bold> and <bold>d</bold>), human-induced and human-modified droughts can be determined relative to
+a natural threshold (light green) or a human-influenced threshold
+(dark green), resulting in different drought events (green areas vs. dashed
+areas). For simplicity of this figure, we assumed a similar water demand in
+humid and arid climates and under natural and human-influenced conditions.
+Often, however, water demand is higher in arid climates and under
+human-influenced conditions leading to even more severe water scarcity and
+drought. NB: both the drought threshold and water demand can also be
+seasonally variable (e.g. Van Loon, 2015; Mekonnen and Hoekstra, 2016).</p></caption>
+          <?xmltex \igopts{width=341.433071pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f04.png"/>
+
+        </fig>
+
+      <p>With these terms, we actively include humans as drivers and modifiers of
+drought in the definition. There is no need for rephrasing the general
+drought definition, in which human processes are implicitly included.
+Furthermore, the terms we propose are not new (climate-induced drought:
+Sheffield and Wood, 2011, p. 30; human-induced drought: Wilhite and
+Buchanan-Smith 2005, p. 10 and Falkenmark and Rockström, 2008, p. 93)
+and they match well with the flood terminology (Yevjevich, 1994).</p>
+</sec>
+<sec id="Ch1.S2.SS2">
+  <title>Drier than normal: timescales of drought in the Anthropocene</title>
+      <p>Drought is a lack of water compared to a certain normal situation, but
+what constitutes this normal situation in the Anthropocene? A drought occurs
+when actual water availability (indicated by water levels or fluxes) is
+below normal (Fig. 4). In a natural catchment, undisturbed by human
+activity, both actual and normal water availability are governed by natural
+processes in response to climate. Normal water availability is determined by
+the climate (long timescales), for example, a (semi-)arid climate results in
+low average water availability (aridity; Table 1) and low threshold
+levels (Fig. 4c). Actual availability is determined by climate variability
+(here used as term for a combination of weather events; short timescales);
+for example, a rainfall deficit leading to a climate-induced drought
+(Table 1; Fig. 4a, c). Even though drought is defined on shorter
+timescales than aridity, very short periods of below-normal water
+availability are often not regarded as drought, e.g. drought is defined as
+“sustained” by Tallaksen and Van Lanen (2004, p. 4), which means it lasts
+for longer than few days. This makes droughts generally occur on longer
+timescales than, for example, floods.</p>
+      <p>In a human-influenced catchment, actual and normal water availability are,
+besides by climate, also influenced by human activities (Fig. 4b, d).
+The actual situation is influenced by water use and water management (short
+timescales), leading to lower or higher water levels, whereas the normal
+situation is influenced by long-term actions such as groundwater depletion
+and anthropogenic land use change (long timescales; Table 1). There are
+different ways to account for this different normal. If we have a long-enough
+time series to determine the normal situation as influenced by human
+activities, we can use that as our reference or threshold and only determine
+our droughts as extreme events relative to this human-influenced normal
+(Fig. 4b, d: disturbed drought threshold). For example, in the Júcar
+Basin in Spain drought measures are based on thresholds in measured
+reservoir levels, groundwater levels, and river flow, which are all heavily
+influenced by abstraction for irrigation (Andreu et al., 2009).
+Alternatively, we can use a threshold determined from an undisturbed period
+or a naturalized model scenario, so using the situation that would have
+occurred without human activities as reference, as a natural normal (Fig. 4b, d:
+natural drought threshold; e.g. Van Loon and Van Lanen, 2013). The
+latter allows for a better identification of human-modified drought, both
+droughts enhanced and alleviated by human activities (Van Loon and Van
+Lanen, 2015). Because drought is an extreme event, the normal situation is
+not characterized by long-term average water levels or fluxes. Instead, a
+drought threshold (Fig. 3) is used that is calculated as a percentile(s) of
+a long time series (commonly, the value that is exceeded 80–95 % of the
+time) or return periods representing rare occurrence (for example, a 50-year
+drought). Some studies use a variable threshold calculated on daily,
+monthly, or seasonal timescales to represent seasonality and identify
+differences between droughts in different seasons (Van Loon, 2015). This is
+very relevant in the Anthropocene, because humans interact differently with
+droughts in different seasons. Water abstraction for irrigation, for
+example, also follows a seasonal pattern and has different effects on summer
+drought vs. winter drought. On the other hand, in monsoon climates, drought
+characterized by a prolonged dry season causes different socio-economic
+impacts than a below-normal wet season.</p>
+</sec>
+<sec id="Ch1.S2.SS3">
+  <title>Confusion between terms in the Anthropocene</title>
+      <p>Drought is often confused with water scarcity and water shortage, which are
+defined as “less water than needed”, i.e. where demand is greater than
+supply (Table 1). The demand, or desired level, is included in Fig. 4 to
+illustrate the difference. In an unpopulated natural region, the desired
+situation is related to ecosystem requirements. Often these are not
+different from the normal situation because of the co-evolution of ecosystem
+and landscape. However, in a human-dominated region, the desired situation
+or water demand is dependent on population, standard of living, water
+efficiency, but also on climate. In many areas, the desired situation is out
+of balance with the normal situation, i.e. average water demand is higher
+than average water availability, because of rapid population growth, changes
+in diet, etc. This long-term imbalance leads to water scarcity (see
+Rijsberman, 2006, for a good overview of water scarcity definitions) and
+when it coincides with short-term drought it leads to acute water shortage
+(Table 1 and Fig. 4). If society satisfies its demand by abstracting more
+water, human-induced drought can occur in the short term (changing the
+actual situation) and overexploitation in the long term (changing the normal
+situation; Table 1 and Fig. 4).</p>
+      <p>Human-induced drought should also not be confused with the term
+“socio-economic drought” (Wilhite and Glantz, 1985, p. 115), which is used
+to denote socio-economic impacts of drought. Although socio-economic drought
+is often mentioned as a type of drought in scientific papers and on websites
+explaining drought to the general public, a clear distinction should be made
+between the physical lack of water (drought) and its socio-economic
+consequences (impacts of drought). These impacts are sometimes used to
+define the drought threshold (Fig. 3), which then reflects the water level
+at which ecological or socio-economic impacts are expected to occur, such as
+ecological minimum flow or minimum reservoir levels.</p>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T1" specific-use="star"><caption><p>Drought terminology in relation to drivers and timescales (based on
+Wilhite and Glantz, 1985; Tallaksen and Van Lanen, 2004; Rijsberman, 2006;
+Sheffield and Wood, 2011; Maliva and Missimer, 2012; Van Loon and Van Lanen,
+2013; Lloyd-Hughes, 2014; Oertel et al., 2015; Stahl et al., 2016;  Van
+Loon et al., 2016).</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="2">
+     <oasis:colspec colnum="1" colname="col1" align="left"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="360pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Term</oasis:entry>  
+         <oasis:entry colname="col2">Definition</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>  
+         <oasis:entry colname="col1">Drought</oasis:entry>  
+         <oasis:entry colname="col2">Temporary lack of water compared to normal conditions</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Climate-induced drought</oasis:entry>  
+         <oasis:entry colname="col2">Drought caused by climate variability</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Human-induced drought</oasis:entry>  
+         <oasis:entry colname="col2">Drought caused by human influence on water cycle</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Human-modified drought</oasis:entry>  
+         <oasis:entry colname="col2">Drought caused by combination of climate variability and human influence on water cycle or<?xmltex \hack{\hfill\break}?>Climate-induced drought enhanced or alleviated by human activities</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Drought impact</oasis:entry>  
+         <oasis:entry colname="col2">Impact of drought on socio-economic systems (sometimes called “socio-economic drought”)<?xmltex \hack{\hfill\break}?>and/or ecosystems</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Aridity</oasis:entry>  
+         <oasis:entry colname="col2">Long-term dryness as feature of climate, with long-term average precipitation being much lower than<?xmltex \hack{\hfill\break}?>potential evaporation</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Water scarcity</oasis:entry>  
+         <oasis:entry colname="col2">Long-term imbalance between water demand and water supply, caused by high average  demand, low<?xmltex \hack{\hfill\break}?>average water availability and/or problems with water supply</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Water shortage/stress</oasis:entry>  
+         <oasis:entry colname="col2">Acute lack of water for (social, economic, or environmental)  needs, caused by lower water<?xmltex \hack{\hfill\break}?>supply than demand</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Overexploitation</oasis:entry>  
+         <oasis:entry colname="col2">Long-term overuse of water resources resulting in a gradual decrease in water availability <?xmltex \hack{\hfill\break}?>(for overexploitation of groundwater, the term “depletion” is often used)</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table></table-wrap>
+
+      <p>We have to point out that the definitions of drought and its impacts used
+here deviate from the definitions used in other scientific disciplines, in
+particular in the climate community. For example, in the IPCC SREX report,
+drought, as we define it here, is considered an “impact of extreme (weather
+or climate) on the natural physical environment” (IPCC, 2012, p. 40 and
+167), whereas we see drought as a state of the natural physical environment
+that can cause ecological and socio-economic impacts. Similar confusion can
+arise for the terms “attribution”, “mitigation”, and “adaptation”, which are
+often assumed to be synonymous with attribution, mitigation, and adaptation
+of (anthropogenic) climate change, but can also be used for the attribution,
+mitigation, and adaptation of drought.</p>
+</sec>
+</sec>
+<sec id="Ch1.S3">
+  <title>A framework for understanding and analysing drought in the
+Anthropocene</title>
+      <p>The traditional view of drought propagation is uni-directional: climate
+variability causes drought, which propagates through the hydrological system
+and subsequently leads to impacts (Fig. 2, left side). Because of the
+complex relationships in the water cycle (Fig. 1) there are other drivers
+and modifications of drought and influences working in the opposite
+direction (Fig. 2). Therefore, the understanding of drought propagation
+needs to move from single driver to multiple drivers, and from
+uni-directional to bi-directional or even multi-directional.</p>
+      <p>For characterization of this complete multi-directional system,
+unfortunately, our understanding and observation of drought processes have
+important gaps and the modelling and prediction tools at our disposal are
+therefore inadequate. The gaps are in the areas of (1) drivers of drought,
+(2) modifications of drought, (3) impacts of drought, (4) feedbacks of drought,
+and (5) changing the normal situation. The framework presented in this section allows us to
+acknowledge what has been done in these areas, highlight where our
+understanding of drought processes in the Anthropocene is lacking, and
+discuss the data, approaches, and tools that are needed to address these
+gaps.</p><?xmltex \hack{\newpage}?>
+<sec id="Ch1.S3.SS1">
+  <title>Drivers of drought</title>
+      <p>Drought is often seen from a meteorological perspective (Van Lanen et al.,
+2016), driven only by meteorological anomalies that disturb the normal water
+balance in a catchment (Fig. 2, left side). Given the significant human
+modifications of the terrestrial hydrological cycle, this is too simplistic
+a perspective (Box 1). If we take a hydrological perspective on drought, a
+lack of water compared to normal conditions can have a range of drivers
+(Fig. 2). There are many reasons for adopting a hydrological, rather than
+meteorological, perspective on drought. Firstly, people mainly use
+(sub)surface water, not rainfall directly (except for rainwater harvesting),
+so socio-economic impacts of drought are more related to a lack of
+(sub)surface water. Secondly, water on and beneath the land surface can be
+managed and manipulated, in contrast to rainfall, so that hydrological
+drought can be mitigated. Finally, the direct anthropogenic influences
+on hydrological drought are probably much larger than climate change
+influences in many areas of the world. If we adopt a hydrological
+perspective on drought, it is important to distinguish between the different
+drivers of drought. This distinction leads to more accurate drought
+prediction and helps to direct attention and allocate investments between
+adaptation to climate-induced drought and reduction of human-induced
+drought. However, distinguishing between climate-induced and human-induced
+drought is a major scientific challenge.</p>
+      <p>Human-induced droughts are recognized (Wilhite and Buchanan-Smith, 2005),
+but there is a large gap in our understanding of the development of
+human-induced and human-modified drought. We do know that human drivers principally
+influence soil moisture drought and hydrological drought and generally do
+not cause meteorological drought (Fig. 2; excluding relatively small-scale
+land surface feedback, e.g. due to irrigation (Tuinenburg et al., 2014), or
+the global, indirect effects of anthropogenic climate change). We can also
+hypothesize that the main process underlying human-induced and
+human-modified drought is abstraction from groundwater and surface water.
+There are many scientific studies on the long-term effects of abstraction
+(decades to centuries) but few on the temporal variability of abstraction
+on drought timescales (months to years). It is therefore still unclear how
+important human-induced and human-modified droughts are compared to
+climate-induced droughts for different areas around the world.</p>
+      <p>Research questions about drought drivers include
+<list list-type="bullet"><list-item><p>To what extent can observed historic drought events be attributed to different drivers?</p></list-item><list-item><p>What are the dominant drivers of drought in different parts of the world?</p></list-item><list-item><p>Do human-induced and human-modified droughts follow the same development as
+climate-induced drought and what are the implications for management?</p></list-item></list></p>
+      <p>Answering these questions requires quantification of the direct human
+drivers of soil moisture drought and hydrological drought, in absence of
+meteorological anomalies, for historical drought events. The approach would
+be to identify droughts in time series of observed hydrological variables
+and compare those to time series of climate-induced drought (represented by
+meteorological drought, observed droughts in an undisturbed nearby
+catchment, or simulated naturalized droughts). This last approach was used
+successfully in Australia (Van Dijk et al., 2013) and Spain (Van Loon and
+Van Lanen, 2013) and could be applied in other areas around the world to
+understand the variability in how human drivers impact drought.
+Naturalization of disturbed time series is challenging, being very much
+dependent on accurate modelling or regionalization approaches and data of
+human disturbances at a sufficiently high spatial and temporal resolution.
+Many international hydrological databases and data-sharing initiatives,
+however, have deliberately focused on near-natural systems (e.g. Hannah et
+al., 2011; Whitfield et al., 2012) in order to discern climate-driven
+processes from the noise of various human disturbances. We argue for more
+analysis of the disturbed catchments already included in hydrological
+databases and promote the extension of these databases with more
+human-influenced catchments, as suggested previously by Gustard et al. (2004).
+Perhaps the greatest obstacle to achieving this is the lack of
+metadata indexing the type and degree of human impact in any one catchment,
+which is often not known or poorly quantified. There is a pressing need for
+a bottom-up approach to transfer such knowledge, where it exists, from
+catchment-, regional- or national-scale archives to the international research
+community. We also call for more experimental catchments in human-influenced
+areas in which particular human influences on the hydrological cycle can be
+isolated and controlled, for example, within the Euromediterranean Network of
+Experimental and Representative Basins (ERB), the network of Critical Zone
+Observatories in the USA, and the TERestrial ENvironmental Observatories
+(TERENO) in Germany. Alternatively, we can make more use of satellite data
+of hydrological variables, which have become more widely available on the global
+scale, although still with high uncertainties (AghaKouchak et al., 2015b).
+Useful satellite products are soil moisture missions (SMAP, SMOS, AMSR-E II,
+ASCAT) for soil moisture information on high spatial and temporal resolution
+and NASA's Gravity Recovery and Climate Experiment (GRACE) for total water
+storage. If these are compared with global precipitation estimates (from
+satellites, TRMM and GPM, or from re-analysis), human-induced droughts might
+be identified in the absence of natural drought drivers.</p>
+</sec>
+<sec id="Ch1.S3.SS2">
+  <title>Modifications of drought</title>
+      <p>The severity of droughts is strongly modified by catchment storage and
+release processes. In the natural situation these modifiers are determined
+by factors such as soil type, geology, and land cover (Fig. 2, left side). In
+the Anthropocene, human activities change storage and land properties
+influencing propagation processes, and modify drought severity directly
+through anthropogenic inflows or outflows of water (Fig. 2, right side).
+Just like natural modifiers, human modifiers can have both positive
+(enhancing) and negative (attenuating) effects on drought severity. The
+processes underlying direct modification of drought severity by human-influenced
+inflows or outflows of water are most recognized and understood,
+whereas the effects of human modification of storage and land properties,
+although recognized as potentially important, are more elusive.</p>
+      <p>There are ample examples of how human changes in land properties influence
+the hydrological cycle. Urbanization, for example, results in less
+infiltration and more runoff in some cases and in more recharge in others
+(due to leakage of water supply and sewage systems; Lerner, 1990).
+Deforestation, afforestation, agricultural practices, and desertification
+influence evapotranspiration and consequently soil moisture. Some studies
+focused on the effects of land use change on low flows (Tallaksen, 1993;
+Hurkmans et al., 2009), but there is very little quantitative research on
+how these processes influence drought severity and contrasting results are
+reported between modelling studies (Tallaksen, 1993; Hurkmans et al., 2009)
+and observation-based studies (Price et al., 2011; Eng et al., 2013).</p>
+      <p>Research questions about human modifications of drought include
+<list list-type="bullet"><list-item><p>How do human modifications of drought enhance or alleviate drought severity?</p></list-item><list-item><p>How do we predict drought development, severity and recovery in
+human-influenced areas, taking into account relevant human drought
+modifiers?</p></list-item></list>
+Direct inflows or outflows of water are relatively easy to quantify with a
+water balance approach that explicitly takes into account human water flows
+(Lloyd-Hughes, 2014). However, this approach requires data of human
+influences on the water system, such as surface water and groundwater
+abstraction, inter-basin water transfers (Van Loon and Van Lanen, 2015), and
+irrigation return flows (De Graaf, et al., 2014). These data are usually not
+measured or collected, and if they are, there are often privacy issues in
+sharing the data, even for research. Additionally, there are many illegal or
+undocumented human influences on the water system that remain unknown (e.g.
+Pérez Blanco and Gómez, 2014). National statistical databases can be
+a good source of information, but their spatial resolution is often coarse,
+so downscaling might be needed. Examples of methods for downscaling
+information on water demand and water use can be found in Wada et al. (2011)
+and Nazemi and Wheater (2015a, b). More qualitative and local-scale
+information on the human influences in a catchment can be gathered by a
+range of methods, including interviews with local water users, participant
+diaries, oral recollections, community histories, participant observation,
+photographs and other visual materials, satellite-derived land use maps, and
+novel methods such as unmanned aerial vehicles (also known as drones).</p>
+      <p>Besides new data, new methods are needed to disentangle human modifiers from
+natural modifiers of drought and quantify how large their effect on drought
+severity has been for historical drought events and might be for future
+events. When sufficient data are available, statistical methods, such as
+multiple regression analysis, can be useful in finding the statistical
+relationships between drought severity and multiple influencing factors.
+This approach was used by Van Loon and Laaha (2015) for natural drought
+modifiers, but can easily be extended to include human modifiers. Paired
+catchment statistical approaches (as applied to urbanization impacts on
+floods by Prosdocimi et al., 2015) or upstream (natural) – downstream
+(disturbed) comparisons (Fig. 5a; López-Moreno et al., 2009;
+Rangecroft et al., 2016) are other data-driven approaches, although these
+have yet to be applied extensively for drought and low flows. Another
+large-scale data analysis method that has great potential for use in drought
+research is comparative analysis (Wagener et al., 2007), which aims to find
+patterns by analysing a large set of catchments with a wide range of
+characteristics, both in terms of natural and human processes (e.g. Price et
+al., 2011; Eng et al., 2013; Sadri et al., 2016). This method is especially
+valuable if it is combined with qualitative data to explain the patterns
+found.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F6"><caption><p>Example of the approaches to investigate drought
+modification by reservoirs, based on <bold>(a)</bold> observations of discharge upstream
+and downstream of a reservoir in Chile (Rangecroft et al., 2016),
+<bold>(b)</bold> theoretical effect of reservoirs on drought (Martinez et al., 2016),
+<bold>(c)</bold> simulated effect of reservoirs on drought deficit on global scale (adapted
+from Wanders and Wada, 2015).</p></caption>
+          <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f05.png"/>
+
+        </fig>
+
+      <p>For scenario testing, conceptual models of human-water systems (Di
+Baldassarre et al., 2013, 2015) are a useful tool. Natural flows are altered
+by the presence of reservoirs and the resulting outflows depend on
+(changing) operational rules, i.e. optimized for flood or drought (Fig. 5b;
+e.g. Mateo et al., 2014). The conceptual model (Martinez et al., 2016)
+simulates how the occurrence of a flood event might lead to changes in
+operational rules (e.g. shifting from the “optimized for drought” to
+“optimized for flood” scenario in Fig. 5b), which will eventually enhance
+the next drought event (Di Baldassarre et al., 2016).</p>
+      <p>Modelling tools are also indispensable for prediction of drought under human
+modification. There are many types of models and many options to use these
+models for drought in the Anthropocene. Large-scale hydrological models are
+being adapted to include more anthropogenic processes (e.g. WaterGAP and
+PCR-GLOBWB; Wada et al., 2011; Döll et al., 2012; Nazemi and Wheater,
+2015a; Veldkamp et al., 2015). Analysing these models specifically during
+drought periods has given some encouraging results (Fig. 5c; e.g. Van Lanen
+et al., 2004; Verbeiren et al., 2013; Wada et al., 2013; De Graaf, et al.,
+2014; Forzieri et al., 2014; Wanders and Wada, 2015), although model
+uncertainties during low flow and drought remain high. Since many human
+influences on the hydrological cycle are on the local scale, hyper-resolution
+modelling might be needed to explicitly represent all relevant human
+activities (Wood et al., 2011). For parameterization of these models,
+however, a thorough understanding of the processes is essential (Beven and
+Cloke, 2012). Most predictions on the local scale, however, are done with lumped
+or semi-distributed hydrological models. It is often not straightforward to
+incorporate dynamic human processes into these models and more work is
+needed to adapt these lumped hydrological models for use in the
+Anthropocene. An example of a new lumped hydrological model that
+incorporates man-made extraction and supply of water to both surface and
+subsurface water is WALRUS by Brauer et al. (2014). Current physically based
+models are better fitted to simulate human responses to drought, e.g. SIMGRO
+(Querner et al., 2008; Van Lanen et al., 2004). Once again, an important
+limiting factor is availability of data and metadata on the human modifiers.
+If information on human pressures is available, modelling can be a key tool
+in separating human and natural drivers (thus paving the way to attribution)
+through a multiple working hypotheses approach (see, for example, the work
+of Harrigan et al., 2014).</p>
+</sec>
+<sec id="Ch1.S3.SS3">
+  <title>Impacts of drought</title>
+      <p>On the other side of the propagation diagram are the environmental and
+socio-economic impacts of drought (Fig. 2). Drought impacts, compared to the
+impacts of other hazards, are mostly non-structural and difficult to
+quantify. Drought impacts also have a high diversity, ranging across
+agriculture, water supply, industry, energy production, human health,
+aquatic ecology, forestry, and other sectors (Stahl et al., 2016). Impacts
+are sometimes characterized into direct and indirect or tangible and
+intangible impacts (Wilhite and Vanyarko, 2000). Thus, the quantification of
+drought impacts depends on the affected sector and on the level of impact
+(direct or indirect, and perhaps cumulative). Direct impacts on the
+agricultural sector are often documented as losses or reductions in crop
+yields. However, associating indirect economic losses directly to drought is
+not always straightforward (Ding et al., 2011). Indirect negative
+consequences are often quantified by the number of people affected or by
+number of people who died as a result of related food security or health
+issues, but factors other than a direct association to drought may play an
+important role as well. Especially drought impacts on (mental) health are
+complex and dependent on a multitude of factors (Stanke et al., 2013; Obrien
+et al., 2014).</p>
+      <p>Whether a drought event has negative consequences on one of these sectors
+also depends strongly on people's perception and thus on the vulnerability
+of affected sectors (Knutson et al., 1998; Iglesias et al., 2009).
+Understanding a particular sector's vulnerability can benefit from specific
+information and quantification of drought impacts in addition to knowledge
+on the general vulnerability factors that describe the sensitivity and
+adaptive capacity of the considered community or region.</p>
+      <p>For drought characteristics, ample data sources exist. However, as noted
+before, they rarely specify the level of human modification to the drought
+signal.</p>
+      <p>Research questions that need to be addressed thus include
+<list list-type="bullet"><list-item><p>How should drought impacts be monitored and quantified?</p></list-item><list-item><p>How do they depend on the physical characteristics of drought vs. the vulnerability of people
+or the environment?</p></list-item></list>
+For drought impacts, the US Drought Impact Reporter (DIR)
+(<uri>http://droughtreporter.unl.edu/</uri>) and the European Drought Impact report
+Inventory (EDII) in Europe (<uri>http://www.geo.uio.no/edc/droughtdb/</uri>)
+collect and categorize textual
+drought impact reports, whereas Lackstrom et al. (2013) and others suggest
+the development of a more targeted impact monitoring. A survey of
+operational monitoring and early warning systems by Bachmair et al. (2016a)
+found that many regional systems do monitor impacts, however, not in a
+systematic way and thus they do not consider them for the drought warning
+and other management in a quantitative manner. Hence, impact monitoring is an
+important starting point for improvement. For vulnerability analysis,
+likewise many useful data on the sensitivity or adaptive capacity from
+community to country to international levels are lacking (De Stefano et al.,
+2015). Where data are available, however, research can target to find a
+useful and applicable functional link between these aspects of drought.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F7" specific-use="star"><caption><p>Scheme of the three approaches to investigate
+impact-related drought index values: <bold>(a)</bold> correlation of drought index to crop
+yield (from unpublished work), <bold>(b)</bold> drought index values at the time of impact
+occurrence (based on Bachmair et al., 2015), and <bold>(c)</bold> logistic regression model
+predicting the likelihood of impact occurrence by the drought index (as in
+Stagge et al. (2015), but for drought index SPI instead of SPEI).</p></caption>
+          <?xmltex \igopts{width=341.433071pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f06.pdf"/>
+
+        </fig>
+
+      <p>Retrospective analysis of the physical characteristics of past droughts
+(through some drought indicator) and the impacts that they have triggered
+have moved this search for a link function forward, especially if compared
+across different societal contexts, in particular different degrees of
+vulnerability. However, methods to link physical indicators and societal
+impacts have only recently been explored more in depth and still require
+more systematic appraisal. Figure 6 gives an overview of the different
+methods. The most widely adopted approach to relate drought
+indicators to impacts is to link commonly used hydrometeorological drought
+indicators to agricultural yield (Lobell et al., 2008; Vicente-Serrano et
+al., 2012, 2013; Bachmair et al., 2016a). Most of these studies are based on
+correlation and as summarized by Stagge et al. (2015a), thus are useful for
+screening relationships, but they measure the response of a variable, such
+as crop yield, across its entire range of values including typical or even
+productive years. A further complicating factor is the non-linearity of the
+climate-yield relation, which can show ambiguous relations with positive
+effects during drought or threshold behaviour for reductions in yield (Fig. 6a).
+Report-based impact data cover a wider range of impact types, but are
+tedious to gather and have many biases. So far, they have mostly been
+converted to binary or counts of “impact occurrences” for
+indicator-to-impact studies (Fig. 6b). Data-driven statistical models have
+used time series or spatial variability of these impact occurrences as a
+response variable in regression and classification tree models (Fig. 6c;
+Stagge et al., 2015a; Bachmair et al., 2016b; Blauhut et al., 2015). These
+studies have also shown that impact generation is more complex than
+previously assumed and may be caused by the co-occurrence of several
+extremes, lagged effects, and seasonality (Stagge et al., 2015a). A useful
+outcome of these modelling exercises was the objective determination of
+“best-indicators” for impacts in particular sectors that are strongly
+influenced by human factors. For example, when using the Standardized
+Precipitation Index (SPI) or Standardized Precipitation Evapotranspiration
+Index (SPEI) the best accumulation period suited to predict agricultural
+impacts clearly differs for irrigated and rain-fed agriculture (Stagge et
+al., 2015a); similarly, the best accumulation period to predict drought
+impact on public water supply differs depending on the relative
+contributions of groundwater vs. surface water resources and the type of
+reservoirs available (Bachmair et al., 2016b). These examples show that
+human perception of drought impacts can differ from the occurrence of
+drought in the natural hydrological system, depending on the prevailing
+water management framework and thus the vulnerability. Future analysis could
+use impact information to better characterize impacts of human-modified or
+human-induced drought.</p>
+</sec>
+<sec id="Ch1.S3.SS4">
+  <title>Human feedback of drought</title>
+      <p>The interaction between natural hydroclimatological processes and human
+influences is not a simple addition of both effects, but instead comprises
+complex and dynamic feedbacks resulting in a strongly non-linear response of
+the hydrological system (Fig. 2). There are negative feedbacks, when human
+management responses to drought (impacts) lessen drought; and positive
+feedbacks, where management responses exacerbate drought. There is growing
+knowledge of climate feedbacks (also called land–atmosphere feedback), in
+which drought influences evapotranspiration rates positively or negatively
+(Teuling et al., 2013), dependent on geographic situation and time frame.
+There is, however, only very limited understanding of human feedbacks during
+drought.</p>
+      <p>Short-term human feedbacks are responses to drought situations (whether
+observed, or at least perceived, or predicted) that influence water storages
+and fluxes within a particular water system in a catchment over timescales
+of days to years. These influences can include reductions in water use,
+implementation of water-saving technologies, planting of less
+water-demanding crops, using other water sources (e.g. from surface water to
+groundwater; from clean to grey water), short-term increases in groundwater
+abstraction because of surface water shortage, and water transfer from
+wetter areas or areas where water demand is lower (e.g. Andreu et al.,
+2005).</p>
+      <p>There is strong non-linearity in the reaction of the water system to these
+short-term influences (Sivapalan et al., 2012). Timescales often do not
+match; for example, the societal response might be in the order of weeks,
+but the reaction of groundwater can be in the order of years (Gleeson et
+al., 2010; Castle et al., 2014). Consequently, there is a difference between
+short- and long-term droughts, where longer droughts show a more complex
+interaction of natural and human processes (Van Dijk et al., 2013).
+Societies can also learn from historic droughts and adapt drought policy in
+the long-term to be more proactive, rather than reactive, when the next
+drought comes (McLeman et al., 2014). Crucially, however, human activities
+are not only influenced by climate and the drought state of the system but
+are also strongly dependent on domestic water behaviours (Pullinger et al.,
+2013), national policy styles (Gober, 2013), existing public policies
+(particularly for agriculture; Campos, 2015), water law and governance
+(Maggioni, 2015), and even indirectly by international food markets and
+geopolitics.</p>
+      <p>Research questions about human feedbacks include
+<list list-type="bullet"><list-item><p>Are there commonalities in the response of different societies to different drought
+events?</p></list-item><list-item><p>To what extent are physical and human drought processes coupled, and
+can feedback loops be identified and altered to lessen or mitigate drought?</p></list-item><list-item><p>What are the links between discourses and practices of drought mitigation
+and alleviation?</p></list-item></list>
+Additionally, more information is needed on past histories
+of water use and the role of technology in current routines of water
+practice (Pullinger et al., 2013), tipping points in human water use (Mera
+et al., 2014), and the reasons for a lack of public awareness of
+environmental water demands (Dessai and Sims, 2010). Understanding the
+relationship between these factors is crucial to enhancing our understanding
+of drought.</p>
+      <p>Qualitative data are essential in our quest for increased understanding of
+this topic. One novel type of qualitative data is the use of drought
+narratives (i.e. stories of historic drought events), which can give new
+insights into societal responses and feedbacks (e.g. Daniels and Endfield,
+2009). This is an example of how citizen science can help harvest data. It
+is especially interesting to study paired drought events, i.e. drought
+events of similar magnitude that occurred in the same region, to investigate
+whether societies learn from drought events and what the effect of this
+learning is on the next drought. Despite the obvious uncertainties of such
+an approach, it can provide information on drought responses and feedbacks
+from one drought event to the next, as was shown for paired flood events
+by Kreibich et al. (2016).</p>
+      <p>For quantitative prediction of the effect of feedback on drought, water
+management models could be adapted to include more hydrology and feedbacks.
+The modelling tools that are used in water management generally take water
+availability as external forcing and do not include the feedbacks of the
+water use on the hydrological system (e.g. Higgins et al., 2008; Borgomeo et
+al., 2014). Like some global and lumped hydrological models mentioned
+before, many water management models are capable of simulating the effect of
+the allocation of water on hydrological processes also during drought, as
+was shown by Querner et al. (2008) and Van Oel et al. (2012), or simulating
+the influence of water management decisions on the evolution of a given
+drought scenario (e.g. Watts et al., 2012).</p>
+      <p>Socio-hydrology models aim to account explicitly for the two-way feedbacks
+between social and hydrological processes (e.g. Sivapalan et al., 2012). Di
+Baldasarre et al. (2013, 2015) have applied this approach to flooding, and
+the development of a similar modelling framework for drought is underway
+(Kuil et al., 2015). As the interplay between water and people is still
+poorly understood, socio-hydrological theory is still to be developed via an
+iterative process of empirical study, comparative analysis, and process-based
+modelling. Thus, while the current studies do contribute to improve the
+current understudying of water–society interactions, their predictive power
+is still very limited (Viglione et al., 2014). Modelling approaches are most
+successful when people themselves are actively involved in the modelling
+process; stakeholders can, for example, guide scenario analysis (Loucks,
+2015). In contrast to modelling studies, environmental social science
+epistemologies, such as grounded theory building, offer alternative means of
+understanding water resource use and human behaviour (Pearce et al., 2013),
+potentially enabling more holistic insights into the role of drought
+feedbacks in the hydrosocial cycle (Linton and Budds, 2014, p. 170).</p>
+</sec>
+<sec id="Ch1.S3.SS5">
+  <title>Changing the normal situation</title>
+      <p>We now live in a fast-changing environment; both climate change and
+long-term human influences on the water cycle are changing the reference
+normal situation, even within 30-year time blocks that are traditionally
+being used to determine a climatology or a drought threshold. This is
+important from a drought perspective because the normal situation is our
+reference to determine the occurrence and severity of drought events (Fig. 4).
+There are many uncertainties in dealing with extreme events like drought
+under conditions of change. Some model studies of future hydrological
+drought commented on the assumption of using the same threshold for the
+historic and the future period (e.g. Giuntoli et al., 2015; Wanders et al.,
+2015). Two aspects should be mentioned. Firstly, regime changes trigger
+methodological considerations, because they can result in detection of
+drought events that should otherwise not be classified as drought, such as
+earlier snowmelt resulting in a drought in the normal snowmelt period
+(Lehner et al., 2006; Van Huijgevoort et al., 2014). Secondly, ecological
+and societal systems might adapt to a changing normal situation, but it is unclear how
+fast these adaptations will take place and whether tipping points will be
+passed (Mera et al., 2014).</p>
+      <p>Research questions related to a changing normal situation include
+<list list-type="bullet"><list-item><p>Is the normal situation actually changing or do we not have the data or
+understanding of natural variability to say anything about what is normal?</p></list-item><list-item><p>How do long-term human influences on the water cycle change the normal
+situation?</p></list-item><list-item><p>Do societies adapt to changes in the normal situation so that
+more severe droughts might lead to less impact in the future?</p></list-item><list-item><p>How should we adapt our drought analysis to accommodate changes in the normal situation?</p></list-item></list>
+The most straightforward solution to regime shifts is analysing different
+seasons separately, as was done by Hisdal et al. (2001) and Feyen and
+Dankers (2009) with respect to a snow season and non-snow season. In
+historical drought analyses, long-term climate change effects are often
+excluded by taking a short-enough period to neglect climate change or by
+detrending the time series. For a changing normal situation, due to future climate
+change, Vidal et al. (2012) and Wanders et al. (2015) have suggested to
+include adaptation by changing the drought threshold for the future. Mondal
+and Mujumdar (2015) followed a similar approach by estimating changes in
+return levels of drought under similar probability of occurrence in observed
+and projected streamflow. These methodologies should be evaluated more
+thoroughly and should also be applied to account for long-term human
+influences, alongside climate change effects. Important long-term human
+influences to consider are anthropogenic land use change (urbanization and
+deforestation; Verbeiren et al., 2016), continuous increases in abstraction,
+and step changes in storage by dam building (e.g. Wisser et al., 2010;
+Pokhrel et al., 2012).</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F8"><caption><p>A changing normal situation due to climate change changes
+drought occurrence and severity (after Smit et al., 2000). Will society
+adapt to changing normal situation or in response to one/two extreme events?</p></caption>
+          <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://hess.copernicus.org/articles/20/3631/2016/hess-20-3631-2016-f07.png"/>
+
+        </fig>
+
+      <p>These methodological explorations on how to deal with changes of the normal
+situation in drought analysis are urgently needed, but we should also get a
+better understanding of long-term changes in the perception of drought
+impacts and vulnerability. This perception drives adaptation to extreme
+events like drought and influences feedbacks between the physical and social
+system. Societies might be able to adapt to a changing mean, but they are
+more likely to be triggered by extreme impacts of a severe drought,
+resulting in long-term adaptations aiming to reduce impacts of drought in
+the future (Fig. 7; Smit et al., 2000; Dillehay and Kolata, 2004). More
+research is needed to understand trajectories of social development that
+lead to adaptation to drought.</p>
+      <p>We can benefit from the work done on long timescales, regarding
+long-term climate change, long-term human influence on the water cycle
+(overexploitation), and long-term water demand and scarcity (Table 1).
+Research on groundwater depletion (Aeschbach-Hertig and Gleeson, 2012) and
+water scarcity (Rijsberman, 2006) has been carried out on large temporal and
+spatial scales (annual and country level), because that is the level of
+relevance and the level of available data. Accounting for temporal
+variability and increasing spatial resolution can close the gap with drought
+research (Savenije, 2000; Hoekstra et al., 2012; Hering et al., 2015;
+Vörösmarty et al., 2015). Veldkamp et al. (2015) and Mekonnen and
+Hoekstra (2016) were the first to explore sub-annual timescales of water
+scarcity.</p>
+</sec>
+</sec>
+<sec id="Ch1.S4" sec-type="conclusions">
+  <title>A broader scope on drought in the Anthropocene</title>
+      <p>The framework proposed here is in line with suggestions for hydrological
+research in general, for example, with the call by Wagener et al. (2010) for
+a paradigm shift to study hydrology under change, with the research agenda
+set by Thompson et al. (2013) for hydrological prediction in the
+Anthropocene, with the new decade of the International Association of
+Hydrological Sciences (IAHS) Panta Rhei (Montanari et al., 2013; McMillan
+et al., 2016), and with the propositions for hydrological research and water
+management by Vogel et al. (2015). Complementary to these visions on the
+future of hydrology in general, we think that a focus on drought is needed
+to cope with complex future water challenges.</p>
+      <p>The challenges mentioned here are, however, not unique to drought. We can
+learn from other fields that have struggled or are still struggling with
+similar issues. The parallels with flood research have already been
+mentioned above in relation to definitions and socio-hydrology. Flood
+research is further advanced than drought research in including human
+influences on catchments and rivers in flood analysis (e.g. Vorogushyn and
+Merz, 2013) and many studies exist that focus on attribution of flood to
+different drivers and modifications, the complex interaction between natural
+and human processes, and flood response and adaptation.</p>
+      <p>There is also an interesting parallel between society and ecology, because,
+just like people, plants are simultaneously dependent on and shape water
+availability (e.g. Rodriguez-Iturbe, 2001). The field of ecohydrology has
+evolved in the last 15 years to a quantitative understanding of the
+interrelated dynamics of plants and water (e.g. Hannah et al., 2007;
+Asbjornsen et al., 2011; Jenerette et al., 2012). The importance of
+including vegetation feedback in future drought modelling was, for example,
+highlighted by Prudhomme et al. (2014). Similar approaches can be applied to
+the interrelated dynamics of people and water, especially during drought. In
+addition, the field of hydroecology has been grappling for several decades
+with the same issue of how to capture reference natural conditions in
+order to compare impacted conditions against them. Again, this is hampered
+because there are so few extant examples of natural conditions in observed
+hydrological data sets; the same challenges of how to naturalize flows have
+been at the core of the environmental flow paradigm (e.g. Acreman and
+Dunbar, 2004).</p>
+      <p>Societies have always had to cope with drought, so water management and
+governance have a long history. Especially interesting are the stories of
+civilizations that collapsed due to a combination of water overexploitation,
+drought, and other factors (e.g. Lucero, 2002). But there are many examples
+of successful water management in the past that have reduced drought
+severity or led to successful adaptation (e.g. Dillehay and Kolata, 2004;
+Garnier, 2015), which can help to understand feedbacks between society and
+the water system. In this light, it is also very informative to understand
+how people deal with uncertainties in drought prediction (Kasprzyk et al.,
+2009; Wagener et al., 2010), which are partly caused by the gaps in our
+understanding and unsuitability of data and tools to quantify the
+interaction between people and drought in the Anthropocene (Vogel et al.,
+2015). The use of drought predictions by society plays an important role in
+the impacts and feedbacks of drought. For improved drought management in the
+Anthropocene, a better two-way communication between scientists,
+stakeholders, policy makers, and the general public is needed. There are often
+social, psychological, and organizational barriers that prevent optimal use
+of scientific understanding in decision making. They are not our primary focus
+here, but clearly they can play an important role.</p>
+      <p>Although water scarcity is very different from drought, and water demand is
+not the focus of this article, regions with high water demand often
+influence the water cycle more drastically, possibly resulting in more
+human-induced drought and human-modified drought compared to regions with
+low water demand. Additionally, high-demand regions will be more severely
+impacted by drought than low-demand regions. Since increases in global water
+demand are projected for the future, enhancing water scarcity, collaboration
+between drought research and water scarcity research is urgently needed.</p>
+      <p>In focussing on human aspects of drought, we should not forget the other
+parts of the complex interlinked system (Fig. 1). Ecological and
+environmental requirements are recognized but are often neglected during
+drought (Vörösmarty et al., 2010). For example, in the
+Murray–Darling Basin (Australia) water management mitigated the water supply
+and economic impacts of drought, but at the same time strongly amplified the
+negative environmental impacts of drought (Van Dijk et al., 2008).
+Deterioration of water quality during drought can mean that water is
+available but cannot be used, for example, due to algal blooms or salt water
+intrusion in deltas (Van Vliet and Zwolsman, 2008). Although water quality
+was not discussed in this article, we stress that there are many challenges
+related to water quality and drought in the Anthropocene that require
+further research (e.g. Mosely, 2015).</p>
+      <p>In this article, we have argued that drought in the Anthropocene is
+not an external natural hazard. Instead, the natural hazard is intertwined
+with human influences on the water cycle and feedbacks of society on
+drought. We, therefore, explicitly include human processes in drought
+definitions and clarify previous confusion with related terms such as water
+scarcity. We present a multi-driver and multi-directional drought framework,
+in which human drivers, modifications, impacts, feedbacks, and changing the
+normal situation of drought are included in drought research. This framework
+highlights gaps in our understanding and indicates the tools and data
+needed. The elements of the framework have increasing complexity, from
+relatively straightforward aspects, like human drivers and modifications of
+drought, to the more complex impacts of drought, to compound feedbacks and
+changing the normal situation that integrate across all other elements.</p>
+      <p>The framework can be used to focus on a specific point or research question
+with the aim to solve part of the puzzle, or to study the entire
+interrelated system with the aim to put the pieces of the puzzle together.
+In the end, both approaches will hopefully result in a more holistic view of
+drought in the Anthropocene and consequently better drought management, in
+which the appropriate understanding and data and tools are used to take
+effective measures to mitigate drought severity, and to reduce drought
+impacts in the Anthropocene (Van Loon et al., 2016). This is of crucial
+importance now that the world is facing increasing human influence on the
+hydrological system, increasing dependence of society on water availability,
+combined with significant population growth and climate change, possibly
+leading to an increasing frequency of extreme hydroclimatological events
+(Vörösmarty et al., 2000; Oki and Kanae, 2006).</p>
+</sec>
+
+      
+      </body>
+    <back><notes notes-type="authorcontribution">
+
+      <p>Anne F. Van Loon initialized the ideas presented
+in this paper with Henny A. J. Van Lanen,
+Tom Gleeson, Remko Uijlenhoet, and Adriaan J. Teuling. All authors contributed to the
+discussions that shaped the paper. Anne F. Van Loon prepared the manuscript with
+parts written by Julian Clark and Kerstin Stahl, and contributions from all
+co-authors. Figures were prepared by Anne F. Van Loon, Sally Rangecroft, Giuliano Di
+Baldassarre, Niko Wanders, Kerstin Stahl, Boud Verbeiren, and Tom Gleeson.</p>
+  </notes><?xmltex \hack{\newpage}?><ack><title>Acknowledgements</title><p>The present work was (partially) developed within the framework of the Panta
+Rhei Research Initiative of the International Association of Hydrological
+Sciences (IAHS). It draws from discussion in (amongst others) the EU FP7
+Project DROUGHT-R&amp;SPI (282769), supports the work of the UNESCO-IHP VIII
+FRIEND-Water programme, and is partly funded by the Dutch NWO Rubicon project
+“Adding the human dimension to drought” (reference number: 2004/08338/ALW).
+We want to thank the editor Hilary McMillan, two anonymous reviewers, and
+Marc Bierkens for their constructive comments on our paper.<?xmltex \hack{\\\\}?>
+Edited by: H. McMillan<?xmltex \hack{\\}?>
+Reviewed by: two anonymous referees</p></ack><ref-list>
+    <title>References</title>
+
+      <ref id="bib1.bib1"><label>1</label><mixed-citation>
+Acreman, M. C. and Dunbar, M. J.: Defining environmental river flow requirements –
+a review, Hydrol. Earth Syst. Sci., 8, 861–876, doi:10.5194/hess-8-861-2004, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib2"><label>2</label><mixed-citation>
+Aeschbach-Hertig, W. and Gleeson, T.: Regional strategies for the
+accelerating global problem of groundwater depletion, Nature Geosci., 5,
+853–861, doi:10.1038/ngeo1617, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib3"><label>3</label><mixed-citation>
+AghaKouchak, A., Feldman, D., Hoerling, M., Huxman, T., and Lund, J.: Water
+and climate: Recognize anthropogenic drought, Nature, 524, 409–411,
+doi:10.1038/524409a, 2015a.</mixed-citation></ref>
+      <ref id="bib1.bib4"><label>4</label><mixed-citation>
+AghaKouchak, A., Farahmand, A., Melton, F. S., Teixeira, J., Anderson, M. C.,
+Wardlow, B. D., and Hain, C. R.: Remote sensing of drought: Progress,
+challenges and opportunities, Rev. Geophys., 53, 452–480,
+2015b.</mixed-citation></ref>
+      <ref id="bib1.bib5"><label>5</label><mixed-citation>
+Andreu, J., Rossi, G., Vagliasindi, F., and Vela, A. (Eds.): Drought Management and
+Planning for Water Resource, CRC Taylor &amp; Francis, Boca Raton, USA, 255 pp., 2005.</mixed-citation></ref>
+      <ref id="bib1.bib6"><label>6</label><mixed-citation>
+Andreu, J., Ferrer-Polo, J., Pérez, M. A., and Solera, A.: Decision
+support system for drought planning and management in the Jucar river basin,
+Spain, in: 18th World IMACS/MODSIM Congress, Cairns, Australia, 13–17,
+2009.</mixed-citation></ref>
+      <ref id="bib1.bib7"><label>7</label><mixed-citation>
+Asbjornsen, H., Goldsmith, G. R., Alvarado-Barrientos, M. S., Rebel, K., Van
+Osch, F. P., Rietkerk, M., and Dawson, T. E.: Ecohydrological advances
+and applications in plant–water relations research: a review, J. Plant Ecol., 4, 3–22, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib8"><label>8</label><mixed-citation>
+Bachmair, S., Kohn, I., and Stahl, K.: Exploring the link between drought
+indicators and impacts, Nat. Hazards Earth Syst. Sci., 15, 1381–1397,
+doi:10.5194/nhess-15-1381-2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib9"><label>9</label><mixed-citation>
+Bachmair, S., Stahl, K., Collins, K., Hannaford, J., Acreman, M., Svoboda, M.,
+Knutson, C., Smith, K. H., Wall, N., Fuchs, B., Crossman, N. D., and Overton, I.
+C.: Drought indicators revisited: the need for a wider consideration of
+environment and society, WIREs Water, doi:10.1002/wat2.1154, 2016a.</mixed-citation></ref>
+      <ref id="bib1.bib10"><label>10</label><mixed-citation>
+Bachmair, S., Svensson, C., Hannaford, J., Barker, L. J., and Stahl, K.: A
+quantitative analysis to objectively appraise drought indicators and model
+drought impacts, Hydrol. Earth Syst. Sci., 20, 2589–2609,
+doi:10.5194/hess-20-2589-2016, 2016b.</mixed-citation></ref>
+      <ref id="bib1.bib11"><label>11</label><mixed-citation>Beven, K. J. and Cloke, H. L.: Comment on “Hyperresolution global land
+surface modeling: Meeting a grand challenge for monitoring Earth's
+terrestrial water” by Eric F. Wood et al., Water Resour. Res., 48, W01801,
+<ext-link xlink:href="http://dx.doi.org/10.1029/2011WR010982" ext-link-type="DOI">10.1029/2011WR010982</ext-link>, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib12"><label>12</label><mixed-citation>
+Blauhut V., Gudmundsson, L., and  Stahl, K.: Towards pan-European drought risk
+maps: quantifying the link between drought indices and reported drought
+impacts, Environ. Res. Lett., 10, 014008, doi:10.1088/1748-9326/10/1/014008,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib13"><label>13</label><mixed-citation>
+Bloomfield, J. P. and  Marchant, B. P.: Analysis of groundwater drought building on the
+standardised precipitation index approach, Hydrol. Earth Syst. Sci.,
+17, 4769–4787, doi:10.5194/hess-17-4769-2013, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib14"><label>14</label><mixed-citation>
+Borgomeo, E., Hall, J. W., Fung, F., Watts, G., Colquhoun, K., and Lambert,
+C.: Risk-based water resources planning: Incorporating probabilistic
+nonstationary climate uncertainties, Water Resour. Res., 50,
+6850–6873, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib15"><label>15</label><mixed-citation>
+Brauer, C. C., Teuling, A. J., Torfs, P. J. J. F., and Uijlenhoet, R.: The
+Wageningen Lowland Runoff Simulator (WALRUS): a lumped rainfall–runoff model
+for catchments with shallow groundwater, Geosci. Model Dev., 7, 2313–2332,
+doi:10.5194/gmd-7-2313-2014, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib16"><label>16</label><mixed-citation>
+Campos, J.: Paradigms and public policies on drought in northeast Brazil: A
+historical perspective, Environ. Manage., 55, 1052–1063, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib17"><label>17</label><mixed-citation>
+Castle, S. L., Thomas, B. F., Reager, J. T., Rodell, M., Swenson, S. C., and
+Famiglietti, J. S.: Groundwater depletion during drought threatens future
+water security of the Colorado River Basin, Geophys. Res. Lett., 41,
+5904–5911, doi:10.1002/2014GL061055, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib18"><label>18</label><mixed-citation>
+Ciais, P., Reichstein, M., Viovy, N., Granier, A., Ogée, J., Allard, V.,
+and Valentini, R.: Europe-wide reduction in primary productivity caused by
+the heat and drought in 2003, Nature, 437, 529–533, 2005.</mixed-citation></ref>
+      <ref id="bib1.bib19"><label>19</label><mixed-citation>Crutzen, P. J.: Geology of mankind, Nature, 415, p. 23, <ext-link xlink:href="http://dx.doi.org/10.1038/415023a" ext-link-type="DOI">10.1038/415023a</ext-link>, 2002.</mixed-citation></ref>
+      <ref id="bib1.bib20"><label>20</label><mixed-citation>
+Daniels, S. and Endfield, G. H.: Narratives of climate change: introduction, J. Hist. Geograph., 35, 215–222, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib21"><label>21</label><mixed-citation>
+De Graaf, I. E. M., van Beek, L. P. H., Wada, Y., and Bierkens, M. F. P.
+Dynamic attribution of global water demand to surface water and groundwater
+resources: effects of abstractions and return flows on river discharges, Adv. Water Resour., 64, 21–33, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib22"><label>22</label><mixed-citation>
+De Kraker, A. M. J.: Flooding in river mouths: human caused or natural
+events? Five centuries of flooding events in the SW Netherlands, 1500–2000,
+Hydrol. Earth Syst. Sci., 19, 2673-2684, doi:10.5194/hess-19-2673-2015,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib23"><label>23</label><mixed-citation>
+Dessai, S. and Sims, C.: Public perception of drought and climate change in
+southeast England, Environ. Hazards, 9, 340–357, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib24"><label>24</label><mixed-citation>De Stefano, S. D., Gudmundsson, L., Gunst, L., Kohn, I., Van Lanen, H. A.,
+Reguera, J. U., and Tallaksen, L. M.: Recommendations for indicators for
+monitoring and early-warning considering different sensitivities:
+pan-European scale. DROUGHT-R&amp;SPI Technical Report No. 26, 121 pp.,
+available at:
+<ext-link xlink:href="http://www.eu-drought.org/technicalreports/10859964/DROUGHT-R-SPI-Technical-Report-No-26-Methodological-approach-considering-different-factors-influencing-vulnerability-pan-European-scale">http://www.eu-drought.org/technicalreports/</ext-link>
+(last access: 18 May 2016), 2012.</mixed-citation></ref>
+      <ref id="bib1.bib25"><label>25</label><mixed-citation>
+Di Baldassarre, G., Viglione, A., Carr, G., Kuil, L., Salinas, J. L., and
+Blöschl, G.: Socio-hydrology: conceptualising human-flood interactions,
+Hydrol. Earth Syst. Sci., 17, 3295–3303, doi:10.5194/hess-17-3295-2013, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib26"><label>26</label><mixed-citation>
+Di Baldassarre, G., Viglione, A., Carr, G., Kuil, L., Yan, K., Brandimarte,
+L.,
+and Blöschl, G.: Debates – Perspectives on socio-hydrology: Capturing
+feedbacks between physical and social processes, Water Resour. Res.,
+51, 4770–4781, doi:10.1002/2014WR016416, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib27"><label>27</label><mixed-citation>
+Di Baldassarre, G., Martinez, F., Zalantari, Z., and Viglione, A.:
+Modelling Floods and Droughts in the Anthropocene, submitted, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib28"><label>28</label><mixed-citation>
+Diffenbaugh, N. S., Swain, D. L., and Touma, D.: Anthropogenic warming has
+increased drought risk in California, P. Natl. Acad. Sci., 112, 3931–3936, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib29"><label>29</label><mixed-citation>
+Dillehay, T. D. and Kolata, A. L.: Long-term human response to uncertain
+environmental conditions in the Andes, P. Natl. Acad. Sci., 101, 4325–4330, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib30"><label>30</label><mixed-citation>
+Ding, Y., Hayes, M. J., and Wildham, M.: Measuring economic impacts of
+drought: a review and discussion, Disaster Prev. Manage., 20, 434–446, doi:10.1108/09653561111161752, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib31"><label>31</label><mixed-citation>
+Döll, P., Hoffmann-Dobrev, H., Portmann, F. T., Siebert, S., Eicker, A.,
+Rodell, M., and Scanlon, B. R.: Impact of water withdrawals from
+groundwater and surface water on continental water storage variations, J. Geodynam., 59, 143–156, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib32"><label>32</label><mixed-citation>
+Eng, K., Wolock, D. M., and Carlisle, D. M.: River flow changes related to
+land and water management practices across the conterminous United States,
+Sci. Total Environ., 463, 414–422, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib33"><label>33</label><mixed-citation>
+Falkenmark, M. and Rockström, J.: Building resilience to drought in
+desertification-prone savannas in Sub-Saharan Africa: The water perspective,
+in: Natural Resources Forum, 32,  93–102, Blackwell Publishing Ltd., 2008.</mixed-citation></ref>
+      <ref id="bib1.bib34"><label>34</label><mixed-citation>
+Feyen, L. and Dankers, R.: Impact of global warming on streamflow drought in
+Europe, J. Geophys. Res., 114, D17116, doi:10.1029/2008JD011438, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib35"><label>35</label><mixed-citation>
+Fleig, K., Tallaksen, L. M., Hisdal, H., Stahl, K., and Hannah, D. M.:
+Inter-comparison of weather and circulation type classifications for
+hydrological drought development, Phys. Chem. Earth, 35, 507–515, doi:10.1016/j.pce.2009.11.005, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib36"><label>36</label><mixed-citation>
+Forzieri, G., Feyen, L., Rojas, R., Flörke, M., Wimmer, F., and Bianchi,
+A.: Ensemble projections of future streamflow droughts in Europe, Hydrol. Earth Syst.
+Sci., 18, 85–108, doi:10.5194/hess-18-85-2014,  2014.</mixed-citation></ref>
+      <ref id="bib1.bib37"><label>37</label><mixed-citation>
+Foster, T., Brozović, N., and Butler, A. P.: Why well yield matters for
+managing agricultural drought risk, Weather  Clim. Extremes, 10,
+11–19, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib38"><label>38</label><mixed-citation>
+Garnier, E.: A historic experience for a strenthened resilience. European
+societies in front of hydro-meteors 16th–20th centuries',
+in: Prevention of hydrometeorological extreme events-Interfacing
+sciences and policies, edited by:  Quevauviller, P., Wiley Publisher, New York, 1, 3–26, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib39"><label>39</label><mixed-citation>
+Giuntoli, I., Vidal, J.-P., Prudhomme, C., and Hannah, D. M.: Future
+hydrological extremes: the uncertainty from multiple global climate and
+global hydrological models, Earth Syst. Dynam., 6, 267–285,
+doi:10.5194/esd-6-267-2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib40"><label>40</label><mixed-citation>
+Gleeson, T., VanderSteen, J., Sophocleous, M. A., Taniguchi, M., Alley, W. M.,
+Allen, D. M., and Zhou, Y.: Groundwater sustainability strategies, Nature Geosci., 3, 378–379, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib41"><label>41</label><mixed-citation>
+Gober, P.: Getting Outside the Water Box: The Need for New Approaches to
+Water Planning and Policy, Water Resour Manage., 27, 955–957, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib42"><label>42</label><mixed-citation>
+Grayson, M.: Agriculture and drought, Nature, 501, S1, doi:10.1038/501S1a,
+2013.</mixed-citation></ref>
+      <ref id="bib1.bib43"><label>43</label><mixed-citation>Gudmundsson, L., Rego, F. C., Rocha, M., and Seneviratne, S. I.: Predicting
+above normal wildfire activity in southern Europe as a function of
+meteorological drought, Environ. Res. Lett., 9, 084008, <ext-link xlink:href="http://dx.doi.org/10.1088/1748-9326/9/8/084008" ext-link-type="DOI">10.1088/1748-9326/9/8/084008</ext-link>,
+2014.</mixed-citation></ref>
+      <ref id="bib1.bib44"><label>44</label><mixed-citation>
+Güneralp, B., Güneralp, İ., and Liu, Y.: Changing global
+patterns of urban exposure to flood and drought hazards, Global Environ. Change, 31, 217–225, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib45"><label>45</label><mixed-citation>
+Gustard, A., van Lanen, H. A. J. and Tallaksen, L. M.: Outlook, Chapter 12,
+in: Hydrological Drought, Processes and Estimation Methods for Streamflow and
+Groundwater,
+Developments in Water Science, edited by: Tallaksen, L. M., and van Lanen,
+H. A. J., 48, Elsevier Science B.V.,  485–498, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib46"><label>46</label><mixed-citation>
+Hamilton, C.: Define the Anthropocene in terms of the whole Earth, Nature,
+536, p. 251, doi:10.1038/536251a, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib47"><label>47</label><mixed-citation>
+Hannah, D. M., Demuth, S., van Lanen, H. A., Looser, U., Prudhomme, C.,
+Rees, G.,  and Tallaksen, L. M.: Large-scale river flow archives:
+importance, current status and future needs, Hydrol. Process., 25,
+1191–1200, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib48"><label>48</label><mixed-citation>
+Hannah, D. M., Sadler, J. P., and Wood, P. J.: Hydroecology and
+ecohydrology: a potential route forward?, Hydrol. Process., 21,
+3385–3390, 2007.</mixed-citation></ref>
+      <ref id="bib1.bib49"><label>49</label><mixed-citation>
+Harrigan, S., Murphy, C., Hall, J., Wilby, R. L., and Sweeney, J.:
+Attribution of detected changes in streamflow using multiple working
+hypotheses, Hydrol. Earth Syst. Sci., 18, 1935–1952,
+doi:10.5194/hess-18-1935-2014, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib50"><label>50</label><mixed-citation>
+Hering, J. G., Sedlak, D. L., Tortajada, C., Biswas, A. K., Niwagaba, C., and
+Breu, T.: Local perspectives on water. Science, 349, 479–480, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib51"><label>51</label><mixed-citation>
+Higgins, A., Archer, A., and Hajkowicz, S.: A stochastic non-linear
+programming model for a multi-period water resource allocation with multiple
+objectives, Water Resour. Manage., 22, 1445–1460, 2008.</mixed-citation></ref>
+      <ref id="bib1.bib52"><label>52</label><mixed-citation>
+Hisdal, H., Stahl, K., Tallaksen, L. M., and Demuth, S.: Have streamflow
+droughts in Europe become more severe or frequent?, Int. J. Climatol., 21, 317–333, 2001.</mixed-citation></ref>
+      <ref id="bib1.bib53"><label>53</label><mixed-citation>
+Hoekstra, A. Y., Mekonnen, M. M., Chapagain, A. K., Mathews, R. E., and Richter,
+B. D.: Global Monthly Water Scarcity: Blue Water Footprints versus Blue Water
+Availability. PLoS ONE, 7, e32688, doi:10.1371/journal.pone.0032688, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib54"><label>54</label><mixed-citation>Hurkmans, R. T. W. L., Terink, W., Uijlenhoet, R., Moors, E. J., Troch, P.
+A., and Verburg, P. H.: Effects of land use changes on streamflow generation
+in the Rhine basin, Water Resour. Res., 45, W06405, <ext-link xlink:href="http://dx.doi.org/10.1029/2008WR007574" ext-link-type="DOI">10.1029/2008WR007574</ext-link>, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib55"><label>55</label><mixed-citation>
+Iglesias, A., Moneo, M., and Quiroga, S.: Methods for Evaluating Social
+Vulnerability to Drought, edited by:  Iglesias, A., Garrote, L., Cancelliere, A.,
+Cubillo, F., and Wilhite, D., Coping with Drought Risk in Agriculture and Water
+Supply Systems, Chapter 10, Adv. Nat. Technol. Hazards Res., 26, 153–159, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib56"><label>56</label><mixed-citation>
+IPCC: Managing the Risks of Extreme Events and Disasters to Advance Climate
+Change Adaptation. A Special Report of Working Groups I and II of the
+Intergovernmental Panel on Climate Change, edited by: Field, C. B., Barros, V.,
+Stocker, T. F., Qin, D., Dokken, D.  J., Ebi, K. L., Mastrandrea, M. D., Mach, K. J.,
+Plattner, G.-K., Allen, S. K., Tignor, M., and Midgley,  P. M., Cambridge
+University Press, Cambridge, UK, and New York, NY, USA, 582 pp., 2012.</mixed-citation></ref>
+      <ref id="bib1.bib57"><label>57</label><mixed-citation>
+Jenerette, G. D., Barron-Gafford, G. A., Guswa, A. J., McDonnell, J. J., and
+Villegas, J. C.: Organization of complexity in water limited ecohydrology.
+Ecohydrology, 5, 184–199, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib58"><label>58</label><mixed-citation>Kasprzyk, J. R., Reed, P. M., Kirsch, B. R., and Characklis, G. W.: Managing
+population and drought risks using many-objective water portfolio planning
+under uncertainty, Water Resour. Res., 45, W12401, <ext-link xlink:href="http://dx.doi.org/10.1029/2009WR008121" ext-link-type="DOI">10.1029/2009WR008121</ext-link>, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib59"><label>59</label><mixed-citation>
+Kingston, D. G., Stagge, J. H., Tallaksen, L. M., and Hannah, D. M.:
+European-Scale Drought: Understanding Connections between Atmospheric
+Circulation and Meteorological Drought Indices, J. Climate, 28, 505–516,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib60"><label>60</label><mixed-citation>Knutson, C. L., Hayes, M. J., and Philipps, T.: How to Reduce Drought Risk,
+Western Drought Coordination Council, Preparedness and Mitigation Working
+Group, Lincoln, 10 pp., available at:
+<uri>http://drought.unl.edu/portals/0/docs/risk.pdf</uri> (last access: 18 May 2016),
+1998.</mixed-citation></ref>
+      <ref id="bib1.bib61"><label>61</label><mixed-citation>
+Kreibich, H., Vorogushyn, S., Aerts, J. C. J. H., Apel, H., Aronica, G. T.,
+Arnbjerg-Nielsen, K., Di Baldassarre, G., Bouwer, L. M., Bubeck, Ph.,
+Caloiero, T., Chinh, D. T., Cortés, M., Gain, A. K., Giampá, V.,
+Kuhlicke, Ch., Kundzewicz, Z. W., Llasat, M. C., Mård, J., Matczak, P.,
+Mazzoleni, M., Molinari, D., Dung, V. N., Petrucci, O., Schröter, K.,
+Slager, K., Thieken, A. H., Ward, P. J., and Merz, B.: Reducing flood risk by
+learning from past events, under review, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib62"><label>62</label><mixed-citation>
+Kuil, L., Carr, G., Viglione, A., and  Bloeschl, G.: Conceptualizing the dynamics
+of a drought affected agricultural community, Geophys. Res. Abstr.
+Vol. 17, EGU2015-12435, EGU General Assembly 2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib63"><label>63</label><mixed-citation>
+Kumar, R., Musuuza, J. L., Van Loon, A. F., Teuling, A. J., Barthel, R.,
+Ten Broek, J., Mai, J., Samaniego, L., and Attinger, S.: Multiscale
+evaluation of the Standardized Precipitation Index as a groundwater drought
+indicator, Hydrol. Earth Syst. Sci., 20, 1117–1131,
+doi:10.5194/hess-20-1117-2016, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib64"><label>64</label><mixed-citation>
+Lackstrom, K., Brennan, A., Ferguson, D., Crimmins, M., Darby, L., Dow, K.,
+Ingram, K., Meadow, A., Reges, H., Shafer, M., and Smith, K.: The Missing
+Piece: Drought Impacts Monitoring. Workshop report produced by the Carolinas
+Integrated Sciences and Assessments program and the Climate Assessment for
+the Southwest, 5–6 March 2013, Tucson, AZ, 1–23, 22 pp., 2013.</mixed-citation></ref>
+      <ref id="bib1.bib65"><label>65</label><mixed-citation>
+Lake, S.: Drought and Aquatic Ecosystems: effects and responses, Wiley,
+Chichester, 400 pp., 2011.</mixed-citation></ref>
+      <ref id="bib1.bib66"><label>66</label><mixed-citation>
+Lehner, B., Döll, P., Alcamo, J., Henrichs, T., and Kaspar, F.:
+Estimating the impact of global change on flood and drought risks in Europe:
+a continental, integrated analysis, Clim. Change, 75, 273–299, 2006.</mixed-citation></ref>
+      <ref id="bib1.bib67"><label>67</label><mixed-citation>
+Lerner, D. N.: Groundwater recharge in urban areas, Atmos. Environ.
+24, 29–33, 1990.</mixed-citation></ref>
+      <ref id="bib1.bib68"><label>68</label><mixed-citation>
+Lewis, S. L., and Maslin, M. A.: Defining the Anthropocene. Nature,
+519(7542), 171-180, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib69"><label>69</label><mixed-citation>
+Linton, J. and Budds, J.: The hydrosocial cycle: Defining and mobilizing a
+relational-dialectical approach to water, Geoforum, 57, 170–180, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib70"><label>70</label><mixed-citation>
+Lloyd-Hughes, B.: The impracticality of a universal drought definition,
+Theor.  Appl. Climatol., 117, 607–611, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib71"><label>71</label><mixed-citation>
+Lobell, D. B., Burke, M. B., Tebaldi, C., Mastrandrea, M. D., Falcon, W. P., and
+Naylor, R. L.: Prioritizing climate change adaptation needs for food security
+in 2030, Science, 319, 607–610, 2008.</mixed-citation></ref>
+      <ref id="bib1.bib72"><label>72</label><mixed-citation>
+López-Moreno, J. I., Vicente-Serrano, Beguerıá, S. M., Garcıá-Ruiz, J. M., Portela, M. M., and Almeida, A. B.: Dam effects on droughts
+magnitude and duration in a transboundary basin: The Lower River Tagus,
+Spain and Portugal, Water Resour. Res., 45, W02405,
+doi:10.1029/2008WR007198, 2009.</mixed-citation></ref>
+      <ref id="bib1.bib73"><label>73</label><mixed-citation>
+Loucks, D. P.: Debates – Perspectives on sociohydrology: Simulating
+hydrologic-human interactions, Water Resour. Res., 51,
+4789–4794, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib74"><label>74</label><mixed-citation>
+Lucero, L. J.: The collapse of the Classic Maya: A case for the role of
+water control, Am. Anthropol., 104, 814–826, 2002.</mixed-citation></ref>
+      <ref id="bib1.bib75"><label>75</label><mixed-citation>
+Maggioni, E.: Water demand management in times of drought: What matters for
+water conservation, Water Resour. Res., 511, 125–139, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib76"><label>76</label><mixed-citation>
+Maliva, R. and Missimer, T.: Aridity and drought, in: Arid lands water
+evaluation and management, 21–39, Springer Berlin Heidelberg, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib77"><label>77</label><mixed-citation>
+Martinez, F., Di Baldassarre, G., and Zalantari, Z.: Modeling the Interactions
+between Hydrological Extremes, Water Management and Society, Geophys. Res. Abstr.,  18, EGU2016-825, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib78"><label>78</label><mixed-citation>
+Mateo, C. M., Hanasaki, N., Komori, D., Tanaka, K., Kiguchi, M.,
+Champathong, A., Sukhapunnaphan, T., Yamazaki, D., and Oki, T.: Assessing
+the impacts of reservoir operation to floodplain inundation by combining
+hydrological, reservoir management, and hydrodynamic models, Water Resour.
+Res., 50, 7245–7266, doi:10.1002/2013wr014845, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib79"><label>79</label><mixed-citation>
+McLeman, R., Dupre, J., Ford, L., Ford, J., Gajewski, K., and Marchildon,
+G.: What we learned from the Dust Bowl: lessons in science, policy, and
+adaptation, Popul. Environ., 35, 417–440, doi:10.1007/s11111-013-0190-z, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib80"><label>80</label><mixed-citation>
+McMillan, H., Montanari, A., Cudennec, C., Savenije, H., Kreibich, H.,
+Krueger, T., Liu, J., Mejia, A., Van Loon, A.F., Aksoy, H., Di Baldassarre,
+G., Huang, Y., Mazvimavi, D., Rogger, M., Sivakumar, B., Bibikova, T.,
+Castellarin, A., Chen, Y., Finger, D., Gelfan, A., Hannah, D., Hoekstra, A.,
+Li, H., Maskey, S., Mathevet, T., Mijic, A., Pedrozo Acuña, A., Polo,
+M., Rosales, V., Smith, P., Viglione, A., Srinivasan, V., Toth, E., van
+Nooyen, R., and Xia, J.: Panta Rhei 2013–2015: global perspectives on
+hydrology, society and change, Hydrol. Sci. J., 1–18, doi:10.1080/02626667.2016.1159308, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib81"><label>81</label><mixed-citation>Mekonnen, M. M. and Hoekstra, A. Y.: Four billion people facing severe water
+scarcity, Sci. Adv., 2, e1500323, <ext-link xlink:href="http://dx.doi.org/10.1126/sciadv.1500323" ext-link-type="DOI">10.1126/sciadv.1500323</ext-link>, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib82"><label>82</label><mixed-citation>
+Mera, R., Massey, N., Rupp, D., Mote, P., Allen, M., and Frumhoff, P.:
+Climate change, climate justice and the application of probabilistic event
+attribution to summer heat extremes in the California Central Valley,
+Clim. Change, 133, 427–438, doi:10.1007/s10584-015-1474-3, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib83"><label>83</label><mixed-citation>
+Mondal, A. and Mujumdar, P. P.: Return levels of hydrologic droughts under
+climate change, Adv. Water Resour., 75, 67–79, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib84"><label>84</label><mixed-citation>
+Montanari, A., Young, G., Savenije, H. H. G., Hughes, D., Wagener, T., Ren,
+L. L., Koutsoyiannis, D., Cudennec, C., Toth, E., Grimaldi, S., Blöschl,
+G., Sivapalan, M., Beven, K., Gupta, H., Hipsey, M., Schaefli, B., Arheimer,
+B., Boegh, E., Schymanski, S. J., Di Baldassarre, G., Yu, B., Hubert, P.,
+Huang, Y., Schumann, A., Post, D., Srinivasan, V., Harman, C., Thompson, S.,
+Rogger, M., Viglione, A., McMillan, H., Characklis, G., Pang, Z., and
+Belyaev, V.: “Panta Rhei – Everything Flows”: Change in hydrology and
+society – The IAHS Scientific Decade 2013–2022, Hydrol. Sci. J., 58, 1256–1275, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib85"><label>85</label><mixed-citation>
+Mosely, L. M.: Drought impacts on the water quality of freshwater systems: a
+review, Earth Sci. Rev., 140, 203–214, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib86"><label>86</label><mixed-citation>
+Nazemi, A. and Wheater, H. S.: On inclusion of water resource management in
+Earth system models – Part 1: Problem definition and representation of
+water demand, Hydrol. Earth Syst. Sci., 19, 33–61,
+doi:10.5194/hess-19-33-2015, 2015a.</mixed-citation></ref>
+      <ref id="bib1.bib87"><label>87</label><mixed-citation>
+Nazemi, A. and Wheater, H. S.: On inclusion of water resource management in
+Earth system models – Part 2: Representation of water supply and allocation
+and opportunities for improved modeling, Hydrol. Earth Syst. Sci., 19,
+63–90, doi:10.5194/hess-19-63-2015, 2015b.</mixed-citation></ref>
+      <ref id="bib1.bib88"><label>88</label><mixed-citation>
+Obrien, L. V., Berry, H. L., Coleman, C., and Hanigan, I. C.: Drought as a
+mental health exposure, Environ. Res., 131, 181–187, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib89"><label>89</label><mixed-citation>Oertel, M., Meza, F. J., and Gironás, J. Improving operational drought
+definitions – taking them to basin scale, in: Drought: Research and Science-Policy
+Interfacing, edited by: Andreu, J., Solera, A., Paredes-Arquiola, J.,
+Haro-Monteagudo, D., and van Lanen, H. A. J., CRC Press, London, 151, <ext-link xlink:href="http://dx.doi.org/10.1201/b18077-26" ext-link-type="DOI">10.1201/b18077-26</ext-link>, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib90"><label>90</label><mixed-citation>
+Oki, T. and Kanae, S.: Global hydrological cycles and world water
+resources, Science, 313, 1068–1072, 2006.</mixed-citation></ref>
+      <ref id="bib1.bib91"><label>91</label><mixed-citation>
+Palmer, W. C.: Meteorological drought (Vol. 30). Washington, DC, USA, US
+Department of Commerce, Weather Bureau, 1965.</mixed-citation></ref>
+      <ref id="bib1.bib92"><label>92</label><mixed-citation>
+Pearce, R., Dessai, S., and Barr, S.: Re-Framing Environmental Social
+Science Research for Sustainable Water Management in a Changing Climate,
+Water Resour. Manage., 27, 959–979, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib93"><label>93</label><mixed-citation>
+Pérez Blanco, C. D. and Gómez, C. M.: Insuring water: A practical
+risk management option in water scarce and drought-prone regions, Water
+Pol., 16, 244–263, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib94"><label>94</label><mixed-citation>
+Pokhrel, Y. N., Hanasaki, N., Yeh, P. J. F., Yamada, T. J., Kanae, S., and
+Oki, T.: Model estimates of sea-level change due to anthropogenic impacts on
+terrestrial water storage, Nature Geosci., 5, 389–392, doi:10.1038/ngeo1476,
+2012.</mixed-citation></ref>
+      <ref id="bib1.bib95"><label>95</label><mixed-citation>Price, K., Jackson, C. R., Parker, A. J., Reitan, T., Dowd, J., and
+Cyterski, M. Effects of watershed land use and geomorphology on stream low
+flows during severe drought conditions in the southern Blue Ridge Mountains,
+Georgia and North Carolina, United States, Water Resour. Res., 47,
+W02516, <ext-link xlink:href="http://dx.doi.org/10.1029/2010WR009340" ext-link-type="DOI">10.1029/2010WR009340</ext-link>, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib96"><label>96</label><mixed-citation>
+Prosdocimi, I., Kjeldsen, T. R., and Miller, J. D.: Detection and
+attribution of urbanization effect on flood extremes using nonstationary
+flood frequency models, Water Resour. Res., 51, 4244–4262, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib97"><label>97</label><mixed-citation>
+Prudhomme C., Giuntoli, I., Robinson, E. L., Clark, D. B., Arnell, N. W.,
+Dankers, R., Fekete, B. M., Franssen, W., Gerten, D., Gosling, S. N.,
+Hagemann, S., Hannah, D. M., Kim, H., Masaki, Y., Satoh, Y., Stacke, T.,
+Wada, Y., and Wisser, D.: Hydrological droughts in the 21st century,
+hotspots and uncertainties from a global multimodel ensemble experiment, P.
+Natl. Acad. Sci. USA, 111, 3262–3267, doi:10.1073/pnas.1222473110, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib98"><label>98</label><mixed-citation>
+Pullinger, M., Anderson, B., Browne, A., and Medd, W.: New directions in understanding
+household water demand: a practices perspective, J. Water Supply, 62, 496–506, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib99"><label>99</label><mixed-citation>
+Querner, E., Morábito, J., and Tozzi, D.: SIMGRO, a GIS-Supported
+Regional Hydrologic Model in Irrigated Areas: Case Study in Mendoza,
+Argentina, J. Irrig. Drain Eng., 134, 43–48, 2008.</mixed-citation></ref>
+      <ref id="bib1.bib100"><label>100</label><mixed-citation>
+Rangecroft, S., Van Loon, A. F., Maureira, H., Verbist, K., and Hannah, D. M.:
+Multi-method assessment of dam effects on hydrological droughts in arid
+Chile, submitted, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib101"><label>101</label><mixed-citation>Rijkswaterstaat: Droogtemonitor, available at
+<ext-link xlink:href="http://www.rijkswaterstaat.nl/water/waterdata-en-waterberichtgeving/waterberichten/droogteseizoen/droogtemonitor.aspx">http://www.rijkswaterstaat.nl/water/waterdata-en-waterberichtgeving</ext-link>
+(last access: 18 May 2016), 2015.</mixed-citation></ref>
+      <ref id="bib1.bib102"><label>102</label><mixed-citation>
+Rijsberman, F. R.: Water scarcity: Fact or fiction?, Agr. Water
+Manage., 80, 5–22, 2006.</mixed-citation></ref>
+      <ref id="bib1.bib103"><label>103</label><mixed-citation>
+Rodriguez-Iturbe, I., Porporato, A., Laio, F., and Ridolfi, L.: Plants in
+water-controlled ecosystems: active role in hydrologic processes and
+response to water stress: I. Scope and general outline, Adv. Water Resour., 24, 695–705, 2001.</mixed-citation></ref>
+      <ref id="bib1.bib104"><label>104</label><mixed-citation>
+Sadri, S., Kam, J., and Sheffield, J.: Nonstationarity of low flows and
+their timing in the eastern United States, Hydrol. Earth Syst. Sci., 20,
+633–649, doi:10.5194/hess-20-633-2016, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib105"><label>105</label><mixed-citation>
+Savenije, H. H. G.: Water scarcity indicators; the deception of the
+numbers, Phys. Chem. Earth, 25, 199–204, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib106"><label>106</label><mixed-citation>
+Sheffield, J. and Wood, E.: Drought; Past Problems and Future Scenarios,
+Earthscan, London, UK, Washington DC, USA, 233 pp., 2011.</mixed-citation></ref>
+      <ref id="bib1.bib107"><label>107</label><mixed-citation>
+Sheffield, J., Wood, E. F., and Roderick, M. L.: Little change in global
+drought over the past 60 years, Nature, 491, 435–438, doi:10.1038/nature11575, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib108"><label>108</label><mixed-citation>
+Sheffield, J., Wood, E. F., Chaney, N., Guan, K., Sadri, S., Yuan, X.,
+Olang, L., Amani, A., Ali, A., Demuth, S., and Ogallo, L.: A drought
+monitoring and forecasting system for sub-Sahara African water resources and
+food security, B. Am. Meteor. Soc., 95,
+861–882, doi: 10.1175/BAMS-D-12-00124.1, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib109"><label>109</label><mixed-citation>
+Shukla, S. and Wood, A. W.: Use of a standardized runoff index for
+characterizing hydrologic drought, Geophys. Res. Lett., 35, L02405, doi:10.1029/2007GL032487, 2008.</mixed-citation></ref>
+      <ref id="bib1.bib110"><label>110</label><mixed-citation>
+Sivapalan, M., Savenije, H. H., and Blöschl, G.: Socio-hydrology: A new
+science of people and water, Hydrol. Process., 26, 1270–1276, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib111"><label>111</label><mixed-citation>
+Smit, B., Burton, I., Klein, R. J., and Wandel, J.: An anatomy of adaptation
+to climate change and variability, Clim. Change, 45, 223–251, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib112"><label>112</label><mixed-citation>
+Stagge, J. H., Kohn, I., Tallaksen, L. M., and Stahl, K.: Modeling drought
+impact occurrence based on meteorological drought indices in Europe, J. Hydrol., 530, 37–50, 2015a.</mixed-citation></ref>
+      <ref id="bib1.bib113"><label>113</label><mixed-citation>
+Stagge, J. H., Tallaksen, L. M., Gudmundsson, L., Van Loon, A. F., and Stahl, K.:
+Candidate distributions for climatological drought indices (SPI and SPEI),
+Int. J. Climatol., 35, 4027–4040, doi:10.1002/joc.4267, 2015b.</mixed-citation></ref>
+      <ref id="bib1.bib114"><label>114</label><mixed-citation>
+Stahl, K., Hisdal, H., Hannaford, J., Tallaksen, L. M., van Lanen, H. A. J.,
+Sauquet, E., Demuth, S., Fendekova, M., and Jódar, J.: Streamflow trends
+in Europe: evidence from a dataset of near-natural catchments, Hydrol.
+Earth Syst. Sci., 14, 2367–2382, doi:10.5194/hess-14-2367-2010, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib115"><label>115</label><mixed-citation>
+Stahl, K., Kohn, I., Blauhut, V., Urquijo, J., De Stefano, L., Acácio,
+V., Dias, S., Stagge, J. H., Tallaksen, L. M., Kampragou, E., and Van Loon,
+A. F.: Impacts of European drought events: insights from an international
+database of text-based reports, Hydrol. Earth Syst. Sci.,
+16, 801–819, doi:10.5194/hess-16-801-2016, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib116"><label>116</label><mixed-citation>
+Stahl, K., Kohn, I., De Stefano, L., Tallaksen, L. M., Rego, F. C.,
+Seneviratne, S. I., Andreu, J., and Van Lanen, H. A. J.: An impact
+perspective on pan-European drought sensitivity, in: Drought: Research and
+Science-Policy Interfacing, edited by: Andreu, J., Solera, A.,
+Paredes-Arquiola, J., Haro-Monteagudo, D., and van Lanen, H. A. J., CRC
+Press, London, 329–334, doi:10.1201/b18077-56, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib117"><label>117</label><mixed-citation>
+Stanke, C., Kerac, M., Prudhomme, C., Medlock, J., and Murray, V.: Health
+Effects of Drought: a Systematic Review of the Evidence, PLoS Currents, 5,
+doi:10.1371/currents.dis.7a2cee9e980f91ad7697b570bcc4b004, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib118"><label>118</label><mixed-citation>
+Staudinger, M., Stahl, K., and Seibert, J.: A drought index accounting for snow,
+Water Resour. Res., 5, 7861–7872, doi:10.1002/2013WR015143, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib119"><label>119</label><mixed-citation>
+Stoelzle, M., Stahl, K., Morhard, A., and Weiler, M.: Streamflow sensitivity to drought
+scenarios in catchments with different geology, Geophys. Res. Lett.,
+41, 6174–6183, doi:10.1002/2014GL061344, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib120"><label>120</label><mixed-citation>
+Tallaksen, L. M. and Van Lanen, H. A. J. (Eds.): Hydrological drought:
+processes and estimation methods for streamflow and groundwater,
+Developments in water science, 48, Elsevier Science B.V., Amsterdam, the
+Netherlands, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib121"><label>121</label><mixed-citation>
+Tallaksen, L. M.: Modelling land use change effects on low flows, FRIEND,
+1, 56–68, 1993.</mixed-citation></ref>
+      <ref id="bib1.bib122"><label>122</label><mixed-citation>
+Teuling, A. J., Van Loon, A. F., Seneviratne, S. I., Lehner, I., Aubinet, M.,
+Heinesch, B., Bernhofer, C., Grünwald, T., Prasse, H., and Spank, U.:
+Evapotranspiration amplifies European summer drought, Geophys. Res. Lett.,
+40, 2071–2075, doi:10.1002/grl.50495, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib123"><label>123</label><mixed-citation>
+Thompson, S. E., Sivapalan, M., Harman, C. J., Srinivasan, V., Hipsey, M.
+R., Reed, P., Montanari, A., and Blöschl, G.: Developing predictive
+insight into changing water systems: use-inspired hydrologic science for the
+Anthropocene, Hydrol. Earth Syst. Sci., 17, 5013–5039,
+doi:10.5194/hess-17-5013-2013, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib124"><label>124</label><mixed-citation>
+Trambauer, P., Werner, M., Winsemius, H. C., Maskey, S., Dutra, E., and
+Uhlenbrook, S.: Hydrological drought forecasting and skill assessment for
+the Limpopo River basin, southern Africa, Hydrol. Earth Syst. Sci., 19,
+1695–1711, doi:10.5194/hess-19-1695-2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib125"><label>125</label><mixed-citation>
+Trenberth, K. E., Dai, A., van der Schrier, G., Jones, P. D., Barichivich,
+J., Briffa, K. R., and Sheffield, J. Global warming and changes
+in drought, Nature Clim. Change, 4, 17–22, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib126"><label>126</label><mixed-citation>
+Tuinenburg, O. A., Hutjes, R. W. A., Stacke, T., Wiltshire, A., and
+Lucas-Picher, P.: Effects of Irrigation in India on the Atmospheric Water
+Budget, J. Hydrometeorol., 15, 1028–1050, doi:10.1175/JHM-D-13-078.1, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib127"><label>127</label><mixed-citation>
+Van Dijk, A. I. J. M., Kirby, M., Paydar, Z., Podger, G., Mainuddin, M. D., Marvanek, S.,
+and Peña Arancibia, J.: Uncertainty in river modelling across the
+Murray-Darling Basin, A report to the Australian Government from the CSIRO
+Murray-Darling Basin Sustainable Yields Project, details published by CSIRO,
+2008.</mixed-citation></ref>
+      <ref id="bib1.bib128"><label>128</label><mixed-citation>
+Van Dijk, A. I. J. M., Beck, H. E., Crosbie, R. S., Jeu, R. A., Liu, Y. Y.,
+Podger, G. M., and Viney, N. R.: The Millennium Drought in southeast
+Australia (2001–2009): Natural and human causes and implications for water
+resources, ecosystems, economy, and society, Water Resour. Res.,
+49, 1040–1057, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib129"><label>129</label><mixed-citation>
+Van Huijgevoort, M. H. J., Van Lanen, H. A. J., Teuling, A. J., and
+Uijlenhoet, R.: Identification of changes in hydrological drought
+characteristics from a multi-GCM driven ensemble constrained by observed
+discharge, J. Hydrol., 512, 421–434, doi:10.1016/j.jhydrol.2014.02.060, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib130"><label>130</label><mixed-citation>
+Van Lanen, H. A. J., Kasparek, L., Novicky, O., Querner, E. P., Fendekova, M.
+Kupczyk, E.: Human influences, Ch. 9, in: Hydrological drought: processes
+and estimation methods for streamflow and groundwater, edited by: Tallaksen, L. M.,
+and Van Lanen, H. A. J., Developments in water science, 48, Elsevier
+Science B.V., Amsterdam, the Netherlands, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib131"><label>131</label><mixed-citation>Van Lanen, H. A. J., Laaha, G., Kingston, D. G., Gauster, T., Ionita, M.,
+Vidal, J.-P., Vlnas, R., Tallaksen, L. M., Stahl, K., Hannaford, J., Delus,
+C., Fendekova, M., Mediero, L., Prudhomme, C., Rets, E., Romanowicz, R. J.,
+Gailliez, S., Wong, W. K., Adler, M.-J., Blauhut, V., Caillouet, L.,
+Chelcea, S., Frolova, N., Gudmundsson, L., Hanel, M., Haslinger, K.,
+Kireeva, M., Osuch, M., Sauquet, E., Stagge, J. H., and Van Loon, A. F.:
+Hydrology needed to manage droughts: the 2015 European case, Hydrol.
+Process., 30, 3097–3104, <ext-link xlink:href="http://dx.doi.org/10.1002/hyp.10838" ext-link-type="DOI">10.1002/hyp.10838</ext-link>, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib132"><label>132</label><mixed-citation>
+Van Loon, A. F.: Hydrological drought explained, Wiley Interdisciplinary
+Reviews: Water, 2, 359–392, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib133"><label>133</label><mixed-citation>
+Van Loon, A. F. and Laaha, G.: Hydrological drought severity explained by
+climate and catchment characteristics, J. Hydrol., 526, 3–14,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib134"><label>134</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: A process-based typology of
+hydrological drought, Hydrol. Earth Syst. Sci., 16, 1915–1946,
+doi:10.5194/hess-16-1915-2012, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib135"><label>135</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: Making the distinction between water
+scarcity and drought using an observation-modeling framework,
+Water Resour. Res., 49, 1483–1502, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib136"><label>136</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: Testing the observation-modelling
+framework to distinguish between hydrological drought and water scarcity in
+case studies around Europe, Europ. Water, 49, 65–75, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib137"><label>137</label><mixed-citation>
+Van Loon, A. F., Ploum, S. W., Parajka, J., Fleig, A. K., Garnier, E.,
+Laaha, G., and Van Lanen, H. A. J.: Hydrological drought types in cold
+climates: quantitative analysis of causing factors and qualitative survey of
+impacts, Hydrol. Earth Syst. Sci., 19, 1993–2016,
+doi:10.5194/hess-19-1993-2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib138"><label>138</label><mixed-citation>
+Van Loon, A. F., Gleeson, T., Clark, J., Van Dijk, A. I. J. M., Stahl, K.,
+Hannaford, J., Di Baldassarre, G., Teuling, A. J., Tallaksen, L. M.,
+Uijlenhoet, R., Hannah, D. M., Sheffield, J., Svoboda, M., Verbeiren, B.,
+Wagener, T., Rangecroft, S., Wanders, N., and Van Lanen, H. A. J.: Drought in
+the Anthropocene, Nature Geosci., 9, 89–91, doi:10.1038/ngeo2646,
+2016.</mixed-citation></ref>
+      <ref id="bib1.bib139"><label>139</label><mixed-citation>
+Van Oel, P. R., Krol, M. S., and Hoekstra, A. Y.: Application of multi-agent
+simulation to evaluate the influence of reservoir operation strategies on
+the distribution of water availability in the semi-arid Jaguaribe basin,
+Brazil, Phys. Chem. Earth, 47, 173–181, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib140"><label>140</label><mixed-citation>
+Van Vliet, M. T. H. and Zwolsman, J. J. G.: Impact of summer droughts on
+the water quality of the Meuse river, J. Hydrol., 353, 1–17,
+2008.</mixed-citation></ref>
+      <ref id="bib1.bib141"><label>141</label><mixed-citation>
+Veldkamp, T. I., Wada, Y., de Moel, H., Kummu, M., Eisner, S., Aerts, J. C.,
+and Ward, P. J.: Changing mechanism of global water scarcity events: Impacts
+of socioeconomic changes and inter-annual hydro-climatic variability,
+Global Environ. Change, 32, 18–29, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib142"><label>142</label><mixed-citation>
+Verbeiren, B., Huysmans, M., Tychon, B., Jacquemin, I., Canters, F.,
+Vanderhaegen,
+S., Engelen, G., Poelmans, L., De Becker, P., Tsakiris, G., Vangelis, H., and
+Batelaan, O.: Drought-related vulnerability and risk assessment of
+groundwater resources under temperate conditions, Conference Proceedings,
+13th International Conference on Environmental Science and Technology
+Athens, Greece, 5–7 September 2013, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib143"><label>143</label><mixed-citation>
+Vicente-Serrano, S. M., Beguería, S., Lorenzo-Lacruz, J., Camarero,
+J. J., López-Moreno, J. I., Azorin-Molina, C., Revuelto, J.,
+Morán-Tejeda, E., and Sanchez-Lorenzo, A.: Performance of drought indices
+for ecological, agricultural, and hydrological applications, Earth Interact.,
+16, 1–27, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib144"><label>144</label><mixed-citation>
+Vicente-Serrano, S. M., Gouveia, C., Camarero, J. J., Beguería, S.,
+Trigo, R., López-Moreno, J. I., Azorín-Molina, C., Pasho, E.,
+Lorenzo-Lacruz, J., Revuelto, J., and Morán-Tejeda, E.: Response of
+vegetation to drought time-scales across global land biomes, P. Natl. Acad.
+Sci., 110, 52–57, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib145"><label>145</label><mixed-citation>
+Vidal, J.-P., Martin, E., Kitova, N., Najac, J., and Soubeyroux, J.-M.:
+Evolution of spatio-temporal drought characteristics: validation, projections
+and effect of adaptation scenarios, Hydrol. Earth Syst. Sci., 16, 2935–2955,
+doi:10.5194/hess-16-2935-2012, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib146"><label>146</label><mixed-citation>
+Viglione, A., Di Baldassarre, G., Brandimarte, L., Kuil, L., Carr, G.,
+Salinas, J. L., and Blöschl, G.: Insights from socio-hydrology modelling
+on dealing with flood risk–roles of collective memory, risk-taking attitude
+and trust, J. Hydrol., 518, 71–82, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib147"><label>147</label><mixed-citation>
+Vogel, R. M., Lall, U., Cai, X., Rajagopalan, B., Weiskel, P., Hooper, R. P.,
+and Matalas, N. C.: Hydrology: The interdisciplinary science of water,
+Water Resour. Res., 51, 4409–4430, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib148"><label>148</label><mixed-citation>
+Vorogushyn, S. and Merz, B.: Flood trends along the Rhine: the role of river
+training, Hydrol. Earth Syst. Sci., 17, 3871–3884,
+doi:10.5194/hess-17-3871-2013, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib149"><label>149</label><mixed-citation>
+Vörösmarty, C. J., Green, P., Salisbury, J., and Lammers, R. B.:
+Global water resources: vulnerability from climate change and population
+growth, Science, 289, 284–288, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib150"><label>150</label><mixed-citation>
+Vörösmarty, C. J., Lettenmaier, D., Leveque, C., Meybeck, M.,
+Pahl-Wostl, C., Alcamo, J., and Naiman, R.: Humans transforming the global
+water system, Eos, Trans. Am. Geophys. Union, 85, 509–514, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib151"><label>151</label><mixed-citation>
+Vörösmarty, C. J., Hoekstra, A. Y., Bunn, S. E., Conway, D., and
+Gupta, J.: Fresh water goes global, Science, 349, 478–479, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib152"><label>152</label><mixed-citation>
+Vörösmarty, C. J., McIntyre, P. B., Gessner, M. O., Dudgeon, D.,
+Prusevich, A., Green, P., Glidden, S., Bunn, S. E., Sullivan, C. A., Reidy
+Liermann, C., and Davies, P. M.: Global threats to human water security and
+river biodiversity, Nature, 467, 555–561, doi:10.1038/nature09440, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib153"><label>153</label><mixed-citation>
+Wada, Y., Van Beek, L. P. H., Viviroli, D., Dürr, H. H., Weingartner, R.,
+and Bierkens, M. F. P.: Global monthly water stress: 2. Water demand and
+severity of water stress, Water Resour. Res., 47, W07518,
+doi:10.1029/2010WR009792, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib154"><label>154</label><mixed-citation>
+Wada, Y., van Beek, L. P. H., Wanders, N., and Bierkens, M. F. P.: Human water
+consumption intensifies hydrological drought worldwide, Environ. Res. Lett., 8,
+034036, doi:10.1088/1748-9326/8/3/034036, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib155"><label>155</label><mixed-citation>
+Wagener, T., Sivapalan, M., Troch, P., and Woods, R.: Catchment
+Classification and Hydrologic Similarity, Geogr. Compass, 1, 901–931,
+doi:10.1111/j.1749-8198.2007.00039.x, 2007.</mixed-citation></ref>
+      <ref id="bib1.bib156"><label>156</label><mixed-citation>Wagener, T., Sivapalan, M., Troch, P. A., McGlynn, B. L., Harman, C. J.,
+Gupta, H. V., and Wilson, J. S.: The future of hydrology: An evolving
+science for a changing world. Water Resour. Res., 46, W05301, <ext-link xlink:href="http://dx.doi.org/10.1029/2009WR008906" ext-link-type="DOI">10.1029/2009WR008906</ext-link>, 2010.
+</mixed-citation></ref><?xmltex \hack{\newpage}?>
+      <ref id="bib1.bib157"><label>157</label><mixed-citation>Wanders, N. and Wada, Y.: Human and climate impacts on the 21st century
+hydrological drought, J. Hydrol., 526, 208–220, <ext-link xlink:href="http://dx.doi.org/10.1016/j.jhydrol.2014.10.047" ext-link-type="DOI">10.1016/j.jhydrol.2014.10.047</ext-link>, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib158"><label>158</label><mixed-citation>
+Wanders, N., Wada, Y., and Van Lanen, H. A. J.: Global hydrological
+droughts in the 21st century under a changing hydrological regime,
+Earth Syst. Dynam., 6, 1–15, doi:10.5194/esd-6-1-2015, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib159"><label>159</label><mixed-citation>
+Watts, G., von Christierson, B., Hannaford, J., and Lonsdale, K.: Testing
+the resilience of water supply systems to long droughts, J.
+Hydrol., 414, 255–267, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib160"><label>160</label><mixed-citation>
+Whitfield, P. H., Burn, D. H., Hannaford, J., Higgins, H., Hodgkins, G. A.,
+Marsh, T., and Looser, U.: Reference hydrologic networks I. The status and
+potential future directions of national reference hydrologic networks for
+detecting trends, Hydrol. Sci. J., 57, 1562–1579, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib161"><label>161</label><mixed-citation>
+Wilhite, D. A. and Vanyarkho, O.: Pervasive impacts of a creeping
+phenomenon, in: Drought: A Global Assessment I, edited by: Wilhite, D. A.,
+Routledge, New York/London, 245–255, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib162"><label>162</label><mixed-citation>
+Wilhite, D. A. and Glantz, M. H.: Understanding: the drought phenomenon:
+the role of definitions, Water Int., 10, 111–120, 1985.</mixed-citation></ref>
+      <ref id="bib1.bib163"><label>163</label><mixed-citation>
+Wilhite, D. A. and Buchanan-Smith, M.: Drought as hazard: understanding the
+natural and social context. Drought and Water Crises – Science, Technology
+and Management issues, Taylor &amp; Francis,  2005.</mixed-citation></ref>
+      <ref id="bib1.bib164"><label>164</label><mixed-citation>Williams, A. P., Seager, R., Abatzoglou, J. T., Cook, B. I., Smerdon, J. E., and
+Cook, E. R.: Contribution of anthropogenic warming to California drought
+during 2012–2014, Geophys. Res. Lett., 42, 6819–6828, <ext-link xlink:href="http://dx.doi.org/10.1002/2015GL064924" ext-link-type="DOI">10.1002/2015GL064924</ext-link>, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib165"><label>165</label><mixed-citation>Winter, T. C., Harvey, J. W., Franke, O. L., and Alley, W. M.: Ground water and
+surface water: A single resource. USGS Circular 1139, available at:
+<uri>http://pubs.usgs.gov/circ/circ1139/index.html</uri> (last access:
+18 May 2016), 1998.</mixed-citation></ref>
+      <ref id="bib1.bib166"><label>166</label><mixed-citation>
+Wisser, D., Fekete, B. M., Vörösmarty, C. J., and Schumann, A. H.:
+Reconstructing 20th century global hydrography: a contribution to the
+Global Terrestrial Network- Hydrology (GTN-H), Hydrol. Earth Syst. Sci., 14,
+1–24, doi:10.5194/hess-14-1-2010, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib167"><label>167</label><mixed-citation>Wood, E. F., Roundy, J. K., Troy, T. J., Van Beek, L. P. H., Bierkens, M.
+F., Blyth, E., and Whitehead, P: Hyperresolution global land surface
+modeling: Meeting a grand challenge for monitoring Earth's terrestrial
+water, Water Resour. Res., 47, W05301, <ext-link xlink:href="http://dx.doi.org/10.1029/2010WR010090" ext-link-type="DOI">10.1029/2010WR010090</ext-link>, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib168"><label>168</label><mixed-citation>
+Yevjevich, V. M.: An objective approach to definitions and investigations of
+continental hydrologic droughts. Hydrol. Pap., Colorado State
+University,  no. 23, 25 pp., 1967.</mixed-citation></ref>
+      <ref id="bib1.bib169"><label>169</label><mixed-citation>
+Yevjevich, V. M.: Floods and society,  Coping with Floods, 3–9,
+Springer, the Netherlands, 1994.</mixed-citation></ref>
+
+  </ref-list><app-group content-type="float"><app><title/>
+
+    </app></app-group></back>
+    <!--<article-title-html>Drought in a human-modified world: reframing drought definitions,
+understanding, and analysis approaches</article-title-html>
+<abstract-html><p class="p">In the current human-modified world, or Anthropocene,
+the state of water stores and fluxes has become dependent on human as well
+as natural processes. Water deficits (or droughts) are the result of a
+complex interaction between meteorological anomalies, land surface
+processes, and human inflows, outflows, and storage changes. Our current
+inability to adequately analyse and manage drought in many places points to
+gaps in our understanding and to inadequate data and tools. The Anthropocene
+requires a new framework for drought definitions and research. Drought
+definitions need to be revisited to explicitly include human processes
+driving and modifying soil moisture drought and hydrological drought
+development. We give recommendations for robust drought definitions to
+clarify timescales of drought and prevent confusion with related terms such
+as water scarcity and overexploitation. Additionally, our understanding and
+analysis of drought need to move from single driver to multiple drivers and
+from uni-directional to multi-directional. We identify research gaps and
+propose analysis approaches on (1) drivers, (2) modifiers, (3) impacts, (4) feedbacks,
+and (5) changing the baseline of drought in the Anthropocene. The most
+pressing research questions are related to the attribution of drought to its
+causes, to linking drought impacts to drought characteristics, and to
+societal adaptation and responses to drought. Example questions include
+
+<ul class="itemize"><li class="item nobullet">(i)<p class="p">What are the dominant drivers of drought in different parts of the world?</p></li><li class="item nobullet">(ii)<p class="p">How do human modifications of drought enhance or alleviate drought
+severity?</p></li><li class="item nobullet">(iii)<p class="p">How do impacts of drought depend on the physical
+characteristics of drought vs. the vulnerability of people or the
+environment?</p></li><li class="item nobullet">(iv)<p class="p">To what extent are physical and human drought processes
+coupled, and can feedback loops be identified and altered to lessen or
+mitigate drought?</p></li><li class="item nobullet">(v)<p class="p">How should we adapt our drought analysis to
+accommodate changes in the normal situation (i.e. what are considered
+normal or reference conditions) over time?</p></li></ul>
+Answering these questions requires exploration of qualitative and quantitative data as well as mixed
+modelling approaches. The challenges related to drought research and
+management in the Anthropocene are not unique to drought, but do require
+urgent attention. We give recommendations drawn from the fields of flood
+research, ecology, water management, and water resources studies. The
+framework presented here provides a holistic view on drought in the
+Anthropocene, which will help improve management strategies for mitigating
+the severity and reducing the impacts of droughts in future.</p></abstract-html>
+<ref-html id="bib1.bib1"><label>1</label><mixed-citation>
+Acreman, M. C. and Dunbar, M. J.: Defining environmental river flow requirements –
+a review, Hydrol. Earth Syst. Sci., 8, 861–876, doi:10.5194/hess-8-861-2004, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib2"><label>2</label><mixed-citation>
+Aeschbach-Hertig, W. and Gleeson, T.: Regional strategies for the
+accelerating global problem of groundwater depletion, Nature Geosci., 5,
+853–861, doi:10.1038/ngeo1617, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib3"><label>3</label><mixed-citation>
+AghaKouchak, A., Feldman, D., Hoerling, M., Huxman, T., and Lund, J.: Water
+and climate: Recognize anthropogenic drought, Nature, 524, 409–411,
+doi:10.1038/524409a, 2015a.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib4"><label>4</label><mixed-citation>
+AghaKouchak, A., Farahmand, A., Melton, F. S., Teixeira, J., Anderson, M. C.,
+Wardlow, B. D., and Hain, C. R.: Remote sensing of drought: Progress,
+challenges and opportunities, Rev. Geophys., 53, 452–480,
+2015b.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib5"><label>5</label><mixed-citation>
+Andreu, J., Rossi, G., Vagliasindi, F., and Vela, A. (Eds.): Drought Management and
+Planning for Water Resource, CRC Taylor &amp; Francis, Boca Raton, USA, 255 pp., 2005.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib6"><label>6</label><mixed-citation>
+Andreu, J., Ferrer-Polo, J., Pérez, M. A., and Solera, A.: Decision
+support system for drought planning and management in the Jucar river basin,
+Spain, in: 18th World IMACS/MODSIM Congress, Cairns, Australia, 13–17,
+2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib7"><label>7</label><mixed-citation>
+Asbjornsen, H., Goldsmith, G. R., Alvarado-Barrientos, M. S., Rebel, K., Van
+Osch, F. P., Rietkerk, M., and Dawson, T. E.: Ecohydrological advances
+and applications in plant–water relations research: a review, J. Plant Ecol., 4, 3–22, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib8"><label>8</label><mixed-citation>
+Bachmair, S., Kohn, I., and Stahl, K.: Exploring the link between drought
+indicators and impacts, Nat. Hazards Earth Syst. Sci., 15, 1381–1397,
+doi:10.5194/nhess-15-1381-2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib9"><label>9</label><mixed-citation>
+Bachmair, S., Stahl, K., Collins, K., Hannaford, J., Acreman, M., Svoboda, M.,
+Knutson, C., Smith, K. H., Wall, N., Fuchs, B., Crossman, N. D., and Overton, I.
+C.: Drought indicators revisited: the need for a wider consideration of
+environment and society, WIREs Water, doi:10.1002/wat2.1154, 2016a.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib10"><label>10</label><mixed-citation>
+Bachmair, S., Svensson, C., Hannaford, J., Barker, L. J., and Stahl, K.: A
+quantitative analysis to objectively appraise drought indicators and model
+drought impacts, Hydrol. Earth Syst. Sci., 20, 2589–2609,
+doi:10.5194/hess-20-2589-2016, 2016b.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib11"><label>11</label><mixed-citation>
+Beven, K. J. and Cloke, H. L.: Comment on “Hyperresolution global land
+surface modeling: Meeting a grand challenge for monitoring Earth's
+terrestrial water” by Eric F. Wood et al., Water Resour. Res., 48, W01801,
+<a href="http://dx.doi.org/10.1029/2011WR010982" target="_blank">doi:10.1029/2011WR010982</a>, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib12"><label>12</label><mixed-citation>
+Blauhut V., Gudmundsson, L., and  Stahl, K.: Towards pan-European drought risk
+maps: quantifying the link between drought indices and reported drought
+impacts, Environ. Res. Lett., 10, 014008, doi:10.1088/1748-9326/10/1/014008,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib13"><label>13</label><mixed-citation>
+Bloomfield, J. P. and  Marchant, B. P.: Analysis of groundwater drought building on the
+standardised precipitation index approach, Hydrol. Earth Syst. Sci.,
+17, 4769–4787, doi:10.5194/hess-17-4769-2013, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib14"><label>14</label><mixed-citation>
+Borgomeo, E., Hall, J. W., Fung, F., Watts, G., Colquhoun, K., and Lambert,
+C.: Risk-based water resources planning: Incorporating probabilistic
+nonstationary climate uncertainties, Water Resour. Res., 50,
+6850–6873, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib15"><label>15</label><mixed-citation>
+Brauer, C. C., Teuling, A. J., Torfs, P. J. J. F., and Uijlenhoet, R.: The
+Wageningen Lowland Runoff Simulator (WALRUS): a lumped rainfall–runoff model
+for catchments with shallow groundwater, Geosci. Model Dev., 7, 2313–2332,
+doi:10.5194/gmd-7-2313-2014, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib16"><label>16</label><mixed-citation>
+Campos, J.: Paradigms and public policies on drought in northeast Brazil: A
+historical perspective, Environ. Manage., 55, 1052–1063, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib17"><label>17</label><mixed-citation>
+Castle, S. L., Thomas, B. F., Reager, J. T., Rodell, M., Swenson, S. C., and
+Famiglietti, J. S.: Groundwater depletion during drought threatens future
+water security of the Colorado River Basin, Geophys. Res. Lett., 41,
+5904–5911, doi:10.1002/2014GL061055, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib18"><label>18</label><mixed-citation>
+Ciais, P., Reichstein, M., Viovy, N., Granier, A., Ogée, J., Allard, V.,
+and Valentini, R.: Europe-wide reduction in primary productivity caused by
+the heat and drought in 2003, Nature, 437, 529–533, 2005.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib19"><label>19</label><mixed-citation>
+Crutzen, P. J.: Geology of mankind, Nature, 415, p. 23, <a href="http://dx.doi.org/10.1038/415023a" target="_blank">doi:10.1038/415023a</a>, 2002.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib20"><label>20</label><mixed-citation>
+Daniels, S. and Endfield, G. H.: Narratives of climate change: introduction, J. Hist. Geograph., 35, 215–222, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib21"><label>21</label><mixed-citation>
+De Graaf, I. E. M., van Beek, L. P. H., Wada, Y., and Bierkens, M. F. P.
+Dynamic attribution of global water demand to surface water and groundwater
+resources: effects of abstractions and return flows on river discharges, Adv. Water Resour., 64, 21–33, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib22"><label>22</label><mixed-citation>
+De Kraker, A. M. J.: Flooding in river mouths: human caused or natural
+events? Five centuries of flooding events in the SW Netherlands, 1500–2000,
+Hydrol. Earth Syst. Sci., 19, 2673-2684, doi:10.5194/hess-19-2673-2015,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib23"><label>23</label><mixed-citation>
+Dessai, S. and Sims, C.: Public perception of drought and climate change in
+southeast England, Environ. Hazards, 9, 340–357, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib24"><label>24</label><mixed-citation>
+De Stefano, S. D., Gudmundsson, L., Gunst, L., Kohn, I., Van Lanen, H. A.,
+Reguera, J. U., and Tallaksen, L. M.: Recommendations for indicators for
+monitoring and early-warning considering different sensitivities:
+pan-European scale. DROUGHT-R&amp;SPI Technical Report No. 26, 121 pp.,
+available at:
+<a href="http://www.eu-drought.org/technicalreports/10859964/DROUGHT-R-SPI-Technical-Report-No-26-Methodological-approach-considering-different-factors-influencing-vulnerability-pan-European-scale" target="_blank">http://www.eu-drought.org/technicalreports/</a>
+(last access: 18 May 2016), 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib25"><label>25</label><mixed-citation>
+Di Baldassarre, G., Viglione, A., Carr, G., Kuil, L., Salinas, J. L., and
+Blöschl, G.: Socio-hydrology: conceptualising human-flood interactions,
+Hydrol. Earth Syst. Sci., 17, 3295–3303, doi:10.5194/hess-17-3295-2013, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib26"><label>26</label><mixed-citation>
+Di Baldassarre, G., Viglione, A., Carr, G., Kuil, L., Yan, K., Brandimarte,
+L.,
+and Blöschl, G.: Debates – Perspectives on socio-hydrology: Capturing
+feedbacks between physical and social processes, Water Resour. Res.,
+51, 4770–4781, doi:10.1002/2014WR016416, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib27"><label>27</label><mixed-citation>
+Di Baldassarre, G., Martinez, F., Zalantari, Z., and Viglione, A.:
+Modelling Floods and Droughts in the Anthropocene, submitted, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib28"><label>28</label><mixed-citation>
+Diffenbaugh, N. S., Swain, D. L., and Touma, D.: Anthropogenic warming has
+increased drought risk in California, P. Natl. Acad. Sci., 112, 3931–3936, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib29"><label>29</label><mixed-citation>
+Dillehay, T. D. and Kolata, A. L.: Long-term human response to uncertain
+environmental conditions in the Andes, P. Natl. Acad. Sci., 101, 4325–4330, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib30"><label>30</label><mixed-citation>
+Ding, Y., Hayes, M. J., and Wildham, M.: Measuring economic impacts of
+drought: a review and discussion, Disaster Prev. Manage., 20, 434–446, doi:10.1108/09653561111161752, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib31"><label>31</label><mixed-citation>
+Döll, P., Hoffmann-Dobrev, H., Portmann, F. T., Siebert, S., Eicker, A.,
+Rodell, M., and Scanlon, B. R.: Impact of water withdrawals from
+groundwater and surface water on continental water storage variations, J. Geodynam., 59, 143–156, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib32"><label>32</label><mixed-citation>
+Eng, K., Wolock, D. M., and Carlisle, D. M.: River flow changes related to
+land and water management practices across the conterminous United States,
+Sci. Total Environ., 463, 414–422, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib33"><label>33</label><mixed-citation>
+Falkenmark, M. and Rockström, J.: Building resilience to drought in
+desertification-prone savannas in Sub-Saharan Africa: The water perspective,
+in: Natural Resources Forum, 32,  93–102, Blackwell Publishing Ltd., 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib34"><label>34</label><mixed-citation>
+Feyen, L. and Dankers, R.: Impact of global warming on streamflow drought in
+Europe, J. Geophys. Res., 114, D17116, doi:10.1029/2008JD011438, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib35"><label>35</label><mixed-citation>
+Fleig, K., Tallaksen, L. M., Hisdal, H., Stahl, K., and Hannah, D. M.:
+Inter-comparison of weather and circulation type classifications for
+hydrological drought development, Phys. Chem. Earth, 35, 507–515, doi:10.1016/j.pce.2009.11.005, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib36"><label>36</label><mixed-citation>
+Forzieri, G., Feyen, L., Rojas, R., Flörke, M., Wimmer, F., and Bianchi,
+A.: Ensemble projections of future streamflow droughts in Europe, Hydrol. Earth Syst.
+Sci., 18, 85–108, doi:10.5194/hess-18-85-2014,  2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib37"><label>37</label><mixed-citation>
+Foster, T., Brozović, N., and Butler, A. P.: Why well yield matters for
+managing agricultural drought risk, Weather  Clim. Extremes, 10,
+11–19, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib38"><label>38</label><mixed-citation>
+Garnier, E.: A historic experience for a strenthened resilience. European
+societies in front of hydro-meteors 16th–20th centuries',
+in: Prevention of hydrometeorological extreme events-Interfacing
+sciences and policies, edited by:  Quevauviller, P., Wiley Publisher, New York, 1, 3–26, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib39"><label>39</label><mixed-citation>
+Giuntoli, I., Vidal, J.-P., Prudhomme, C., and Hannah, D. M.: Future
+hydrological extremes: the uncertainty from multiple global climate and
+global hydrological models, Earth Syst. Dynam., 6, 267–285,
+doi:10.5194/esd-6-267-2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib40"><label>40</label><mixed-citation>
+Gleeson, T., VanderSteen, J., Sophocleous, M. A., Taniguchi, M., Alley, W. M.,
+Allen, D. M., and Zhou, Y.: Groundwater sustainability strategies, Nature Geosci., 3, 378–379, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib41"><label>41</label><mixed-citation>
+Gober, P.: Getting Outside the Water Box: The Need for New Approaches to
+Water Planning and Policy, Water Resour Manage., 27, 955–957, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib42"><label>42</label><mixed-citation>
+Grayson, M.: Agriculture and drought, Nature, 501, S1, doi:10.1038/501S1a,
+2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib43"><label>43</label><mixed-citation>
+Gudmundsson, L., Rego, F. C., Rocha, M., and Seneviratne, S. I.: Predicting
+above normal wildfire activity in southern Europe as a function of
+meteorological drought, Environ. Res. Lett., 9, 084008, <a href="http://dx.doi.org/10.1088/1748-9326/9/8/084008" target="_blank">doi:10.1088/1748-9326/9/8/084008</a>,
+2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib44"><label>44</label><mixed-citation>
+Güneralp, B., Güneralp, İ., and Liu, Y.: Changing global
+patterns of urban exposure to flood and drought hazards, Global Environ. Change, 31, 217–225, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib45"><label>45</label><mixed-citation>
+Gustard, A., van Lanen, H. A. J. and Tallaksen, L. M.: Outlook, Chapter 12,
+in: Hydrological Drought, Processes and Estimation Methods for Streamflow and
+Groundwater,
+Developments in Water Science, edited by: Tallaksen, L. M., and van Lanen,
+H. A. J., 48, Elsevier Science B.V.,  485–498, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib46"><label>46</label><mixed-citation>
+Hamilton, C.: Define the Anthropocene in terms of the whole Earth, Nature,
+536, p. 251, doi:10.1038/536251a, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib47"><label>47</label><mixed-citation>
+Hannah, D. M., Demuth, S., van Lanen, H. A., Looser, U., Prudhomme, C.,
+Rees, G.,  and Tallaksen, L. M.: Large-scale river flow archives:
+importance, current status and future needs, Hydrol. Process., 25,
+1191–1200, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib48"><label>48</label><mixed-citation>
+Hannah, D. M., Sadler, J. P., and Wood, P. J.: Hydroecology and
+ecohydrology: a potential route forward?, Hydrol. Process., 21,
+3385–3390, 2007.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib49"><label>49</label><mixed-citation>
+Harrigan, S., Murphy, C., Hall, J., Wilby, R. L., and Sweeney, J.:
+Attribution of detected changes in streamflow using multiple working
+hypotheses, Hydrol. Earth Syst. Sci., 18, 1935–1952,
+doi:10.5194/hess-18-1935-2014, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib50"><label>50</label><mixed-citation>
+Hering, J. G., Sedlak, D. L., Tortajada, C., Biswas, A. K., Niwagaba, C., and
+Breu, T.: Local perspectives on water. Science, 349, 479–480, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib51"><label>51</label><mixed-citation>
+Higgins, A., Archer, A., and Hajkowicz, S.: A stochastic non-linear
+programming model for a multi-period water resource allocation with multiple
+objectives, Water Resour. Manage., 22, 1445–1460, 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib52"><label>52</label><mixed-citation>
+Hisdal, H., Stahl, K., Tallaksen, L. M., and Demuth, S.: Have streamflow
+droughts in Europe become more severe or frequent?, Int. J. Climatol., 21, 317–333, 2001.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib53"><label>53</label><mixed-citation>
+Hoekstra, A. Y., Mekonnen, M. M., Chapagain, A. K., Mathews, R. E., and Richter,
+B. D.: Global Monthly Water Scarcity: Blue Water Footprints versus Blue Water
+Availability. PLoS ONE, 7, e32688, doi:10.1371/journal.pone.0032688, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib54"><label>54</label><mixed-citation>
+Hurkmans, R. T. W. L., Terink, W., Uijlenhoet, R., Moors, E. J., Troch, P.
+A., and Verburg, P. H.: Effects of land use changes on streamflow generation
+in the Rhine basin, Water Resour. Res., 45, W06405, <a href="http://dx.doi.org/10.1029/2008WR007574" target="_blank">doi:10.1029/2008WR007574</a>, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib55"><label>55</label><mixed-citation>
+Iglesias, A., Moneo, M., and Quiroga, S.: Methods for Evaluating Social
+Vulnerability to Drought, edited by:  Iglesias, A., Garrote, L., Cancelliere, A.,
+Cubillo, F., and Wilhite, D., Coping with Drought Risk in Agriculture and Water
+Supply Systems, Chapter 10, Adv. Nat. Technol. Hazards Res., 26, 153–159, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib56"><label>56</label><mixed-citation>
+IPCC: Managing the Risks of Extreme Events and Disasters to Advance Climate
+Change Adaptation. A Special Report of Working Groups I and II of the
+Intergovernmental Panel on Climate Change, edited by: Field, C. B., Barros, V.,
+Stocker, T. F., Qin, D., Dokken, D.  J., Ebi, K. L., Mastrandrea, M. D., Mach, K. J.,
+Plattner, G.-K., Allen, S. K., Tignor, M., and Midgley,  P. M., Cambridge
+University Press, Cambridge, UK, and New York, NY, USA, 582 pp., 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib57"><label>57</label><mixed-citation>
+Jenerette, G. D., Barron-Gafford, G. A., Guswa, A. J., McDonnell, J. J., and
+Villegas, J. C.: Organization of complexity in water limited ecohydrology.
+Ecohydrology, 5, 184–199, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib58"><label>58</label><mixed-citation>
+Kasprzyk, J. R., Reed, P. M., Kirsch, B. R., and Characklis, G. W.: Managing
+population and drought risks using many-objective water portfolio planning
+under uncertainty, Water Resour. Res., 45, W12401, <a href="http://dx.doi.org/10.1029/2009WR008121" target="_blank">doi:10.1029/2009WR008121</a>, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib59"><label>59</label><mixed-citation>
+Kingston, D. G., Stagge, J. H., Tallaksen, L. M., and Hannah, D. M.:
+European-Scale Drought: Understanding Connections between Atmospheric
+Circulation and Meteorological Drought Indices, J. Climate, 28, 505–516,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib60"><label>60</label><mixed-citation>
+Knutson, C. L., Hayes, M. J., and Philipps, T.: How to Reduce Drought Risk,
+Western Drought Coordination Council, Preparedness and Mitigation Working
+Group, Lincoln, 10 pp., available at:
+<a href="http://drought.unl.edu/portals/0/docs/risk.pdf" target="_blank">http://drought.unl.edu/portals/0/docs/risk.pdf</a> (last access: 18 May 2016),
+1998.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib61"><label>61</label><mixed-citation>
+Kreibich, H., Vorogushyn, S., Aerts, J. C. J. H., Apel, H., Aronica, G. T.,
+Arnbjerg-Nielsen, K., Di Baldassarre, G., Bouwer, L. M., Bubeck, Ph.,
+Caloiero, T., Chinh, D. T., Cortés, M., Gain, A. K., Giampá, V.,
+Kuhlicke, Ch., Kundzewicz, Z. W., Llasat, M. C., Mård, J., Matczak, P.,
+Mazzoleni, M., Molinari, D., Dung, V. N., Petrucci, O., Schröter, K.,
+Slager, K., Thieken, A. H., Ward, P. J., and Merz, B.: Reducing flood risk by
+learning from past events, under review, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib62"><label>62</label><mixed-citation>
+Kuil, L., Carr, G., Viglione, A., and  Bloeschl, G.: Conceptualizing the dynamics
+of a drought affected agricultural community, Geophys. Res. Abstr.
+Vol. 17, EGU2015-12435, EGU General Assembly 2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib63"><label>63</label><mixed-citation>
+Kumar, R., Musuuza, J. L., Van Loon, A. F., Teuling, A. J., Barthel, R.,
+Ten Broek, J., Mai, J., Samaniego, L., and Attinger, S.: Multiscale
+evaluation of the Standardized Precipitation Index as a groundwater drought
+indicator, Hydrol. Earth Syst. Sci., 20, 1117–1131,
+doi:10.5194/hess-20-1117-2016, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib64"><label>64</label><mixed-citation>
+Lackstrom, K., Brennan, A., Ferguson, D., Crimmins, M., Darby, L., Dow, K.,
+Ingram, K., Meadow, A., Reges, H., Shafer, M., and Smith, K.: The Missing
+Piece: Drought Impacts Monitoring. Workshop report produced by the Carolinas
+Integrated Sciences and Assessments program and the Climate Assessment for
+the Southwest, 5–6 March 2013, Tucson, AZ, 1–23, 22 pp., 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib65"><label>65</label><mixed-citation>
+Lake, S.: Drought and Aquatic Ecosystems: effects and responses, Wiley,
+Chichester, 400 pp., 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib66"><label>66</label><mixed-citation>
+Lehner, B., Döll, P., Alcamo, J., Henrichs, T., and Kaspar, F.:
+Estimating the impact of global change on flood and drought risks in Europe:
+a continental, integrated analysis, Clim. Change, 75, 273–299, 2006.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib67"><label>67</label><mixed-citation>
+Lerner, D. N.: Groundwater recharge in urban areas, Atmos. Environ.
+24, 29–33, 1990.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib68"><label>68</label><mixed-citation>
+Lewis, S. L., and Maslin, M. A.: Defining the Anthropocene. Nature,
+519(7542), 171-180, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib69"><label>69</label><mixed-citation>
+Linton, J. and Budds, J.: The hydrosocial cycle: Defining and mobilizing a
+relational-dialectical approach to water, Geoforum, 57, 170–180, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib70"><label>70</label><mixed-citation>
+Lloyd-Hughes, B.: The impracticality of a universal drought definition,
+Theor.  Appl. Climatol., 117, 607–611, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib71"><label>71</label><mixed-citation>
+Lobell, D. B., Burke, M. B., Tebaldi, C., Mastrandrea, M. D., Falcon, W. P., and
+Naylor, R. L.: Prioritizing climate change adaptation needs for food security
+in 2030, Science, 319, 607–610, 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib72"><label>72</label><mixed-citation>
+López-Moreno, J. I., Vicente-Serrano, Beguerıá, S. M., Garcıá-Ruiz, J. M., Portela, M. M., and Almeida, A. B.: Dam effects on droughts
+magnitude and duration in a transboundary basin: The Lower River Tagus,
+Spain and Portugal, Water Resour. Res., 45, W02405,
+doi:10.1029/2008WR007198, 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib73"><label>73</label><mixed-citation>
+Loucks, D. P.: Debates – Perspectives on sociohydrology: Simulating
+hydrologic-human interactions, Water Resour. Res., 51,
+4789–4794, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib74"><label>74</label><mixed-citation>
+Lucero, L. J.: The collapse of the Classic Maya: A case for the role of
+water control, Am. Anthropol., 104, 814–826, 2002.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib75"><label>75</label><mixed-citation>
+Maggioni, E.: Water demand management in times of drought: What matters for
+water conservation, Water Resour. Res., 511, 125–139, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib76"><label>76</label><mixed-citation>
+Maliva, R. and Missimer, T.: Aridity and drought, in: Arid lands water
+evaluation and management, 21–39, Springer Berlin Heidelberg, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib77"><label>77</label><mixed-citation>
+Martinez, F., Di Baldassarre, G., and Zalantari, Z.: Modeling the Interactions
+between Hydrological Extremes, Water Management and Society, Geophys. Res. Abstr.,  18, EGU2016-825, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib78"><label>78</label><mixed-citation>
+Mateo, C. M., Hanasaki, N., Komori, D., Tanaka, K., Kiguchi, M.,
+Champathong, A., Sukhapunnaphan, T., Yamazaki, D., and Oki, T.: Assessing
+the impacts of reservoir operation to floodplain inundation by combining
+hydrological, reservoir management, and hydrodynamic models, Water Resour.
+Res., 50, 7245–7266, doi:10.1002/2013wr014845, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib79"><label>79</label><mixed-citation>
+McLeman, R., Dupre, J., Ford, L., Ford, J., Gajewski, K., and Marchildon,
+G.: What we learned from the Dust Bowl: lessons in science, policy, and
+adaptation, Popul. Environ., 35, 417–440, doi:10.1007/s11111-013-0190-z, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib80"><label>80</label><mixed-citation>
+McMillan, H., Montanari, A., Cudennec, C., Savenije, H., Kreibich, H.,
+Krueger, T., Liu, J., Mejia, A., Van Loon, A.F., Aksoy, H., Di Baldassarre,
+G., Huang, Y., Mazvimavi, D., Rogger, M., Sivakumar, B., Bibikova, T.,
+Castellarin, A., Chen, Y., Finger, D., Gelfan, A., Hannah, D., Hoekstra, A.,
+Li, H., Maskey, S., Mathevet, T., Mijic, A., Pedrozo Acuña, A., Polo,
+M., Rosales, V., Smith, P., Viglione, A., Srinivasan, V., Toth, E., van
+Nooyen, R., and Xia, J.: Panta Rhei 2013–2015: global perspectives on
+hydrology, society and change, Hydrol. Sci. J., 1–18, doi:10.1080/02626667.2016.1159308, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib81"><label>81</label><mixed-citation>
+Mekonnen, M. M. and Hoekstra, A. Y.: Four billion people facing severe water
+scarcity, Sci. Adv., 2, e1500323, <a href="http://dx.doi.org/10.1126/sciadv.1500323" target="_blank">doi:10.1126/sciadv.1500323</a>, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib82"><label>82</label><mixed-citation>
+Mera, R., Massey, N., Rupp, D., Mote, P., Allen, M., and Frumhoff, P.:
+Climate change, climate justice and the application of probabilistic event
+attribution to summer heat extremes in the California Central Valley,
+Clim. Change, 133, 427–438, doi:10.1007/s10584-015-1474-3, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib83"><label>83</label><mixed-citation>
+Mondal, A. and Mujumdar, P. P.: Return levels of hydrologic droughts under
+climate change, Adv. Water Resour., 75, 67–79, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib84"><label>84</label><mixed-citation>
+Montanari, A., Young, G., Savenije, H. H. G., Hughes, D., Wagener, T., Ren,
+L. L., Koutsoyiannis, D., Cudennec, C., Toth, E., Grimaldi, S., Blöschl,
+G., Sivapalan, M., Beven, K., Gupta, H., Hipsey, M., Schaefli, B., Arheimer,
+B., Boegh, E., Schymanski, S. J., Di Baldassarre, G., Yu, B., Hubert, P.,
+Huang, Y., Schumann, A., Post, D., Srinivasan, V., Harman, C., Thompson, S.,
+Rogger, M., Viglione, A., McMillan, H., Characklis, G., Pang, Z., and
+Belyaev, V.: “Panta Rhei – Everything Flows”: Change in hydrology and
+society – The IAHS Scientific Decade 2013–2022, Hydrol. Sci. J., 58, 1256–1275, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib85"><label>85</label><mixed-citation>
+Mosely, L. M.: Drought impacts on the water quality of freshwater systems: a
+review, Earth Sci. Rev., 140, 203–214, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib86"><label>86</label><mixed-citation>
+Nazemi, A. and Wheater, H. S.: On inclusion of water resource management in
+Earth system models – Part 1: Problem definition and representation of
+water demand, Hydrol. Earth Syst. Sci., 19, 33–61,
+doi:10.5194/hess-19-33-2015, 2015a.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib87"><label>87</label><mixed-citation>
+Nazemi, A. and Wheater, H. S.: On inclusion of water resource management in
+Earth system models – Part 2: Representation of water supply and allocation
+and opportunities for improved modeling, Hydrol. Earth Syst. Sci., 19,
+63–90, doi:10.5194/hess-19-63-2015, 2015b.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib88"><label>88</label><mixed-citation>
+Obrien, L. V., Berry, H. L., Coleman, C., and Hanigan, I. C.: Drought as a
+mental health exposure, Environ. Res., 131, 181–187, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib89"><label>89</label><mixed-citation>
+Oertel, M., Meza, F. J., and Gironás, J. Improving operational drought
+definitions – taking them to basin scale, in: Drought: Research and Science-Policy
+Interfacing, edited by: Andreu, J., Solera, A., Paredes-Arquiola, J.,
+Haro-Monteagudo, D., and van Lanen, H. A. J., CRC Press, London, 151, <a href="http://dx.doi.org/10.1201/b18077-26" target="_blank">doi:10.1201/b18077-26</a>, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib90"><label>90</label><mixed-citation>
+Oki, T. and Kanae, S.: Global hydrological cycles and world water
+resources, Science, 313, 1068–1072, 2006.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib91"><label>91</label><mixed-citation>
+Palmer, W. C.: Meteorological drought (Vol. 30). Washington, DC, USA, US
+Department of Commerce, Weather Bureau, 1965.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib92"><label>92</label><mixed-citation>
+Pearce, R., Dessai, S., and Barr, S.: Re-Framing Environmental Social
+Science Research for Sustainable Water Management in a Changing Climate,
+Water Resour. Manage., 27, 959–979, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib93"><label>93</label><mixed-citation>
+Pérez Blanco, C. D. and Gómez, C. M.: Insuring water: A practical
+risk management option in water scarce and drought-prone regions, Water
+Pol., 16, 244–263, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib94"><label>94</label><mixed-citation>
+Pokhrel, Y. N., Hanasaki, N., Yeh, P. J. F., Yamada, T. J., Kanae, S., and
+Oki, T.: Model estimates of sea-level change due to anthropogenic impacts on
+terrestrial water storage, Nature Geosci., 5, 389–392, doi:10.1038/ngeo1476,
+2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib95"><label>95</label><mixed-citation>
+Price, K., Jackson, C. R., Parker, A. J., Reitan, T., Dowd, J., and
+Cyterski, M. Effects of watershed land use and geomorphology on stream low
+flows during severe drought conditions in the southern Blue Ridge Mountains,
+Georgia and North Carolina, United States, Water Resour. Res., 47,
+W02516, <a href="http://dx.doi.org/10.1029/2010WR009340" target="_blank">doi:10.1029/2010WR009340</a>, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib96"><label>96</label><mixed-citation>
+Prosdocimi, I., Kjeldsen, T. R., and Miller, J. D.: Detection and
+attribution of urbanization effect on flood extremes using nonstationary
+flood frequency models, Water Resour. Res., 51, 4244–4262, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib97"><label>97</label><mixed-citation>
+Prudhomme C., Giuntoli, I., Robinson, E. L., Clark, D. B., Arnell, N. W.,
+Dankers, R., Fekete, B. M., Franssen, W., Gerten, D., Gosling, S. N.,
+Hagemann, S., Hannah, D. M., Kim, H., Masaki, Y., Satoh, Y., Stacke, T.,
+Wada, Y., and Wisser, D.: Hydrological droughts in the 21st century,
+hotspots and uncertainties from a global multimodel ensemble experiment, P.
+Natl. Acad. Sci. USA, 111, 3262–3267, doi:10.1073/pnas.1222473110, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib98"><label>98</label><mixed-citation>
+Pullinger, M., Anderson, B., Browne, A., and Medd, W.: New directions in understanding
+household water demand: a practices perspective, J. Water Supply, 62, 496–506, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib99"><label>99</label><mixed-citation>
+Querner, E., Morábito, J., and Tozzi, D.: SIMGRO, a GIS-Supported
+Regional Hydrologic Model in Irrigated Areas: Case Study in Mendoza,
+Argentina, J. Irrig. Drain Eng., 134, 43–48, 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib100"><label>100</label><mixed-citation>
+Rangecroft, S., Van Loon, A. F., Maureira, H., Verbist, K., and Hannah, D. M.:
+Multi-method assessment of dam effects on hydrological droughts in arid
+Chile, submitted, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib101"><label>101</label><mixed-citation>
+Rijkswaterstaat: Droogtemonitor, available at
+<a href="http://www.rijkswaterstaat.nl/water/waterdata-en-waterberichtgeving/waterberichten/droogteseizoen/droogtemonitor.aspx" target="_blank">http://www.rijkswaterstaat.nl/water/waterdata-en-waterberichtgeving</a>
+(last access: 18 May 2016), 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib102"><label>102</label><mixed-citation>
+Rijsberman, F. R.: Water scarcity: Fact or fiction?, Agr. Water
+Manage., 80, 5–22, 2006.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib103"><label>103</label><mixed-citation>
+Rodriguez-Iturbe, I., Porporato, A., Laio, F., and Ridolfi, L.: Plants in
+water-controlled ecosystems: active role in hydrologic processes and
+response to water stress: I. Scope and general outline, Adv. Water Resour., 24, 695–705, 2001.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib104"><label>104</label><mixed-citation>
+Sadri, S., Kam, J., and Sheffield, J.: Nonstationarity of low flows and
+their timing in the eastern United States, Hydrol. Earth Syst. Sci., 20,
+633–649, doi:10.5194/hess-20-633-2016, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib105"><label>105</label><mixed-citation>
+Savenije, H. H. G.: Water scarcity indicators; the deception of the
+numbers, Phys. Chem. Earth, 25, 199–204, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib106"><label>106</label><mixed-citation>
+Sheffield, J. and Wood, E.: Drought; Past Problems and Future Scenarios,
+Earthscan, London, UK, Washington DC, USA, 233 pp., 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib107"><label>107</label><mixed-citation>
+Sheffield, J., Wood, E. F., and Roderick, M. L.: Little change in global
+drought over the past 60 years, Nature, 491, 435–438, doi:10.1038/nature11575, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib108"><label>108</label><mixed-citation>
+Sheffield, J., Wood, E. F., Chaney, N., Guan, K., Sadri, S., Yuan, X.,
+Olang, L., Amani, A., Ali, A., Demuth, S., and Ogallo, L.: A drought
+monitoring and forecasting system for sub-Sahara African water resources and
+food security, B. Am. Meteor. Soc., 95,
+861–882, doi: 10.1175/BAMS-D-12-00124.1, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib109"><label>109</label><mixed-citation>
+Shukla, S. and Wood, A. W.: Use of a standardized runoff index for
+characterizing hydrologic drought, Geophys. Res. Lett., 35, L02405, doi:10.1029/2007GL032487, 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib110"><label>110</label><mixed-citation>
+Sivapalan, M., Savenije, H. H., and Blöschl, G.: Socio-hydrology: A new
+science of people and water, Hydrol. Process., 26, 1270–1276, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib111"><label>111</label><mixed-citation>
+Smit, B., Burton, I., Klein, R. J., and Wandel, J.: An anatomy of adaptation
+to climate change and variability, Clim. Change, 45, 223–251, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib112"><label>112</label><mixed-citation>
+Stagge, J. H., Kohn, I., Tallaksen, L. M., and Stahl, K.: Modeling drought
+impact occurrence based on meteorological drought indices in Europe, J. Hydrol., 530, 37–50, 2015a.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib113"><label>113</label><mixed-citation>
+Stagge, J. H., Tallaksen, L. M., Gudmundsson, L., Van Loon, A. F., and Stahl, K.:
+Candidate distributions for climatological drought indices (SPI and SPEI),
+Int. J. Climatol., 35, 4027–4040, doi:10.1002/joc.4267, 2015b.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib114"><label>114</label><mixed-citation>
+Stahl, K., Hisdal, H., Hannaford, J., Tallaksen, L. M., van Lanen, H. A. J.,
+Sauquet, E., Demuth, S., Fendekova, M., and Jódar, J.: Streamflow trends
+in Europe: evidence from a dataset of near-natural catchments, Hydrol.
+Earth Syst. Sci., 14, 2367–2382, doi:10.5194/hess-14-2367-2010, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib115"><label>115</label><mixed-citation>
+Stahl, K., Kohn, I., Blauhut, V., Urquijo, J., De Stefano, L., Acácio,
+V., Dias, S., Stagge, J. H., Tallaksen, L. M., Kampragou, E., and Van Loon,
+A. F.: Impacts of European drought events: insights from an international
+database of text-based reports, Hydrol. Earth Syst. Sci.,
+16, 801–819, doi:10.5194/hess-16-801-2016, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib116"><label>116</label><mixed-citation>
+Stahl, K., Kohn, I., De Stefano, L., Tallaksen, L. M., Rego, F. C.,
+Seneviratne, S. I., Andreu, J., and Van Lanen, H. A. J.: An impact
+perspective on pan-European drought sensitivity, in: Drought: Research and
+Science-Policy Interfacing, edited by: Andreu, J., Solera, A.,
+Paredes-Arquiola, J., Haro-Monteagudo, D., and van Lanen, H. A. J., CRC
+Press, London, 329–334, doi:10.1201/b18077-56, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib117"><label>117</label><mixed-citation>
+Stanke, C., Kerac, M., Prudhomme, C., Medlock, J., and Murray, V.: Health
+Effects of Drought: a Systematic Review of the Evidence, PLoS Currents, 5,
+doi:10.1371/currents.dis.7a2cee9e980f91ad7697b570bcc4b004, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib118"><label>118</label><mixed-citation>
+Staudinger, M., Stahl, K., and Seibert, J.: A drought index accounting for snow,
+Water Resour. Res., 5, 7861–7872, doi:10.1002/2013WR015143, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib119"><label>119</label><mixed-citation>
+Stoelzle, M., Stahl, K., Morhard, A., and Weiler, M.: Streamflow sensitivity to drought
+scenarios in catchments with different geology, Geophys. Res. Lett.,
+41, 6174–6183, doi:10.1002/2014GL061344, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib120"><label>120</label><mixed-citation>
+Tallaksen, L. M. and Van Lanen, H. A. J. (Eds.): Hydrological drought:
+processes and estimation methods for streamflow and groundwater,
+Developments in water science, 48, Elsevier Science B.V., Amsterdam, the
+Netherlands, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib121"><label>121</label><mixed-citation>
+Tallaksen, L. M.: Modelling land use change effects on low flows, FRIEND,
+1, 56–68, 1993.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib122"><label>122</label><mixed-citation>
+Teuling, A. J., Van Loon, A. F., Seneviratne, S. I., Lehner, I., Aubinet, M.,
+Heinesch, B., Bernhofer, C., Grünwald, T., Prasse, H., and Spank, U.:
+Evapotranspiration amplifies European summer drought, Geophys. Res. Lett.,
+40, 2071–2075, doi:10.1002/grl.50495, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib123"><label>123</label><mixed-citation>
+Thompson, S. E., Sivapalan, M., Harman, C. J., Srinivasan, V., Hipsey, M.
+R., Reed, P., Montanari, A., and Blöschl, G.: Developing predictive
+insight into changing water systems: use-inspired hydrologic science for the
+Anthropocene, Hydrol. Earth Syst. Sci., 17, 5013–5039,
+doi:10.5194/hess-17-5013-2013, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib124"><label>124</label><mixed-citation>
+Trambauer, P., Werner, M., Winsemius, H. C., Maskey, S., Dutra, E., and
+Uhlenbrook, S.: Hydrological drought forecasting and skill assessment for
+the Limpopo River basin, southern Africa, Hydrol. Earth Syst. Sci., 19,
+1695–1711, doi:10.5194/hess-19-1695-2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib125"><label>125</label><mixed-citation>
+Trenberth, K. E., Dai, A., van der Schrier, G., Jones, P. D., Barichivich,
+J., Briffa, K. R., and Sheffield, J. Global warming and changes
+in drought, Nature Clim. Change, 4, 17–22, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib126"><label>126</label><mixed-citation>
+Tuinenburg, O. A., Hutjes, R. W. A., Stacke, T., Wiltshire, A., and
+Lucas-Picher, P.: Effects of Irrigation in India on the Atmospheric Water
+Budget, J. Hydrometeorol., 15, 1028–1050, doi:10.1175/JHM-D-13-078.1, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib127"><label>127</label><mixed-citation>
+Van Dijk, A. I. J. M., Kirby, M., Paydar, Z., Podger, G., Mainuddin, M. D., Marvanek, S.,
+and Peña Arancibia, J.: Uncertainty in river modelling across the
+Murray-Darling Basin, A report to the Australian Government from the CSIRO
+Murray-Darling Basin Sustainable Yields Project, details published by CSIRO,
+2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib128"><label>128</label><mixed-citation>
+Van Dijk, A. I. J. M., Beck, H. E., Crosbie, R. S., Jeu, R. A., Liu, Y. Y.,
+Podger, G. M., and Viney, N. R.: The Millennium Drought in southeast
+Australia (2001–2009): Natural and human causes and implications for water
+resources, ecosystems, economy, and society, Water Resour. Res.,
+49, 1040–1057, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib129"><label>129</label><mixed-citation>
+Van Huijgevoort, M. H. J., Van Lanen, H. A. J., Teuling, A. J., and
+Uijlenhoet, R.: Identification of changes in hydrological drought
+characteristics from a multi-GCM driven ensemble constrained by observed
+discharge, J. Hydrol., 512, 421–434, doi:10.1016/j.jhydrol.2014.02.060, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib130"><label>130</label><mixed-citation>
+Van Lanen, H. A. J., Kasparek, L., Novicky, O., Querner, E. P., Fendekova, M.
+Kupczyk, E.: Human influences, Ch. 9, in: Hydrological drought: processes
+and estimation methods for streamflow and groundwater, edited by: Tallaksen, L. M.,
+and Van Lanen, H. A. J., Developments in water science, 48, Elsevier
+Science B.V., Amsterdam, the Netherlands, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib131"><label>131</label><mixed-citation>
+Van Lanen, H. A. J., Laaha, G., Kingston, D. G., Gauster, T., Ionita, M.,
+Vidal, J.-P., Vlnas, R., Tallaksen, L. M., Stahl, K., Hannaford, J., Delus,
+C., Fendekova, M., Mediero, L., Prudhomme, C., Rets, E., Romanowicz, R. J.,
+Gailliez, S., Wong, W. K., Adler, M.-J., Blauhut, V., Caillouet, L.,
+Chelcea, S., Frolova, N., Gudmundsson, L., Hanel, M., Haslinger, K.,
+Kireeva, M., Osuch, M., Sauquet, E., Stagge, J. H., and Van Loon, A. F.:
+Hydrology needed to manage droughts: the 2015 European case, Hydrol.
+Process., 30, 3097–3104, <a href="http://dx.doi.org/10.1002/hyp.10838" target="_blank">doi:10.1002/hyp.10838</a>, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib132"><label>132</label><mixed-citation>
+Van Loon, A. F.: Hydrological drought explained, Wiley Interdisciplinary
+Reviews: Water, 2, 359–392, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib133"><label>133</label><mixed-citation>
+Van Loon, A. F. and Laaha, G.: Hydrological drought severity explained by
+climate and catchment characteristics, J. Hydrol., 526, 3–14,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib134"><label>134</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: A process-based typology of
+hydrological drought, Hydrol. Earth Syst. Sci., 16, 1915–1946,
+doi:10.5194/hess-16-1915-2012, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib135"><label>135</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: Making the distinction between water
+scarcity and drought using an observation-modeling framework,
+Water Resour. Res., 49, 1483–1502, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib136"><label>136</label><mixed-citation>
+Van Loon, A. F. and Van Lanen, H. A. J.: Testing the observation-modelling
+framework to distinguish between hydrological drought and water scarcity in
+case studies around Europe, Europ. Water, 49, 65–75, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib137"><label>137</label><mixed-citation>
+Van Loon, A. F., Ploum, S. W., Parajka, J., Fleig, A. K., Garnier, E.,
+Laaha, G., and Van Lanen, H. A. J.: Hydrological drought types in cold
+climates: quantitative analysis of causing factors and qualitative survey of
+impacts, Hydrol. Earth Syst. Sci., 19, 1993–2016,
+doi:10.5194/hess-19-1993-2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib138"><label>138</label><mixed-citation>
+Van Loon, A. F., Gleeson, T., Clark, J., Van Dijk, A. I. J. M., Stahl, K.,
+Hannaford, J., Di Baldassarre, G., Teuling, A. J., Tallaksen, L. M.,
+Uijlenhoet, R., Hannah, D. M., Sheffield, J., Svoboda, M., Verbeiren, B.,
+Wagener, T., Rangecroft, S., Wanders, N., and Van Lanen, H. A. J.: Drought in
+the Anthropocene, Nature Geosci., 9, 89–91, doi:10.1038/ngeo2646,
+2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib139"><label>139</label><mixed-citation>
+Van Oel, P. R., Krol, M. S., and Hoekstra, A. Y.: Application of multi-agent
+simulation to evaluate the influence of reservoir operation strategies on
+the distribution of water availability in the semi-arid Jaguaribe basin,
+Brazil, Phys. Chem. Earth, 47, 173–181, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib140"><label>140</label><mixed-citation>
+Van Vliet, M. T. H. and Zwolsman, J. J. G.: Impact of summer droughts on
+the water quality of the Meuse river, J. Hydrol., 353, 1–17,
+2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib141"><label>141</label><mixed-citation>
+Veldkamp, T. I., Wada, Y., de Moel, H., Kummu, M., Eisner, S., Aerts, J. C.,
+and Ward, P. J.: Changing mechanism of global water scarcity events: Impacts
+of socioeconomic changes and inter-annual hydro-climatic variability,
+Global Environ. Change, 32, 18–29, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib142"><label>142</label><mixed-citation>
+Verbeiren, B., Huysmans, M., Tychon, B., Jacquemin, I., Canters, F.,
+Vanderhaegen,
+S., Engelen, G., Poelmans, L., De Becker, P., Tsakiris, G., Vangelis, H., and
+Batelaan, O.: Drought-related vulnerability and risk assessment of
+groundwater resources under temperate conditions, Conference Proceedings,
+13th International Conference on Environmental Science and Technology
+Athens, Greece, 5–7 September 2013, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib143"><label>143</label><mixed-citation>
+Vicente-Serrano, S. M., Beguería, S., Lorenzo-Lacruz, J., Camarero,
+J. J., López-Moreno, J. I., Azorin-Molina, C., Revuelto, J.,
+Morán-Tejeda, E., and Sanchez-Lorenzo, A.: Performance of drought indices
+for ecological, agricultural, and hydrological applications, Earth Interact.,
+16, 1–27, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib144"><label>144</label><mixed-citation>
+Vicente-Serrano, S. M., Gouveia, C., Camarero, J. J., Beguería, S.,
+Trigo, R., López-Moreno, J. I., Azorín-Molina, C., Pasho, E.,
+Lorenzo-Lacruz, J., Revuelto, J., and Morán-Tejeda, E.: Response of
+vegetation to drought time-scales across global land biomes, P. Natl. Acad.
+Sci., 110, 52–57, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib145"><label>145</label><mixed-citation>
+Vidal, J.-P., Martin, E., Kitova, N., Najac, J., and Soubeyroux, J.-M.:
+Evolution of spatio-temporal drought characteristics: validation, projections
+and effect of adaptation scenarios, Hydrol. Earth Syst. Sci., 16, 2935–2955,
+doi:10.5194/hess-16-2935-2012, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib146"><label>146</label><mixed-citation>
+Viglione, A., Di Baldassarre, G., Brandimarte, L., Kuil, L., Carr, G.,
+Salinas, J. L., and Blöschl, G.: Insights from socio-hydrology modelling
+on dealing with flood risk–roles of collective memory, risk-taking attitude
+and trust, J. Hydrol., 518, 71–82, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib147"><label>147</label><mixed-citation>
+Vogel, R. M., Lall, U., Cai, X., Rajagopalan, B., Weiskel, P., Hooper, R. P.,
+and Matalas, N. C.: Hydrology: The interdisciplinary science of water,
+Water Resour. Res., 51, 4409–4430, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib148"><label>148</label><mixed-citation>
+Vorogushyn, S. and Merz, B.: Flood trends along the Rhine: the role of river
+training, Hydrol. Earth Syst. Sci., 17, 3871–3884,
+doi:10.5194/hess-17-3871-2013, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib149"><label>149</label><mixed-citation>
+Vörösmarty, C. J., Green, P., Salisbury, J., and Lammers, R. B.:
+Global water resources: vulnerability from climate change and population
+growth, Science, 289, 284–288, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib150"><label>150</label><mixed-citation>
+Vörösmarty, C. J., Lettenmaier, D., Leveque, C., Meybeck, M.,
+Pahl-Wostl, C., Alcamo, J., and Naiman, R.: Humans transforming the global
+water system, Eos, Trans. Am. Geophys. Union, 85, 509–514, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib151"><label>151</label><mixed-citation>
+Vörösmarty, C. J., Hoekstra, A. Y., Bunn, S. E., Conway, D., and
+Gupta, J.: Fresh water goes global, Science, 349, 478–479, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib152"><label>152</label><mixed-citation>
+Vörösmarty, C. J., McIntyre, P. B., Gessner, M. O., Dudgeon, D.,
+Prusevich, A., Green, P., Glidden, S., Bunn, S. E., Sullivan, C. A., Reidy
+Liermann, C., and Davies, P. M.: Global threats to human water security and
+river biodiversity, Nature, 467, 555–561, doi:10.1038/nature09440, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib153"><label>153</label><mixed-citation>
+Wada, Y., Van Beek, L. P. H., Viviroli, D., Dürr, H. H., Weingartner, R.,
+and Bierkens, M. F. P.: Global monthly water stress: 2. Water demand and
+severity of water stress, Water Resour. Res., 47, W07518,
+doi:10.1029/2010WR009792, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib154"><label>154</label><mixed-citation>
+Wada, Y., van Beek, L. P. H., Wanders, N., and Bierkens, M. F. P.: Human water
+consumption intensifies hydrological drought worldwide, Environ. Res. Lett., 8,
+034036, doi:10.1088/1748-9326/8/3/034036, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib155"><label>155</label><mixed-citation>
+Wagener, T., Sivapalan, M., Troch, P., and Woods, R.: Catchment
+Classification and Hydrologic Similarity, Geogr. Compass, 1, 901–931,
+doi:10.1111/j.1749-8198.2007.00039.x, 2007.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib156"><label>156</label><mixed-citation>
+Wagener, T., Sivapalan, M., Troch, P. A., McGlynn, B. L., Harman, C. J.,
+Gupta, H. V., and Wilson, J. S.: The future of hydrology: An evolving
+science for a changing world. Water Resour. Res., 46, W05301, <a href="http://dx.doi.org/10.1029/2009WR008906" target="_blank">doi:10.1029/2009WR008906</a>, 2010.
+
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib157"><label>157</label><mixed-citation>
+Wanders, N. and Wada, Y.: Human and climate impacts on the 21st century
+hydrological drought, J. Hydrol., 526, 208–220, <a href="http://dx.doi.org/10.1016/j.jhydrol.2014.10.047" target="_blank">doi:10.1016/j.jhydrol.2014.10.047</a>, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib158"><label>158</label><mixed-citation>
+Wanders, N., Wada, Y., and Van Lanen, H. A. J.: Global hydrological
+droughts in the 21st century under a changing hydrological regime,
+Earth Syst. Dynam., 6, 1–15, doi:10.5194/esd-6-1-2015, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib159"><label>159</label><mixed-citation>
+Watts, G., von Christierson, B., Hannaford, J., and Lonsdale, K.: Testing
+the resilience of water supply systems to long droughts, J.
+Hydrol., 414, 255–267, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib160"><label>160</label><mixed-citation>
+Whitfield, P. H., Burn, D. H., Hannaford, J., Higgins, H., Hodgkins, G. A.,
+Marsh, T., and Looser, U.: Reference hydrologic networks I. The status and
+potential future directions of national reference hydrologic networks for
+detecting trends, Hydrol. Sci. J., 57, 1562–1579, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib161"><label>161</label><mixed-citation>
+Wilhite, D. A. and Vanyarkho, O.: Pervasive impacts of a creeping
+phenomenon, in: Drought: A Global Assessment I, edited by: Wilhite, D. A.,
+Routledge, New York/London, 245–255, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib162"><label>162</label><mixed-citation>
+Wilhite, D. A. and Glantz, M. H.: Understanding: the drought phenomenon:
+the role of definitions, Water Int., 10, 111–120, 1985.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib163"><label>163</label><mixed-citation>
+Wilhite, D. A. and Buchanan-Smith, M.: Drought as hazard: understanding the
+natural and social context. Drought and Water Crises – Science, Technology
+and Management issues, Taylor &amp; Francis,  2005.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib164"><label>164</label><mixed-citation>
+Williams, A. P., Seager, R., Abatzoglou, J. T., Cook, B. I., Smerdon, J. E., and
+Cook, E. R.: Contribution of anthropogenic warming to California drought
+during 2012–2014, Geophys. Res. Lett., 42, 6819–6828, <a href="http://dx.doi.org/10.1002/2015GL064924" target="_blank">doi:10.1002/2015GL064924</a>, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib165"><label>165</label><mixed-citation>
+Winter, T. C., Harvey, J. W., Franke, O. L., and Alley, W. M.: Ground water and
+surface water: A single resource. USGS Circular 1139, available at:
+<a href="http://pubs.usgs.gov/circ/circ1139/index.html" target="_blank">http://pubs.usgs.gov/circ/circ1139/index.html</a> (last access:
+18 May 2016), 1998.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib166"><label>166</label><mixed-citation>
+Wisser, D., Fekete, B. M., Vörösmarty, C. J., and Schumann, A. H.:
+Reconstructing 20th century global hydrography: a contribution to the
+Global Terrestrial Network- Hydrology (GTN-H), Hydrol. Earth Syst. Sci., 14,
+1–24, doi:10.5194/hess-14-1-2010, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib167"><label>167</label><mixed-citation>
+Wood, E. F., Roundy, J. K., Troy, T. J., Van Beek, L. P. H., Bierkens, M.
+F., Blyth, E., and Whitehead, P: Hyperresolution global land surface
+modeling: Meeting a grand challenge for monitoring Earth's terrestrial
+water, Water Resour. Res., 47, W05301, <a href="http://dx.doi.org/10.1029/2010WR010090" target="_blank">doi:10.1029/2010WR010090</a>, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib168"><label>168</label><mixed-citation>
+Yevjevich, V. M.: An objective approach to definitions and investigations of
+continental hydrologic droughts. Hydrol. Pap., Colorado State
+University,  no. 23, 25 pp., 1967.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib169"><label>169</label><mixed-citation>
+Yevjevich, V. M.: Floods and society,  Coping with Floods, 3–9,
+Springer, the Netherlands, 1994.
+</mixed-citation></ref-html>--></article>

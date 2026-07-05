@@ -14,6 +14,13 @@ Internal skills should make the workflow more inspectable, not hide external wor
 
 ## Skill Categories
 
+This repository uses a simple ownership distinction:
+
+- **Internal skills** are skills written and maintained in this repository under `skills/`.
+- **External tools or skills** are installable or downloadable tools, packages, services, databases, templates, or skills maintained outside this repository.
+
+All seven skills in `skills/` are internal workflow-native skills. Keeping a skill internal does not mean the framework should reimplement every operation itself. Several internal skills are intentionally designed to wrap, orchestrate, or verify external tools while preserving the framework's stage packages, evidence records, and gates.
+
 ### 1. External Mature Tools or Skills
 
 These are tools, services, plugins, templates, databases, or established packages that already solve a common research task.
@@ -72,7 +79,7 @@ stage:
 | `/venue-calibration` | Planning, Reporting | Calibrate target outlet and extract plan constraints |
 | `/research-skill-card-distiller` | Planning | Convert retrieved or user-supplied papers into skill cards |
 | `/model-contract-runner` | Modeling | Execute the approved modeling contract end to end |
-| `/figure-table-narrative` | Reporting | Design the visual plan and tie figures/tables to claims |
+| `/figure-table-narrative` | Reporting | Plan visual evidence and tie figures/tables to claims; use external tools such as CCF-Figure for visual generation |
 | `/claim-evidence-mapper` | Reporting, Reviewing | Map every claim to evidence or flag it as unsupported |
 | `/route-aware-reviewer` | Reviewing | Stress-test the evidence package and route findings |
 | `/gate-manager` | All stages | Record gate decisions and advance to the next stage |
@@ -93,6 +100,18 @@ These are the reusable skills maintained in this repository. Their job is not to
 - manage gates and backtracking
 
 Workflow-native skills should declare where external tools can be used and what evidence must be brought back into the stage package.
+
+Current internal skills fall into two practical groups:
+
+| Internal skill | Relationship to external tools |
+|---|---|
+| `venue-calibration` | Wraps external venue pages, author guidelines, templates, and exemplar papers; keeps the venue constraints inside Planning and Reporting packages |
+| `research-skill-card-distiller` | May use external literature-search or deep-research outputs; keeps the reusable skill-card format internal |
+| `model-contract-runner` | Uses external execution tools such as Python, R, Jupyter, containers, APIs, or domain packages; keeps success rules, run logs, repair decisions, and gate readiness internal |
+| `figure-table-narrative` | Does not generate figures itself; hands method/conceptual visuals to CCF-Figure or diagram tools and empirical visuals to Model/plotting tools; keeps claim-visual alignment, evidence status, placement, and caption limits internal |
+| `claim-evidence-mapper` | May use external citation or retrieval tools for support; keeps the final claim-evidence map and unsupported-claim flags internal |
+| `route-aware-reviewer` | May use external reviewer simulation or checklists; keeps severity labels and route decisions internal |
+| `gate-manager` | Mostly framework-native; records human gates, synthetic gates, transitions, and backtracking |
 
 ### 3. Project-Specific Skills
 

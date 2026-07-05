@@ -16,6 +16,25 @@ your approval. Every stage ends with a gate where you decide what happens next.
 
 ## Before You Start: What to Prepare
 
+The researcher agent should lead the workflow. You should not need to remind it
+what step comes next. When it pauses, it should tell you the current stage, what
+it just completed, the next concrete action, and the specific decision or input
+it needs from you.
+
+At the start of Planning, the researcher agent should not begin by asking a long
+list of questions. It should first tell you what it thinks you want to do, how
+it proposes to run the workflow, what package it will create, and what it will
+do next. Your job is to confirm that understanding or correct the part that is
+wrong. Once the goal is clear enough, the agent should start Planning rather
+than keep asking low-value preference questions.
+
+For a real research project, Planning should normally include a focused
+literature/prior-work and novelty check before the Planning Package is treated
+as ready. This can be light, but it should answer whether the idea has already
+been studied, what adjacent work did, and whether the project is better framed
+as a paper, demo, replication, tool, dataset, or internal report. If you only
+confirm that the topic is interesting, that is not approval to start Modeling.
+
 You do not need to write code. You do need to have ready:
 
 - **A research question or topic**, even a rough one. The Planning stage will
@@ -25,31 +44,45 @@ You do not need to write code. You do need to have ready:
 - **A rough idea of your output goal**: journal article, policy report, thesis
   chapter, slide deck, or something else. If you are not sure, the AI will ask.
 
+For each new real research project, the researcher agent should create a
+separate project folder under:
+
+```text
+research/<research-name>/
+```
+
+Inside that folder, stage packages, discussion notes, run artifacts, data,
+code, figures, tables, deliverables, and archived files should be kept in their
+own subfolders. This keeps one research project from getting mixed with another
+and supports step-by-step discussion.
+
+If your prompt is already clear enough, the AI should make a reasonable proposed
+route and ask whether that is what you mean. It should not require you to design
+the workflow before it begins.
+
 ---
 
 ## Starting a Session
 
 Open a new session with your AI agent (Codex or Claude Code depending on your
-setup) and paste this prompt, filling in the bracketed parts:
+setup) and say only two things: what you want to do, and what the topic is.
 
 ```text
-Please run this repository's AI-native research workflow.
-
-My research topic is: [describe your question or problem in plain language]
-My domain is: [e.g. environmental science, public health, education policy]
-My target output is: [e.g. journal article, policy report, slide deck — or "not sure yet"]
-
-I have domain materials here: [path or folder name, or "none yet"]
-
-Read AGENTS.md (or CLAUDE.md) and WORKFLOW-CONFIG.md first to confirm your role,
-then begin Planning. Pause at each gate for my approval.
-This is a real research project, so do not use synthetic gates.
+Read WORKFLOW-CONFIG.md and AGENTS.md first, confirm your role, then follow this repository's workflow starting with Pre-Planning Session Setup.
+The topic is: [describe your question, problem, or research idea in plain language].
 ```
 
-If you just want to try the workflow with a small test question first, add:
+That is enough. The researcher agent should read the workflow instructions,
+confirm its role, ask you to choose the workflow mode and reviewer strategy,
+then propose a user-need profile for you to confirm or correct. You can add
+domain materials, output goals, constraints, or target venue later when the
+agent asks or when they become relevant.
+
+If you just want to try the framework with a small test question first, use:
 
 ```text
-This is a framework test — please use synthetic gates and label them clearly.
+Read WORKFLOW-CONFIG.md and AGENTS.md first, confirm your role, then run a small framework smoke test with synthetic gates.
+The topic is: [short test topic, or "choose one for me"].
 ```
 
 ---
@@ -66,12 +99,20 @@ your decision before moving on.
 | **Reporting** | Packages evidence, drafts the paper, report, or other deliverable | Is this ready for review? |
 | **Reviewing** | Critiques the work and flags what needs fixing | What should be revised, accepted, or stopped? |
 
+For real projects, the AI should begin with Planning only. Modeling, Reporting,
+and Reviewing should not be treated as active work until the previous gate is
+approved.
+
 ---
 
 ## At the Gates: What to Say
 
 At the end of each stage, the AI will present a **gate decision** — a short
 summary of what was done and a list of options. You choose one:
+
+When the chat interface supports structured choices, the AI should show
+clickable options for the gate, such as approve, revise, or backtrack. You can
+still type a condition or correction instead of choosing one of the buttons.
 
 **Approve and continue**
 ```text
@@ -214,6 +255,21 @@ expertise as evidence. The AI should not override your domain judgment.
 ```text
 Please stop. We have not finished [Planning / Modeling]. Go back and
 complete [specific missing item] before continuing.
+```
+
+For example:
+```text
+Please stop. We have not finished Planning. Before writing the final Planning
+Package or moving to Modeling, do a focused literature/prior-work scan and tell
+me whether this idea has already been done, what gap remains, and whether it is
+worth pursuing.
+```
+
+**The AI waits for you to manage the workflow.**
+```text
+Please lead the workflow according to AGENTS.md. Tell me the current stage,
+the current package path, the next action you will take, and the decision you
+need from me before proceeding.
 ```
 
 **The AI produces output that looks like a report summary, not a real paper.**

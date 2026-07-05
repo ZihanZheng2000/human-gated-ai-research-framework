@@ -2,11 +2,52 @@
 
 This document summarizes how the workflow stages connect. Each stage outputs one compact package. Downstream stages should read the approved package rather than reconstructing context from scattered notes.
 
+## Pre-Planning Session Setup
+
+Before the workflow enters Planning, the researcher agent should run a short
+setup gate. This setup gate is not a research stage and does not produce a
+Planning package. It determines how the rest of the workflow should be led.
+
+The setup gate has two decisions:
+
+1. Confirm the active role configuration from `WORKFLOW-CONFIG.md`.
+2. Ask the user to choose the workflow mode and reviewer strategy.
+
+Workflow mode choices:
+
+| Mode | Meaning | Default use |
+|---|---|---|
+| Auto-until-needed | The researcher agent proceeds through the workflow and stops only at gates, missing information, route-changing decisions, or genuine uncertainty/problems. | smoke tests, mature ideas, speed-first internal work |
+| Step-by-step discussion | The researcher agent discusses each meaningful step or decision with the user before expanding the package or moving on. | broad, uncertain, high-stakes, or collaborative projects |
+
+Reviewer strategy choices:
+
+| Option | Meaning |
+|---|---|
+| Use reviewer | Run the maker-checker loop before the user gate: review request, reviewer critique, researcher response, then gate. |
+| Skip reviewer | Record the skipped-review reason, accepted risk, and revisit trigger in the package before the user gate. |
+
+Recommended default for real research: **Step-by-step discussion** plus
+**Use reviewer**. Recommended default for smoke tests: **Auto-until-needed** plus
+synthetic gates and either skipped reviewer with recorded risk or a clearly
+labeled synthetic reviewer pass.
+
+After the setup gate, the researcher begins Planning orientation using the
+selected mode.
+
+For real research projects, Planning orientation is followed by at least a
+focused prior-work and novelty calibration before the Planning Package is
+treated as gate-ready. The calibration may be light, but it should check whether
+the idea has already been studied, what adjacent work did, and what research
+value remains. It may be skipped or deferred only when the user explicitly
+chooses that route or the project is clearly a smoke test/demo, and the package
+must record the skipped/deferred reason, accepted risk, and revisit trigger.
+
 ## Linear Path
 
 | Stage | Primary input | Primary output | Gate |
 |---|---|---|---|
-| Planning | user need, idea maturity, optional prior-work/novelty scan, feasibility checks, research-skill cards or skill candidates, Planning Reviewer critique, researcher-agent response/fix | Approved Planning Package | Planning Gate after reviewer response |
+| Planning | user need, focused prior-work/novelty calibration or explicit skip/defer rationale, idea maturity, feasibility checks, research-skill cards or skill candidates, Planning Reviewer critique, researcher-agent response/fix | Approved Planning Package | Planning Gate after reviewer response |
 | Modeling / Execution | Approved Planning Package | Modeling Package, often after an exploratory demo phase inside Modeling | Modeling Gate |
 | Reporting / Output Packaging | Approved Planning Package + Modeling Package | Reporting Package and reader-facing deliverables | Reporting Gate |
 | Reviewing | Approved Planning Package + Modeling Package + Reporting Package | Review Package | Reviewing Gate |
@@ -25,6 +66,57 @@ dashboard, web page, software package, technical appendix, or review packet is
 a Reporting output mode, not a separate stage. Reviewing happens after
 Reporting because reviewer agents need a concrete package and deliverables to
 inspect.
+
+## Researcher-Led Step Protocol
+
+The researcher agent is responsible for driving the workflow. The user should
+not need to remind the agent what the next stage action is.
+
+At the start of every stage, the researcher agent should state:
+
+1. current stage
+2. package path being created or revised
+3. immediate next action
+4. expected stop condition
+5. user decision needed now, if any
+
+At the start of Planning, the researcher agent should use a confirmation-led
+orientation:
+
+1. "I understand you want to do X."
+2. "I propose to run this workflow as Y."
+3. "The active stage is Planning, and I will create or revise Z package."
+4. "If that is right, I will proceed; if not, correct the part that is wrong."
+
+This orientation is not a questionnaire. The researcher may ask a concise
+question only when the answer would change the route, such as the research
+question, final output, gate mode, domain/source choice, implementation
+location, or claim level. Once the intent is clear enough to plan, the
+researcher should start the Planning package rather than keep asking for
+preferences.
+
+The researcher agent should proceed within the current stage until a real stop
+condition is reached: missing information, missing files or permissions,
+reviewer handoff, user gate, or an explicit user pause. When it stops, it should
+name the next concrete action or decision rather than ending with an open-ended
+request.
+
+For real projects, Planning begins with orientation and proposed user-need confirmation,
+not with filling every package. Modeling, Reporting, and Reviewing remain
+inactive until the upstream gate approves them. Existing downstream templates in
+a scaffold are placeholders only and should stay marked as not started.
+
+User confirmation of the topic or rough research direction is not Planning Gate
+approval. Do not start Modeling after the user merely agrees that the proposed
+research idea is interesting or worth exploring. First complete or explicitly
+defer the prior-work/novelty calibration, write the Planning Package, run or
+record the reviewer pass, and ask for the Planning Gate decision.
+
+User-need confirmation does not mean waiting for the user to design the
+workflow. The researcher owns the next proposed action. It should make a
+reasonable proposal, present likely answers for decision-shaping fields, surface
+assumptions that would materially affect the project, and then move once the
+user confirms or corrects the proposal.
 
 ## Stage Maker-Checker Rule
 
@@ -67,6 +159,25 @@ Backtracking is normal. It is not a system failure.
 ## Package Discipline
 
 The workflow should avoid creating many unreviewed side artifacts. Extra files can exist for code, data, figures, validation outputs, working notes, and drafts, but each stage should summarize them in its package.
+
+For real research projects, create a dedicated project folder under
+`research/<research-name>/` and use the layout in
+[research-organization.md](research-organization.md). New project packages
+belong in `research/<research-name>/packages/`; detailed notes belong in
+`research/<research-name>/notes/`; run-scoped review requests, critiques,
+manifests, and logs belong in `research/<research-name>/artifacts/<run_id>/`.
+
+For discussion-first projects, do not force all work into the stage package at
+once. Use supporting notes or matrices for detailed exploration, and keep the
+stage package as the compact checkpoint that records accepted decisions, open
+questions, evidence status, and links to details. The researcher should
+consolidate only after the relevant sub-step has been discussed or accepted by
+the user.
+
+Only the active stage package should be substantively edited. Downstream package
+templates may be created for scaffolding only when useful, but they must not be
+filled, interpreted as progress, or presented as active stage outputs before the
+workflow reaches those stages.
 
 Required packages:
 
@@ -114,6 +225,26 @@ Each gate should answer three questions:
 
 For autonomous framework tests, gate decisions must be labeled as **synthetic gates** rather than real user approvals. Synthetic gates are acceptable for smoke tests and QA runs, but they do not replace user, domain-owner, or expert approval in a real research project.
 
+When the runtime provides a structured user-choice tool such as
+`request_user_input`, the researcher agent should present each real user gate
+with clickable choices instead of relying only on free-text replies. The prompt
+should still summarize the package, reviewer findings, researcher response, and
+consequences of approval before asking for the choice.
+
+Use 2-3 mutually exclusive gate choices. Put the recommended choice first and
+label it as recommended only when the evidence supports that recommendation.
+Always leave room for the user's free-form correction or condition. If the
+structured-choice tool is unavailable, present the same choices as plain text.
+
+Default gate choices:
+
+| Gate | Structured choices |
+|---|---|
+| Planning Gate | Approve for Modeling / Revise Planning / Backtrack or terminate |
+| Modeling Gate | Approve for Reporting / Revise Modeling / Backtrack to Planning |
+| Reporting Gate | Approve for Reviewing / Revise Reporting / Request Modeling or Planning addendum |
+| Reviewing Gate | Finalize or archive / Revise routed issues / Backtrack to earlier stage |
+
 ## Approval Semantics
 
 Gate approval is an action, not only a status label. When the user approves a stage, the default behavior is to immediately begin the next downstream stage in the same turn if there is enough context and no explicit pause request.
@@ -145,6 +276,8 @@ At each gate, Codex should guide the user with a short decision prompt:
 - what decision is needed
 - what will happen if the user approves
 - what alternative routes are available
+- structured clickable choices when available, with a free-form path for
+  conditions or corrections
 
 Use concrete language such as:
 

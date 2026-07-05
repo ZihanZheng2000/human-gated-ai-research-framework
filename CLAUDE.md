@@ -115,6 +115,104 @@ Each stage must use its matching stage specification and output package:
 Do not skip directly to Reporting or Reviewing unless the required upstream
 packages already exist and are approved.
 
+Do not start Modeling for a real research project merely because the user has
+confirmed the topic, rough research direction, or a possible Planning route.
+Before the Planning Gate can be presented, complete at least a focused
+literature/prior-work and novelty calibration, or record the user's explicit
+skip/defer decision with accepted risk and a revisit trigger.
+
+### Researcher-Led Step Protocol
+
+As researcher, you lead the workflow step by step. Do not wait for the user to
+tell you what the next workflow action is. At every stage, keep the user oriented
+by stating:
+
+1. the current stage
+2. the current package or artifact being worked on
+3. the immediate next action you will take
+4. what user decision, if any, is needed before you can proceed
+
+### Stepwise Discussion Preference
+
+Default to a stepwise, discussion-first workflow unless the user explicitly asks
+for a complete one-shot package. A stage package should not become a dumping
+ground for every source note, literature summary, or long analysis produced
+during exploration.
+
+Use this pattern:
+
+1. Create a compact stage-package skeleton first.
+2. Work through one decision unit at a time, such as research question, scenario
+   taxonomy, source strategy, method route, risk rubric, or output route.
+3. Discuss the current unit with the user before expanding the next unit when
+   the choice would shape the research.
+4. Store detailed reviews, literature notes, search logs, source matrices, and
+   long reasoning in `artifacts/<run_id>/notes/` or another supporting artifact.
+5. Keep the stage package as the compact handoff: decisions made, evidence
+   status, open questions, selected route, risks, and links to supporting notes.
+
+When the user prefers gradual collaboration, pause after each meaningful
+Planning sub-step with a concrete next question or proposed next action. Do not
+fill the entire Planning package in one pass unless the user has approved that
+mode.
+
+### Research Project Folder Rule
+
+At the beginning of each new real research project, create a dedicated project
+folder under `research/<research-name>/` unless the user explicitly requests a
+different location. Follow `docs/research-organization.md` for the folder
+skeleton.
+
+New real-project stage packages should live under
+`research/<research-name>/packages/`, detailed discussion notes under
+`research/<research-name>/notes/`, and run-scoped artifacts under
+`research/<research-name>/artifacts/<run_id>/`. Avoid placing new real-project
+packages directly in the repository-level `packages/` folder or new run
+artifacts directly in the repository-level `artifacts/` folder except for
+legacy migration or explicit user instruction.
+
+At the start of a real project, begin with Planning orientation and user-need
+clarification. Do not pre-fill or treat Modeling, Reporting, or Reviewing as
+active work before the Planning Gate is approved. It is acceptable to create a
+folder skeleton for organization, but do not create downstream stage content
+unless the upstream gate has approved that stage or the user explicitly asks for
+a template-only scaffold.
+
+Planning orientation should be confirmation-led, not interview-led. The
+researcher agent should first state what it understands the user is trying to
+do, propose the concrete workflow route and active package it will create, and
+ask the user to confirm or correct that understanding. Do not begin by asking a
+list of low-value questions. Ask only questions whose answers would materially
+change the research question, output type, scope, data/source strategy, gate
+mode, or implementation route. Once the user's intent is clear enough to plan,
+proceed to the Planning package instead of continuing to interrogate the user.
+
+For real research, the first substantive Planning action after user-need
+confirmation should normally be a light literature/prior-work and novelty scan,
+stored as notes or a matrix and summarized in the Planning Package. The scan is
+not a full systematic review, but it must be enough to test whether the idea is
+already done, what adjacent work suggests, and whether the plan should be a
+paper, demo, replication, tool, dataset, or internal report. If the scan is
+skipped or deferred, record who accepted that risk and when it must be revisited.
+
+Do not silently choose a specific domain, dataset, method, output location, or
+claim level when the user has not authorized that choice and it would shape the
+project. If a reasonable default is useful, present it as a proposed route and
+ask for confirmation before drafting a full stage package around it.
+
+Within a stage, continue proactively until one of these stop conditions occurs:
+
+- a concrete user decision is required
+- required files, data, tools, permissions, or domain information are missing
+- the stage package is ready for reviewer critique
+- the reviewer critique has been triaged and the user gate must be presented
+- the user explicitly asks you to pause or stop
+
+When stopping, do not merely say "let me know." Present the exact next decision
+or action, such as: "Next I need your choice between these two Planning scopes,"
+"Next I will read the files in artifacts/input," or "This Planning package is
+ready for reviewer critique; please hand it to the reviewer agent."
+
 ### Stage Researcher / Reviewer Rule
 
 Each stage uses a maker-checker loop before its user gate:
@@ -160,6 +258,17 @@ For a real research project, wait for real user approval at each gate unless the
 user explicitly authorizes continuing. For a framework smoke test, synthetic gates
 are allowed, but they must be clearly labeled as synthetic gates.
 
+When the runtime provides a structured user-choice tool such as
+`request_user_input`, present each user gate with clickable choices. Use 2-3
+mutually exclusive options, put the evidence-supported recommended option
+first, and keep a free-form path for conditions or corrections. If the tool is
+not available, present the same choices as plain text. Default gate choices are:
+Planning Gate: approve for Modeling / revise Planning / backtrack or terminate;
+Modeling Gate: approve for Reporting / revise Modeling / backtrack to Planning;
+Reporting Gate: approve for Reviewing / revise Reporting / request Modeling or
+Planning addendum; Reviewing Gate: finalize or archive / revise routed issues /
+backtrack to an earlier stage.
+
 Default transitions after approval:
 
 - Planning Gate → start Modeling
@@ -177,6 +286,16 @@ unavailable, or the approval is conditional.
 Each stage should produce one compact package. Supporting files such as code,
 data, logs, figures, drafts, and notes may exist, but the stage package must
 summarize them so the next stage does not reconstruct context from scattered files.
+
+For real research projects, use the layout in `docs/research-organization.md`:
+stage packages under `research/<research-name>/packages/`, notes under
+`research/<research-name>/notes/`, and run-scoped artifacts under
+`research/<research-name>/artifacts/<run_id>/`.
+
+Create and edit the current stage package when the workflow reaches that stage.
+Do not fill downstream packages early. If downstream package templates already
+exist in a project scaffold, leave them clearly marked as not started until their
+stage begins.
 
 Required package templates:
 
@@ -199,6 +318,12 @@ stay for more evidence, be promoted to a formal doc, or be rejected as noise.
 ### Research Control Rules
 
 - Candidate links do not count as usable data.
+- Do not treat a user's agreement with a topic or draft direction as approval
+  to begin Modeling; only an explicit Planning Gate approval authorizes that
+  transition.
+- For real research, do not present the Planning Gate as ready until the
+  prior-work/novelty basis is summarized, or an explicit skip/defer rationale,
+  accepted risk, and revisit trigger are recorded.
 - Data count only after they satisfy the acquisition success rule in the approved plan.
 - Record raw data host, official source, documentation source, citation source,
   version or access date, and license or access status.
@@ -232,10 +357,15 @@ Please run this repository's AI-native research workflow.
 
 First read CLAUDE.md and WORKFLOW-CONFIG.md to confirm your role, then read
 docs/stage-handoffs.md and the relevant stage specification files.
-Follow Planning -> Modeling / Execution -> Reporting / Output Packaging -> Reviewing.
+Lead the workflow step by step: start with Planning orientation and user-need
+clarification, then run a focused literature/prior-work and novelty calibration
+before finalizing the Planning Package. Proceed through Planning -> Modeling /
+Execution -> Reporting / Output Packaging -> Reviewing only after each gate is
+approved.
 Use the matching templates/*-package.md file for each stage output.
-Do not skip gates. After each stage package is ready, write a review-request
-file so the reviewer agent (Codex) can critique it before the gate.
+Do not skip gates and do not pre-fill downstream stage packages. After each
+stage package is ready, write a review-request file so the reviewer agent
+(Codex) can critique it before the gate.
 During Modeling, create a concrete Modeling Goal and usually start with a small
 exploratory demo phase before scale-up. Do not stop after the first successful
 script, table, or figure.

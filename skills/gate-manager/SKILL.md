@@ -25,11 +25,28 @@ description: Use whenever Planning, Modeling, Reporting, or Reviewing reaches a 
 
 1. Record the gate decision.
 2. Label whether the decision is a real user gate, synthetic gate, or mixed gate.
-3. If approved, mark the package status as approved.
-4. Immediately begin the next stage unless the user explicitly pauses or the next stage is blocked.
-5. If revised, route changes to the current stage.
-6. If backtracked, route to the appropriate earlier stage.
-7. If blocked, write the smallest next action needed.
+3. When a structured user-choice tool such as `request_user_input` is available,
+   present the gate as clickable choices before accepting free-form follow-up.
+   Use 2-3 mutually exclusive choices, put the evidence-supported recommended
+   choice first, and allow free-form conditions or corrections.
+4. If the structured-choice tool is unavailable, present the same choices as
+   plain text.
+5. If approved, mark the package status as approved.
+6. Immediately begin the next stage unless the user explicitly pauses or the next stage is blocked.
+7. If revised, route changes to the current stage.
+8. If backtracked, route to the appropriate earlier stage.
+9. If blocked, write the smallest next action needed.
+
+## Structured Gate Choices
+
+Use these defaults unless the stage package requires a more specific option:
+
+| Gate | Choices |
+|---|---|
+| Planning Gate | Approve for Modeling / Revise Planning / Backtrack or terminate |
+| Modeling Gate | Approve for Reporting / Revise Modeling / Backtrack to Planning |
+| Reporting Gate | Approve for Reviewing / Revise Reporting / Request Modeling or Planning addendum |
+| Reviewing Gate | Finalize or archive / Revise routed issues / Backtrack to earlier stage |
 
 ## Default Transitions
 

@@ -14,6 +14,20 @@ Plan is **purpose-first, literature-calibrated, skill-aware, feasibility-aware, 
 
 The system should not begin by generating candidate plans from general AI intuition. It should first clarify what the user actually wants to accomplish, then use prior work to understand whether the idea has been attempted, where the gap is, and which methods or validation patterns can be reused. Only after that should it generate a compact plan that fits the user's resources and intended output.
 
+Clarification should start by reflecting the user's intent back as a proposed
+user-need profile with selectable answers, not by asking a broad interview. The
+researcher agent should say what it thinks the project is, propose likely
+answers for output type, audience, purpose, success criterion, data/source
+direction, and avoid-list, then ask the user to confirm, correct, or add only
+what is missing. Once the goal is clear enough to plan, the agent should proceed
+to the Planning package instead of asking low-value preference questions.
+
+Planning begins only after the Pre-Planning Session Setup choices have been
+confirmed or safely inferred from the user's explicit request. Those choices are
+workflow mode and reviewer strategy. They determine whether Planning should be
+auto-until-needed or step-by-step discussion, and whether a reviewer-agent
+critique is required before the Planning Gate.
+
 Prior work should not be treated only as background. When useful, it should be converted into research-skill cards or skill candidates: reusable patterns for data acquisition, measurement, modeling, validation, visualization, or manuscript framing.
 
 The Plan stage should also check whether mature external tools, packages, templates, databases, or existing skills already solve part of the intended workflow. The goal is to reuse reliable external capabilities where possible and create new skills only for workflow-control gaps or project-specific operations that are not already covered well.
@@ -55,24 +69,84 @@ skipped and why.
 
 ## Internal Flow
 
-0. Domain Onboarding — if user-supplied materials exist, read them and produce a domain knowledge summary and skill cards before the literature scan
-1. Clarify research purpose and intended product
-2. Classify idea maturity and choose planning depth with the user
-3. Ask missing questions before writing the plan
-4. Run a focused literature and prior-work scan when selected or needed
-5. Scan for mature external tools, packages, templates, and existing skills
-6. Distill useful prior work into research-skill cards or skill candidates
-7. Extract gaps, opportunities, and possible research routes
-8. Run feasibility and cost checks on the plausible routes
-9. Calibrate target venue, audience, or output format using official requirements and exemplar articles
-10. Generate candidate research plans, if more than one route remains
-11. Write the Planning Researcher draft package
-12. Run the Planning Reviewer critique, when available and approved
-13. Triage reviewer findings and revise or annotate the package
-14. Human gate
-15. Output one approved plan package
+Before Planning: run the Pre-Planning Session Setup from
+`../docs/stage-handoffs.md`. Confirm active role configuration, workflow mode,
+and reviewer strategy.
+
+0. Domain Onboarding — if user-supplied materials exist, read them and produce a domain knowledge summary before the literature scan
+1. Propose a user-need profile with selectable answers, then ask the user to confirm, correct, or add missing details
+2. Ask only unresolved decision-changing questions before continuing
+3. Run a focused literature and prior-work scan by default for real research,
+   unless the user explicitly chooses skip/defer and the package records the
+   accepted risk and revisit trigger
+4. Extract gaps, opportunities, and possible research routes from the prior-work scan
+5. Classify idea maturity and choose planning depth using the user need plus literature evidence
+6. Generate candidate research plans, if more than one route remains
+7. Run feasibility and cost checks on the plausible routes
+8. Calibrate target venue, audience, or output format using official requirements and exemplar articles
+9. Select or confirm the research route, research question, and claim level
+10. Scan for mature external tools, packages, templates, and existing skills for the selected route
+11. Distill useful selected prior work into research-skill cards or skill candidates
+12. Write the Planning Researcher draft package
+13. Run the Planning Reviewer critique, when available and approved
+14. Triage reviewer findings and revise or annotate the package
+15. Human gate
+16. Output one approved plan package
 
 The final output should be one **Approved Plan Package**. It combines user need, literature basis, selected skill cards, research opportunity, venue/output calibration, research question, data plan, method blueprint, risks, feasibility notes, and Model-stage acceptance criteria. The goal is compact traceability: enough information to support human review and downstream modeling, but not so many artifacts that the workflow becomes hard to use.
+
+## Stepwise Planning Mode
+
+Planning should normally be collaborative and incremental, especially for broad
+or unfamiliar research topics. The Planning package is the compact handoff, not
+the place to paste every detailed review or source note.
+
+Use stepwise mode when the user selects **Step-by-step discussion** during
+Pre-Planning Session Setup, when the project is broad or uncertain, or when
+choices about research question, evidence, method, source strategy, claim level,
+or output route would materially shape the project.
+
+In stepwise mode, the researcher agent should:
+
+1. Create or revise a short Planning package skeleton.
+2. Work on one Planning unit at a time:
+   - user-need profile
+   - research question and boundaries
+   - domain problem taxonomy
+   - source/literature strategy
+   - method route
+   - data/source feasibility
+   - risk rubric
+   - target output or venue route
+3. Present each unit as a discussion artifact or note before treating it as
+   accepted in the Planning package.
+4. Put long reviews, literature matrices, search logs, and source annotations
+   in supporting artifacts, then summarize only their implications in the
+   Planning package.
+5. Ask the user for a concrete next decision when a unit would shape the
+   research route.
+
+Only after the user has discussed or accepted the major Planning units should
+the researcher consolidate them into a complete Planning package for reviewer
+critique.
+
+Do not skip or collapse Planning units in stepwise mode unless the user
+explicitly authorizes the skip, defer, or merge. When a unit is skipped or
+deferred, record the reason, accepted risk, and revisit trigger in the Planning
+package.
+
+## Planning Project Folder Setup
+
+At the start of a real research project, create a dedicated folder under
+`research/<research-name>/` using `../docs/research-organization.md`. The active
+Planning package should be `research/<research-name>/packages/planning-package.md`.
+Long Planning notes should go in `research/<research-name>/notes/`, while
+review requests and reviewer critiques should go in
+`research/<research-name>/artifacts/<run_id>/`.
+
+If a project began in the legacy root-level `packages/` or `artifacts/`
+folders, migrate it into `research/<research-name>/` before sending it for
+reviewer critique unless the user asks to keep the legacy layout.
 
 ## 0. Domain Onboarding
 
@@ -122,9 +196,9 @@ If the user says no or does not respond, proceed to step 1 without waiting.
    learned from the materials that is not obvious from general training.
    Flag any domain-specific terms, conventions, or constraints that should
    govern Planning, Modeling, and Reporting decisions downstream.
-4. Run the Research Skill-Card Distiller (`/research-skill-card-distiller`)
-   on the user-supplied materials to extract reusable method and field-norm
-   patterns, in addition to any retrieved papers later in step 6.
+4. Note possible reusable method and field-norm patterns from the user-supplied
+   materials. Convert them into formal research-skill cards only after the
+   research route is selected or narrowed in step 11.
 5. Record all materials read in the Domain Onboarding inventory so the Plan
    Package is traceable.
 
@@ -139,64 +213,85 @@ If the user says no or does not respond, proceed to step 1 without waiting.
 - Do not use the domain summary to narrow the research question without the
   user's approval. Use it to inform, not to constrain.
 
-## 1. Clarify Research Purpose and Intended Product
+## 1. Propose and Confirm the User-Need Profile
 
-The system should identify:
+The system should first propose a concise user-need profile with selectable
+answers. The default interaction is not to ask open-ended questions. The
+researcher agent should infer the most likely answer from the user's request,
+offer it as a proposed choice, and leave room for the user to correct or add
+details.
 
-- research area and intended audience
-- final product, such as empirical finding, reusable method, dataset, benchmark, skill, workflow demo, manuscript package, proposal, or internal report
-- target output type, such as article, short communication, policy note, proposal, thesis chapter, or internal report
-- whether the project aims to discover a pattern, build a method or tool, validate an intervention, revise an existing artifact, or compare alternatives
-- practical success criterion: what result would make the project useful to the user
-- available data, if any
-- whether public data should be found
-- user's time, tooling, runtime, and cost constraints
-- acceptable method complexity
-- expected novelty level
-- topics, methods, or data types the user wants to avoid
+Use this pattern at the start of Planning:
+
+```text
+I understand you want to do X.
+I propose to run this as Y.
+The active stage is Planning, and I will create Z package.
+If this is right, I will proceed. If not, please correct the part that is wrong.
+```
+
+Then present a compact proposed profile:
+
+| User-need field | Proposed answer | Other common choices | User correction or addition |
+|---|---|---|---|
+| intended output | paper / report / demo / skill / dataset / tool / manuscript package | proposal / thesis chapter / policy note / internal decision brief | |
+| target audience | academic readers / internal decision-makers / course / policy users / engineering users | public-facing readers / domain experts / reviewers | |
+| project purpose | discover a pattern / build a method or tool / validate an intervention / revise an artifact / compare alternatives | workflow test / benchmark / replication | |
+| useful result | evidence for a claim / reusable workflow / validated dataset / decision support / publishable package | proof of feasibility / negative result / limitations map | |
+| data/source direction | use provided data / find public data / use literature only / build a corpus / no empirical data | API data / scraped documents / benchmark data | |
+| avoid-list | no known exclusions / avoid specific data / avoid specific methods / avoid specific domains | avoid paid APIs / avoid private data / avoid black-box methods | |
+
+The user should be invited to confirm the proposed row values or edit only the
+parts that are wrong or missing. If a safe default is clear, record it and move
+on instead of asking for preferences.
 
 Output should be a short user-need profile, not a long interview transcript.
 
-## 2. Classify Idea Maturity and Choose Planning Depth
+The researcher agent should not make a project-shaping choice silently. If it
+chooses a default domain, data source, output route, or implementation location,
+it must present that choice as a proposal before drafting a full plan around it.
 
-Planning should not force every project through the same amount of idea generation, novelty assessment, or literature review. Before investing in prior-work search, the system should classify the user's idea maturity and ask what planning depth is useful.
+## 2. Resolve Only Decision-Changing Unknowns
 
-Suggested idea maturity labels:
+Before continuing, the system should ask concise questions only when
+the answer would materially change the research design, output package, data or
+source strategy, method, implementation location, gate mode, or claim level.
+The goal is not a long interview. The goal is to avoid producing a polished
+plan for the wrong task while still moving forward once the user's intent is
+clear enough.
 
-- **Exploratory idea**: the user has a broad direction but not a stable question, output, data source, or claim.
-- **Partly formed idea**: the user has a question or method but still needs novelty, feasibility, or output-route calibration.
-- **Mature idea**: the user already understands the domain and wants execution planning more than idea discovery.
-- **Revision or implementation task**: the user already has an artifact and needs structured improvement, not new idea generation.
+Instead of asking the user a list of questions, first write provisional answers.
+Ask only about fields that remain genuinely unresolved after the proposed
+profile.
 
-Planning depth options:
+Examples of unresolved items that may require a user answer:
 
-| Option | Use when | Expected planning work |
-|---|---|---|
-| Full calibration | idea is new, risky, manuscript-oriented, or novelty-sensitive | idea refinement, focused literature scan, novelty/gap assessment, feasibility, venue/output calibration |
-| Light calibration | idea is familiar but still needs grounding | brief prior-work check, feasibility, risks, source/tool scan |
-| Skip or defer | user is confident, doing a demo, or wants speed | record the skip/defer decision, assumptions, and when literature/novelty must be revisited |
+- two output routes would imply different evidence standards
+- data access, API cost, runtime, privacy, or licensing constraints are unknown
+- the user mentions a required or forbidden method, source, or domain but not enough detail to act
+- the intended claim level is unclear and would change literature or feasibility work
+- the project may be a real research project or only a smoke test/demo
 
-If the user chooses to skip or defer prior-work and novelty checks, the Plan Package should label the project as demo, internal, preliminary, or user-specified mature. It should not later claim strong novelty unless the required prior-work basis has been added.
+Avoid low-value questions whose answers would not change the next Planning
+action. For example, do not ask the user to choose every folder, naming detail,
+validation style, or minor preference before Planning if a safe default can be
+recorded and revised later.
 
-## 3. Ask Missing Questions Before Writing the Plan
+If reasonable assumptions are safe, state them and proceed. If an assumption
+would change the research design, ask for confirmation before drafting the full
+Planning package. If the user corrects the route, update the understanding and
+then proceed; do not restart the interview from scratch.
 
-Before writing a full plan, the system should ask concise questions when the purpose, output, data, constraints, or success criteria remain ambiguous. The goal is not a long interview. The goal is to avoid producing a polished plan for the wrong task.
-
-Useful questions:
-
-- What is the final thing the user wants: paper, tool, skill, dataset, validation result, or decision support?
-- What should the system avoid doing?
-- What kind of evidence would make the user trust the result?
-- What scale is acceptable for a demo, and what scale would be needed for a full study?
-- Are there hard limits on data access, API cost, runtime, language, methods, or licensing?
-
-If reasonable assumptions are safe, state them and proceed. If an assumption would change the research design, ask before planning.
-
-## 4. Run a Focused Literature and Prior-Work Scan
+## 3. Run a Focused Literature and Prior-Work Scan
 
 Before producing the full plan, the system should run a focused scan to determine whether the idea has already been studied and how adjacent work solved similar problems.
 
-This scan may be full, light, or explicitly deferred according to the planning depth selected above. When deferred, record the reason and the downstream trigger for revisiting it.
+For real research, this scan is the default Planning action after user-need
+confirmation. It may be full, light, or explicitly deferred according to the
+setup choice, user request, and project risk. It should be skipped only for
+smoke tests, clearly mature user-directed work, or an explicit user instruction.
+When skipped or deferred, record the reason, accepted risk, who accepted it,
+and the downstream trigger for revisiting it.
 
 This scan is not a full systematic review. It should answer:
 
@@ -221,60 +316,7 @@ Useful similarity dimensions:
 
 The goal is to learn how comparable work became research, not to collect citations for decoration.
 
-## 5. Scan for Mature External Tools, Packages, Templates, and Existing Skills
-
-Before creating a new project skill or custom method, the system should check whether a mature external capability already exists.
-
-Potential external capabilities include:
-
-- literature search and deep research tools
-- academic databases and citation metadata APIs
-- citation managers and reference-formatting tools
-- journal templates, author guidelines, and reporting checklists
-- systematic-review protocols and checklists
-- statistical, modeling, visualization, and experiment-tracking packages
-- document, spreadsheet, presentation, and bibliography tools
-- established domain-specific analysis packages
-- existing public skills, prompts, workflows, or software repositories
-
-For each candidate, record:
-
-- what workflow task it could handle
-- whether it is mature enough to reuse
-- what inputs and outputs it produces
-- whether outputs can be verified
-- licensing, cost, API, data, privacy, or runtime constraints
-- whether it should be reused directly, wrapped by a workflow-native skill, adapted, or rejected
-
-The Plan Package should distinguish:
-
-- external mature tools to reuse
-- workflow-native skills to invoke
-- project-specific skills to create
-- prior-work patterns that remain as notes rather than formal skills
-
-Use `../docs/skill-strategy.md` for the decision rules.
-
-## 6. Distill Prior Work Into Research-Skill Cards or Skill Candidates
-
-Prior work should be converted into reusable patterns when possible.
-
-For each useful paper or cluster, extract:
-
-- research design pattern
-- data acquisition pattern
-- preprocessing or measurement pattern
-- baseline or control-group pattern
-- modeling or analysis pattern
-- validation or evaluation pattern
-- figure/table pattern
-- limitation or reviewer-risk pattern
-
-Each formal skill card should be traceable to source papers and short enough for a researcher to inspect quickly. Use the template in `../templates/research-skill-card.md`.
-
-Not every useful pattern needs to become a formal skill card. Some may remain as model steps, validation rubrics, figure ideas, or manuscript constraints.
-
-## 7. Extract Gaps, Opportunities, and Possible Routes
+## 4. Extract Gaps, Opportunities, and Possible Routes
 
 For each group of related work, identify:
 
@@ -298,7 +340,56 @@ Opportunity types:
 
 Ideas that are interesting but infeasible should be marked as future work, not forced into the active plan.
 
-## 8. Run Feasibility and Cost Checks
+## 5. Classify Idea Maturity and Choose Planning Depth
+
+Planning should not force every project through the same amount of idea
+generation, novelty assessment, or literature review. Classify idea maturity
+after the initial user-need profile and focused prior-work scan, so the label is
+calibrated by evidence rather than guessed before literature is inspected.
+
+Suggested idea maturity labels:
+
+- **Exploratory idea**: the user has a broad direction but not a stable question, output, data source, or claim.
+- **Partly formed idea**: the user has a question or method but still needs novelty, feasibility, or output-route calibration.
+- **Mature idea**: the user already understands the domain and wants execution planning more than idea discovery.
+- **Revision or implementation task**: the user already has an artifact and needs structured improvement, not new idea generation.
+
+Planning depth options:
+
+| Option | Use when | Expected planning work |
+|---|---|---|
+| Full calibration | idea is new, risky, manuscript-oriented, or novelty-sensitive | idea refinement, focused literature scan, novelty/gap assessment, feasibility, venue/output calibration |
+| Light calibration | idea is familiar but still needs grounding | brief prior-work check, feasibility, risks, source/tool scan |
+| Skip or defer | user is confident, doing a demo, or wants speed | record the skip/defer decision, assumptions, and when literature/novelty must be revisited |
+
+If the user chooses to skip or defer prior-work and novelty checks, the Plan
+Package should label the project as demo, internal, preliminary, or
+user-specified mature. It should not later claim strong novelty unless the
+required prior-work basis has been added.
+
+## 6. Generate Candidate Research Plans
+
+Generate a small number of plans, usually 2-3, only when multiple plausible
+routes remain after the prior-work scan. If the user has clearly approved one
+direction, write that plan directly.
+
+Each candidate should include:
+
+- working title
+- research question
+- closest related work
+- prior-work patterns that may become skill cards later
+- data needed
+- method
+- expected figures and tables
+- feasibility rating
+- novelty rating
+- target venue/output fit
+- likely external tools or skills to check after route selection
+- main risks
+- minimum viable manuscript scope
+
+## 7. Run Feasibility and Cost Checks
 
 Before committing to an approved plan, the system should check whether the plausible route can actually be executed.
 
@@ -320,7 +411,7 @@ For data-collection projects, the Plan stage should distinguish candidate source
 
 When the raw data host differs from the official data source or documentation source, the Plan Package should record that mismatch explicitly. Documentation for a newer or different version should not silently stand in for the exact data used.
 
-## 9. Calibrate Target Venue, Audience, or Output Format
+## 8. Calibrate Target Venue, Audience, or Output Format
 
 Venue or output calibration should happen after the system understands the purpose, prior work, and feasibility. It does not need to lock the project into one journal, but it should identify the intended target enough to shape scope, evidence standards, methods, length, citation style, figures, and novelty expectations.
 
@@ -375,28 +466,86 @@ The exemplar scan should extract:
 
 The exemplar scan should affect the plan. If exemplar articles suggest that the venue expects stronger validation, larger data scale, more robust baselines, more literature grounding, or a different article type, the Plan Package should record that requirement before Model begins. If the current project cannot meet those expectations, the Plan stage should recommend a different venue, a narrower claim level, or a demo/preprint route.
 
-## 10. Generate Candidate Research Plans
+## 9. Select or Confirm the Research Route
 
-Generate a small number of plans, usually 2-3, only when multiple plausible routes remain. If the user has clearly approved one direction, write that plan directly.
+After literature, route generation, feasibility, and output calibration, select
+or confirm the route to carry into the Planning Researcher draft. In
+step-by-step discussion mode, present the selected route to the user before
+extracting formal skill cards or writing the full draft.
 
-Each candidate should include:
+The selected route should lock:
 
-- working title
-- research question
-- closest related work
-- skill cards or prior-work patterns used
-- data needed
-- method
-- expected figures and tables
-- feasibility rating
-- novelty rating
-- target venue/output fit
-- external tools or skills reused
-- project-specific skills needed
-- main risks
-- minimum viable manuscript scope
+- working research question
+- intended output and claim level
+- selected or provisional data/source strategy
+- method family
+- feasibility status and known fallback
+- target venue, audience, or output mode
+- what will be treated as future work rather than active scope
 
-## 11. Planning Researcher Draft
+If the route remains uncertain, stop and ask the user to choose among the
+candidate routes rather than drafting a full package around an unapproved route.
+
+## 10. Scan for Mature External Tools, Packages, Templates, and Existing Skills
+
+Before creating a new project skill or custom method for the selected route,
+check whether a mature external capability already exists.
+
+Potential external capabilities include:
+
+- literature search and deep research tools
+- academic databases and citation metadata APIs
+- citation managers and reference-formatting tools
+- journal templates, author guidelines, and reporting checklists
+- systematic-review protocols and checklists
+- statistical, modeling, visualization, and experiment-tracking packages
+- document, spreadsheet, presentation, or bibliography tools
+- established domain-specific analysis packages
+- existing public skills, prompts, workflows, or software repositories
+
+For each candidate, record:
+
+- what workflow task it could handle
+- whether it is mature enough to reuse
+- what inputs and outputs it produces
+- whether outputs can be verified
+- licensing, cost, API, data, privacy, or runtime constraints
+- whether it should be reused directly, wrapped by a workflow-native skill, adapted, or rejected
+
+The Plan Package should distinguish:
+
+- external mature tools to reuse
+- workflow-native skills to invoke
+- project-specific skills to create
+- prior-work patterns that remain as notes rather than formal skills
+
+Use `../docs/skill-strategy.md` for the decision rules.
+
+## 11. Distill Selected Prior Work Into Research-Skill Cards or Skill Candidates
+
+After the research route is selected or narrowed, convert only relevant prior
+work into reusable patterns. Do not create broad skill cards for every paper
+screened during literature search.
+
+For each useful paper or cluster, extract:
+
+- research design pattern
+- data acquisition pattern
+- preprocessing or measurement pattern
+- baseline or control-group pattern
+- modeling or analysis pattern
+- validation or evaluation pattern
+- figure/table pattern
+- limitation or reviewer-risk pattern
+
+Each formal skill card should be traceable to source papers and short enough
+for a researcher to inspect quickly. Use the template in
+`../templates/research-skill-card.md`.
+
+Not every useful pattern needs to become a formal skill card. Some may remain as
+model steps, validation rubrics, figure ideas, or manuscript constraints.
+
+## 12. Planning Researcher Draft
 
 Before reviewer-agent critique or the user gate, the researcher agent should
 produce a Planning Researcher draft. The draft should be complete enough for
@@ -417,7 +566,7 @@ The draft should include:
 
 The package status should be `draft for Planning Review`, not `approved`.
 
-## 12. Planning Reviewer Critique
+## 13. Planning Reviewer Critique
 
 The Planning Reviewer should inspect the draft before the user gate.
 
@@ -440,7 +589,7 @@ Reviewer findings should include severity, evidence or reasoning, and a route:
 Planning fix, Modeling constraint, user decision, accepted limitation, or
 terminate.
 
-## 13. Researcher-Agent Response to Planning Review
+## 14. Researcher-Agent Response to Planning Review
 
 The researcher agent must respond to Planning Reviewer findings before the user
 gate.
@@ -460,7 +609,7 @@ limitations. The researcher agent should not silently change the user's research
 question, target output, data source strategy, method, or claim level without
 surfacing that change at the user gate.
 
-## 14. Human Gate
+## 15. Human Gate
 
 The user should approve, edit, reject, or combine candidate plans.
 
@@ -482,7 +631,7 @@ Gate questions:
 - Is any skipped external Planning Review acceptable for this project?
 - What must be changed before modeling starts?
 
-## 15. Approved Plan Package
+## 16. Approved Plan Package
 
 The Plan stage outputs one compact approved plan package. It should combine the important artifacts rather than scatter them across many files.
 
