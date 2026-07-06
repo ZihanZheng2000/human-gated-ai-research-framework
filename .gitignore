@@ -25,6 +25,10 @@ Thumbs.db
 # Paper draft — not public yet
 docs/paper.md
 
+# Local research notes and runs
+notes/
+research/
+
 # Generated archives
 *.zip
 *.tar.gz
